@@ -66,8 +66,7 @@ section {
 
   #portfolio-container {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
@@ -79,9 +78,8 @@ section {
     transition: all 0.2s ease;
 
     &.tile-large {
-      grid-column: span 2;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
     }
 
     &.tile-small {
@@ -97,10 +95,18 @@ section {
       justify-content: center;
       padding: 2rem;
     }
+    
+    & .tile-right {
+      display: grid;
+      justify-content: end;
+      align-items: center;
+      margin: 0 0 2rem 0;
+    }
 
     & .tile-vertical {
       padding: 2rem;
     }
+
 
     & #image-container {
       display: grid;
@@ -109,7 +115,7 @@ section {
 
     & #spectrum-screen {
       height: 20rem;
-      margin: 1rem 0;
+      // margin: 1rem 0;
     }
 
     & #wanderlust-screen {
