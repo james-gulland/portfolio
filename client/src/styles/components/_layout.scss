@@ -1,8 +1,33 @@
 #intro-container {
   margin: 2rem 0;
+  position: relative;
+  padding: 0 1rem;
+
+  // job status pill at the top
+  #current-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+
+    &.pill {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 3px solid var(--primary);
+      background-color: var(--primary-light);
+      border-radius: 30px;
+      color: var(--primary);
+      padding: 0.5rem;
+      font-weight: 400;
+    }
+
+    & #pill-emoji {
+      font-size: 1.25rem;
+    }
+  }
 
   p {
-
     margin: 1rem 0;
   }
 
@@ -15,6 +40,11 @@
 
   #profile-description {
     max-width: 60%;
+  }
+
+  #contact-buttons {
+    display: flex;
+    gap: 1rem;
   }
 
 }

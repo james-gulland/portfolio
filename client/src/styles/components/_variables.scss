@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;300;400&display=swap');
 
 :root {
-  --primary-light: #8abdff;
-  --primary: #6d5dfc;
+  // --primary-light: #8abdff;
+  // --primary: #6d5dfc;
+  --primary-light: rgba(52, 211, 153, .1);
+  --primary: rgb(16, 185, 129);
   --primary-dark: #5b0eeb;
   
   --white: #FFFFFF;
@@ -13,9 +15,18 @@
   --greyDark: #9baacf;
 }
 
+// fonts to use
 $main-font: 'Sofia Sans', sans-serif;
 
-h2, p.heading {
-  font-size: 2rem;
+// sizes for fonts
+$size-regular: 1.15rem;
+$size-larger: 2rem;
+
+h2, .heading {
+  font-size: $size-larger;
   font-weight: 400;
+}
+
+.accent-colour {
+  color: var(--primary);
 }
