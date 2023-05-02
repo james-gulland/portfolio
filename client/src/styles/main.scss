@@ -17,3 +17,8 @@ body {
   color: var(--black);
   font-weight: 300;
 }
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
