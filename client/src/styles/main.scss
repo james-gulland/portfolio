@@ -1,3 +1,18 @@
+@import 'components/variables';
+@import 'components/layout';
+
 * {
   box-sizing: border-box;
+}
+
+.site-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--greyLightBg);
+  font-family: $main-font;
+  color: var(--black);
+  font-weight: 300;
 }

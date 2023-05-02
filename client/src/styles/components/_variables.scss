@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;300;400&display=swap');
+
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  
+  --white: #FFFFFF;
+  --black: rgb(24, 24, 27);
+  --greyLightBg: rgb(249, 250, 251);
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+
+$main-font: 'Sofia Sans', sans-serif;
+
+h2, p.heading {
+  font-size: 2rem;
+  font-weight: 400;
+}

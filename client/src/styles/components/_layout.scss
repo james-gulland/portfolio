@@ -1,0 +1,20 @@
+#intro-container {
+  margin: 2rem 0;
+
+  p {
+
+    margin: 1rem 0;
+  }
+
+  #profile-pic img {
+    height: 8rem;
+    border-radius: 50%;
+    border: 3px dashed var(--black);
+    padding: 4px;
+  }
+
+  #profile-description {
+    max-width: 60%;
+  }
+
+}
