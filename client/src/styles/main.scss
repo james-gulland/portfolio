@@ -1,6 +1,7 @@
 @import 'components/variables';
 @import 'components/layout';
 @import 'components/controls';
+@import 'components/media_queries';
 
 * {
   box-sizing: border-box;
@@ -16,6 +17,7 @@ body {
   font-family: $main-font;
   color: var(--black);
   font-weight: 300;
+  padding: 0 1rem;
 }
 
 a, a:visited, a:hover, a:active {

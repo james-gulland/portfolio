@@ -1,12 +1,12 @@
 .button {
-  font-size: $size-regular;
+  font-size: $size-mid;
   font-weight: 400;
   background-color: var(--primary-light);
   color: var(--primary);
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
 }
 
 .icon {
-  margin-right: 0.5rem;
+  margin-right: 0.75rem;
 }
