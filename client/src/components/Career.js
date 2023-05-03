@@ -18,7 +18,7 @@ const career = [
     jobTitle: 'Lead Product Manager',
     startDate: '2022',
     endDate: '2023',
-    description: 'Lead two product teams in the design and development of complex internal web applications. Implemented best practices for product excellence.',
+    description: 'Leading two product teams in the design and development of complex internal web applications. Implemented best practices for product excellence.',
   },
   {
     companyName: 'Subway',
@@ -88,7 +88,7 @@ const career = [
 const Career = () => {
 
   return (
-    <Timeline
+    <Timeline className="timeline-wrapper"
       sx={{
         [`& .${timelineItemClasses.root}:before`]: {
           flex: 0,

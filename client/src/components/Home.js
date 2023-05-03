@@ -17,7 +17,7 @@ const Home = () => {
         </div>
         <p className="heading">Hello there!</p>
         <p id="profile-description" className="heading">I&apos;m James, a full-stack junior <span className="accent-colour">developer</span> with a background in product management.</p>
-        <div id="contact-buttons">
+        <div className="contact-buttons">
           <Contact />
         </div>
       </header>
@@ -45,8 +45,25 @@ const Home = () => {
           <div id="timeline-container">
             <Career />
           </div>
-
         </section>
+
+        {/* THANKS SECTION */}
+        <section>
+          <div id="thanks-container">
+            <div id="profile-pic">
+              <img src={profilePic} alt="Profile" />
+            </div>
+            <div id="thanks-copy-container">
+              <h3>Thanks!</h3>
+              <p>Thanks for making it down this far. It was quite the journey! Hit me up using the links below to contact me for developer roles. Muchos gracias.</p>
+              <div className="contact-buttons"><Contact /></div>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <p>This site was made from scratch using my bare hands and half a brain, thanks to React.js, JavaScript, and SASS.</p>
+        </footer>
 
       </main>
     

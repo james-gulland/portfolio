@@ -8,10 +8,10 @@ const Contact = () => {
   return (
     <>
       <Link className="profile" to={'mailto:jamesgulland@gmail.com'} as={Link} target="_blank">
-        <div id="contact-email" className="button"><FontAwesomeIcon className="icon" icon={faEnvelope} />Email</div>
+        <div className="button contact-email"><FontAwesomeIcon className="icon" icon={faEnvelope} />Email</div>
       </Link>
       <Link className="profile" to={'https://www.linkedin.com/in/jamesgulland/'} as={Link} target="_blank">
-        <div id="contact-linkedIn" className="button"><FontAwesomeIcon className="icon" icon={faLinkedin} />LinkedIn</div>
+        <div className="button contact-linkedIn"><FontAwesomeIcon className="icon" icon={faLinkedin} />LinkedIn</div>
       </Link>
     </>
   )

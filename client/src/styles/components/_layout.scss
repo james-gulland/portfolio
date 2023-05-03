@@ -34,30 +34,32 @@
     margin: 1rem 0;
   }
 
-  #profile-pic img {
-    height: 8rem;
-    border-radius: 50%;
-    border: 3px dashed var(--black);
-    padding: 4px;
-    margin-bottom: 1rem;
-  }
+}
 
-  #contact-buttons {
-    display: flex;
-    gap: 1rem;
-    margin: 2rem 0;
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
 
-    #contact-email, #contact-linkedIn {
-      transition: transform 0.2s ease-in-out;
-      cursor: pointer;
+  .contact-email, .contact-linkedIn {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 
-      &:hover {
-        transform: translateY(-3px);
-        color: adjust-color(rgb(16, 185, 129), $lightness: -10%);
-        background-color: rgba(213,242,232,255);
-      }
+    &:hover {
+      transform: translateY(-3px);
+      color: adjust-color(rgb(16, 185, 129), $lightness: -10%);
+      background-color: rgba(213,242,232,255);
     }
   }
+}
+
+// PROFILE PIC
+#profile-pic img {
+  height: 8rem;
+  border-radius: 50%;
+  border: 3px dashed var(--black);
+  padding: 4px;
+  margin-bottom: 1rem;
 }
 
 // SECTION AREA
@@ -140,6 +142,9 @@ section {
   }
 
   // TIMELINE STLYES
+  #timeline-container {
+    margin-top: 2rem;
+  }
 
   .timeline-container {
     cursor: pointer;
@@ -161,4 +166,23 @@ section {
     background-color: var(--primary);
   }
 
+  #thanks-container {
+    gap: 2rem;
+    border: 1px solid var(--greyLight);
+    border-radius: 25px;
+    padding: 2rem 2rem 0 2rem;
+    margin-bottom: 4rem;
+    background-color: var(--white);
+
+    #thanks-contact {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+}
+
+footer {
+  margin: 2rem 0;
+  text-align: center;
 }
