@@ -1,7 +1,6 @@
 import profilePic from '../assets/me.jpg'
-import spectrumScreen from '../assets/spectrum-demo.png'
-import wanderlust from '../assets/wanderlust-crop.png'
 import Contact from './Contact'
+import Portfolio from './Portfolio'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCompassDrafting } from '@fortawesome/free-solid-svg-icons'
 
@@ -29,27 +28,7 @@ const Home = () => {
           </div>
 
           <div id="portfolio-container">
-            <div className="portfolio-item tile-large">
-              <div className="tile-centre">
-                <h3>spectrum</h3>
-                <p className="tile-text">Music app that brings together all your favourite mixes from around the web, including Soundcloud and Youtube.</p>
-                <p className="tile-text">Built a full-stack app from scratch using Python and Django to serve data from a PostgreSQL database, which was then consumed by React.js app.</p>
-              </div>
-              <div className="tile-right">
-                <img id="spectrum-screen" src={spectrumScreen} alt="Spectrum" />
-              </div>
-            </div>
-            <div className="portfolio-item tile-small">
-              <div className="tile-vertical">
-                <h3>Wanderlust</h3>
-                <p className="tile-text">Travel website that displays the best destinations based on the current weather in that location right now</p>
-              </div>
-              <div id="image-container">
-                <img id="wanderlust-screen" src={wanderlust} alt="Wanderlust" />
-              </div>
-            </div>
-            <div className="portfolio-item tile-small">Project Three</div>
-            <div className="portfolio-item tile-large">Project Four</div>
+            <Portfolio />
           </div>
 
 
