@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import profilePic from '../assets/me.jpg'
 import Contact from './Contact'
 import Portfolio from './Portfolio'
@@ -8,23 +9,33 @@ import confetti from 'canvas-confetti'
 
 const Home = () => {
 
+  const containerRef = useRef(null)
+
   // little easter egg ;)
   function handleClick() {
+
+    const container = containerRef.current
+    const left = (1 - (container.offsetLeft / window.innerWidth)) - 0.05
+    const top = container.offsetTop / container.offsetHeight
+
+    console.log(left, top)
+
     confetti({
       particleCount: 100,
       spread: 70,
       origin: {
-        x: 0.83,
-        y: 0.15,
+        x: left,
+        y: top,
       },
     })
+    
   }
 
   return (
     <>
       {/* INTRO SECTION */}
-      <header id="intro-container">
-        <div id="current-status" className="pill" onClick={handleClick}><span id="pill-emoji">☻</span> Open to work</div>
+      <header id="intro-container" ref={containerRef}>
+        <div id="current-status" className="pill" onClick={handleClick}><span id="pill-emoji" >☻</span> Open to work</div>
         <div id="profile-pic">
           <img src={profilePic} alt="Profile" />
         </div>
