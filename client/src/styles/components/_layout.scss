@@ -139,6 +139,13 @@ section {
       margin: 0 0 2rem 0;
     }
 
+    & .tile-left {
+      display: grid;
+      justify-content: start;
+      align-items: center;
+      margin: 0 0 2rem 0;
+    }
+
     & .tile-vertical {
       padding: 2rem;
     }

@@ -28,11 +28,11 @@ const career = [
     description: 'Leading digital transformation for the Subway apps across EMEA; scaling up two product divisions, building out the Mobile Order platform from scratch, culture shifting towards data and customer centricity.',
   },
   {
-    companyName: 'Pizza Hut Digital Ventures (PHDV)',
+    companyName: 'Pizza Hut Digital Ventures',
     jobTitle: 'Senior Product Manager',
     startDate: '2017',
     endDate: '2020',
-    description: 'LeLaunching Pizza Hut digital platform in India. 35% growth rate improvement to conversion, 28% revenue uplift vs existing vendor.  Pizza Hut best project prize winner 2019.',
+    description: 'Launching Pizza Hut digital platform in India. 35% growth rate improvement to conversion, 28% revenue uplift vs existing vendor.  Pizza Hut best project prize winner 2019.',
   },
   {
     companyName: 'New Look',

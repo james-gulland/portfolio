@@ -36,7 +36,7 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="portfolio-item tile-large">
-        <div className="tile-right">
+        <div className="tile-left">
           <img id="spectrum-screen" src={journalinspace} alt="Spectrum" />
         </div>
         <div className="tile-centre">

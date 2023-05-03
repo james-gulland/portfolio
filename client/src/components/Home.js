@@ -30,7 +30,7 @@ const Home = () => {
         </div>
         <p className="heading">Hello there!</p>
         <p id="profile-description" className="heading">I&apos;m James, a full-stack junior&nbsp;  
-          {/* LET'S BOUNCE MY FRIENDS */}
+          {/* LET'S BOUNCE, MY FRIENDS */}
           <div id="bounce-text"> 
             <span className="accent-colour letter">d</span>
             <span className="accent-colour letter">e</span>
@@ -52,7 +52,7 @@ const Home = () => {
         <section>
           <div id="title-container">
             <h2><FontAwesomeIcon className="icon" icon={faCompassDrafting} />Selected Projects</h2>
-            <p className="para">Ive worked for a plethora of clients and companies on projects of all sizes. This is only a selection of some of the most recent ones.</p>
+            <p className="para">These are the projects and side projects I have worked on, building from scratch across the front-end and back-end:</p>
           </div>
 
           <div id="portfolio-container">
@@ -80,7 +80,7 @@ const Home = () => {
             </div>
             <div id="thanks-copy-container">
               <h3>Thanks!</h3>
-              <p>Thanks for making it down this far. It was quite the journey! Hit me up using the links below to contact me for developer roles. Muchos gracias.</p>
+              <p className="tile-text">Thanks for making it down this far. It was quite the journey! Hit me up using the links below to contact me for developer roles. Muchos gracias.</p>
               <div className="contact-buttons"><Contact /></div>
             </div>
           </div>
