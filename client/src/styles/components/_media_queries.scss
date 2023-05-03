@@ -8,11 +8,15 @@
     .portfolio-item {
       &.tile-large {
         grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 2rem 0;
       }
 
-      & .tile-right {
-        margin: 0;
+      .tile-right {
+        align-items: center;
+        margin-bottom: 0;
       }
+
     }
   }
 
@@ -55,10 +59,13 @@
       &.tile-large {
         grid-template-columns: 1fr 1fr;
         grid-column: span 2;
+        padding: 1rem 0;
+        align-items: center;
       }
 
       & .tile-right {
         margin: 0;
+        // height: 100%;
       }
     }
 
@@ -67,6 +74,16 @@
       max-width: 80%;
       margin: auto;
     }
+  }
+
+  .portfolio-item.tile-large {
+    grid-template-columns: 1fr 1fr;
+    grid-column: span 2;
+    // background-color: black;
+  }
+
+  .portfolio-item.tile-right {
+    margin: 0;
   }
 }
 
