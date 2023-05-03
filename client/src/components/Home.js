@@ -4,14 +4,27 @@ import Portfolio from './Portfolio'
 import Career from './Career'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCompassDrafting, faTimeline } from '@fortawesome/free-solid-svg-icons'
+import confetti from 'canvas-confetti'
 
 const Home = () => {
+
+  // little easter egg ;)
+  function handleClick() {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: {
+        x: 0.83,
+        y: 0.15,
+      },
+    })
+  }
 
   return (
     <>
       {/* INTRO SECTION */}
       <header id="intro-container">
-        <div id="current-status" className="pill"><span id="pill-emoji">☻</span> Open to work</div>
+        <div id="current-status" className="pill" onClick={handleClick}><span id="pill-emoji">☻</span> Open to work</div>
         <div id="profile-pic">
           <img src={profilePic} alt="Profile" />
         </div>
