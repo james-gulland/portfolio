@@ -62,6 +62,40 @@
   margin-bottom: 1rem;
 }
 
+// LET'S BOUNCE
+#bounce-text {
+  display: inline-flex;
+}
+
+.letter {
+  animation: bounce 1s infinite;
+}
+
+#bounce-text span:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+#bounce-text span:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+#bounce-text span:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+#bounce-text span:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+#bounce-text span:nth-of-type(5) {
+  animation-delay: 0.5s;
+}
+#bounce-text span:nth-of-type(6) {
+  animation-delay: 0.6s;
+}
+#bounce-text span:nth-of-type(7) {
+  animation-delay: 0.7s;
+}
+#bounce-text span:nth-of-type(8) {
+  animation-delay: 0.8s;
+}
+
 // SECTION AREA
 section {
   margin-top: 6rem;
