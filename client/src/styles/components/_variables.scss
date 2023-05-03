@@ -38,8 +38,19 @@ h3, .para {
   margin: 2rem 0;
 }
 
+h4 {
+  font-size: $size-mid;
+  color: var(--black);
+  margin: 0;
+  line-height: normal;
+}
+
 .accent-colour {
   color: var(--primary);
+}
+
+.timeline-container {
+  font-family: $main-font;
 }
 
 .tile-text{

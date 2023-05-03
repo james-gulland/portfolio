@@ -1,13 +1,15 @@
 import profilePic from '../assets/me.jpg'
 import Contact from './Contact'
 import Portfolio from './Portfolio'
+import Career from './Career'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCompassDrafting } from '@fortawesome/free-solid-svg-icons'
+import { faCompassDrafting, faTimeline } from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => {
 
   return (
     <>
+      {/* INTRO SECTION */}
       <header id="intro-container">
         <div id="current-status" className="pill"><span id="pill-emoji">☻</span> Open to work</div>
         <div id="profile-pic">
@@ -21,6 +23,7 @@ const Home = () => {
       </header>
 
       <main>
+        {/* PORTFOLIO SECTION */}
         <section>
           <div id="title-container">
             <h2><FontAwesomeIcon className="icon" icon={faCompassDrafting} />Selected Projects</h2>
@@ -30,11 +33,21 @@ const Home = () => {
           <div id="portfolio-container">
             <Portfolio />
           </div>
+        </section>
 
+        {/* TIMELINE SECTION */}
+        <section>
+          <div id="title-container">
+            <h2><FontAwesomeIcon className="icon" icon={faTimeline} />Career Timeline</h2>
+            <p className="para">I wasn&apos;t always a developer! I have over a decade of experience in product management, working on some cool projects: </p>
+          </div>
 
-
+          <div id="timeline-container">
+            <Career />
+          </div>
 
         </section>
+
       </main>
     
     </>
