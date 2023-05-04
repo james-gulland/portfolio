@@ -20,8 +20,16 @@ $main-font: 'Sofia Sans', sans-serif;
 $size-mid: 1.15rem;
 $size-regular: 1.4rem;
 $size-larger: 2rem;
+$size-bigbertha: 4.5rem;
 
 // headings
+
+h1 {
+  font-size: $size-bigbertha;
+  font-weight: 400;
+  margin: 0;
+}
+
 h2, .heading {
   font-size: $size-larger;
   font-weight: 400;
@@ -47,6 +55,10 @@ h4 {
 
 .accent-colour {
   color: var(--primary);
+}
+
+.black {
+  color: var(--black);
 }
 
 .timeline-container {

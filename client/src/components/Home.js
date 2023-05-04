@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
 import profilePic from '../assets/me.jpg'
 import Contact from './Contact'
 import Portfolio from './Portfolio'
@@ -38,7 +39,7 @@ const Home = () => {
           <img src={profilePic} alt="Profile" />
         </div>
         <p className="heading">Hello there!</p>
-        <p id="profile-description" className="heading">I&apos;m James, a full-stack junior&nbsp;  
+        <p id="profile-description" className="heading">I&apos;m <span id="link"><Link to="/about">James</Link></span>, a full-stack junior&nbsp;  
           {/* LET'S BOUNCE, MY FRIENDS */}
           <span id="bounce-text"> 
             <span className="accent-colour letter">d</span>
