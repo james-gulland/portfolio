@@ -18,8 +18,6 @@ const Home = () => {
     const left = (1 - (container.offsetLeft / window.innerWidth)) - 0.05
     const top = container.offsetTop / container.offsetHeight
 
-    console.log(left, top)
-
     confetti({
       particleCount: 100,
       spread: 70,
@@ -42,7 +40,7 @@ const Home = () => {
         <p className="heading">Hello there!</p>
         <p id="profile-description" className="heading">I&apos;m James, a full-stack junior&nbsp;  
           {/* LET'S BOUNCE, MY FRIENDS */}
-          <div id="bounce-text"> 
+          <span id="bounce-text"> 
             <span className="accent-colour letter">d</span>
             <span className="accent-colour letter">e</span>
             <span className="accent-colour letter">v</span>
@@ -52,7 +50,7 @@ const Home = () => {
             <span className="accent-colour letter">p</span>
             <span className="accent-colour letter">e</span>
             <span className="accent-colour letter">r</span>
-          </div> with a background in product management.</p>
+          </span> with a background in product management.</p>
         <div className="contact-buttons">
           <Contact />
         </div>
