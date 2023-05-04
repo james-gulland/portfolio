@@ -71,7 +71,7 @@ const Home = () => {
         </section>
 
         {/* SKILLS SECTION */}
-        <section>
+        {/* <section>
           <div id="title-container">
             <h2><FontAwesomeIcon className="icon" icon={faScrewdriverWrench} />Key Skills</h2>
             <p className="para">Here are a few of the keys skills and tools that I have, and want to improve!</p>
@@ -79,7 +79,7 @@ const Home = () => {
 
           <div id="portfolio-container">
           </div>
-        </section>
+        </section> */}
 
 
         {/* TIMELINE SECTION */}
