@@ -63,7 +63,7 @@ const Home = () => {
         <section>
           <div id="title-container">
             <h2><FontAwesomeIcon className="icon" icon={faCompassDrafting} />Selected Projects</h2>
-            <p className="para">These are the projects and side projects I have worked on, building from scratch across the front-end and back-end:</p>
+            <p className="para">These are the projects and side hustles I have been working on, building from scratch across the front and back-end:</p>
           </div>
 
           <div id="portfolio-container">
@@ -75,7 +75,7 @@ const Home = () => {
         <section>
           <div id="title-container">
             <h2><FontAwesomeIcon className="icon" icon={faScrewdriverWrench} />Key Skills</h2>
-            <p className="para">Here are a few of the key skills and tools that I have been using, and I will be adding more to the list as I learn:</p>
+            <p className="para">Here are a few of the key languages and frameworks that I have been using, and will continue to add as I learn:</p>
           </div>
 
           <div id="skills-container">
@@ -88,7 +88,7 @@ const Home = () => {
         <section>
           <div id="title-container">
             <h2><FontAwesomeIcon className="icon" icon={faTimeline} />Career Timeline</h2>
-            <p className="para">I wasn&apos;t always a developer! I have over a decade of experience in product management, working on some cool projects: </p>
+            <p className="para">I wasn&apos;t always a developer! I have over a decade of experience working in technology on some awesome projects: </p>
           </div>
 
           <div id="timeline-container">
