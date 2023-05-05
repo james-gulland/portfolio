@@ -4,6 +4,7 @@ import profilePic from '../assets/me.jpg'
 import Contact from './Contact'
 import Portfolio from './Portfolio'
 import Career from './Career'
+import Skills from './Skills'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCompassDrafting, faTimeline, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 import confetti from 'canvas-confetti'
@@ -71,15 +72,16 @@ const Home = () => {
         </section>
 
         {/* SKILLS SECTION */}
-        {/* <section>
+        <section>
           <div id="title-container">
             <h2><FontAwesomeIcon className="icon" icon={faScrewdriverWrench} />Key Skills</h2>
-            <p className="para">Here are a few of the keys skills and tools that I have, and want to improve!</p>
+            <p className="para">Here are a few of the key skills and tools that I have been using, and I will be adding more to the list as I learn:</p>
           </div>
 
-          <div id="portfolio-container">
+          <div id="skills-container">
+            <Skills />
           </div>
-        </section> */}
+        </section>
 
 
         {/* TIMELINE SECTION */}

@@ -25,7 +25,7 @@ const About = () => {
             I studied in Business Information Technology, so basically half business, half technology.  
             From my degree, I started out programming but quickly moved into managerial roles, because I like working with people, and then got into a love affair with product management.</p>
           
-          <p className="para black">Fast forward over a decade, I have had the privilege to work with some truly amazing developers, who have inspired me to start a coding career of my own. Returning back to my roots, I am currently transitioning to become a full-stack software engineer, with an passion for clean and functional UIs.</p>
+          <p className="para black">Fast forward over a decade, I have had the privilege to work with some truly amazing developers, who have inspired me to start a coding career of my own. Returning back to my roots, I am currently transitioning to become a full-stack software engineer, with a passion for clean and functional UIs.</p>
           <h2>What am I looking for?</h2>
           <p className="para black">That is a bit of a deep, existential question, isn&apos;t it?!  Oh... you mean job-wise?  Well, I am looking for a full-stack role with an emphasis on the front-end; somewhere I can flex my product and UX chops, whilst satisfying the logical side of my brain, by integrating with APIs, databases, and all things data.</p>
           <p className="para black">I love connecting dots. I love attention to detail. I love solving the right problems.
