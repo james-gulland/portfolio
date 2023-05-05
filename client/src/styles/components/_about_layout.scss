@@ -10,10 +10,9 @@
 #me-image {
   display: flex;
   justify-content: center;
-  margin: 1rem auto;
+  margin: 1rem -2rem;
   
   & #swiss-screen {
-    border-radius: 1rem;
-    margin-bottom: 4rem;
+    width: 100%
   }
 }

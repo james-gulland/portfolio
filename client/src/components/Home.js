@@ -36,7 +36,7 @@ const Home = () => {
       <header id="intro-container" ref={containerRef}>
         <div id="current-status" className="pill" onClick={handleClick}><span id="pill-emoji" >☻</span> Open to work</div>
         <div id="profile-pic">
-          <img src={profilePic} alt="Profile" />
+          <Link to="/about"><img src={profilePic} alt="Profile" /></Link>
         </div>
         <p className="heading">Hello there!</p>
         <p id="profile-description" className="heading">I&apos;m <span id="link"><Link to="/about">James</Link></span>, a full-stack junior&nbsp;  

@@ -87,9 +87,13 @@
   }
 
   // ABOUT ME PAGE
-  #about-container {
+  #about-container, #me-image {
     width: 80%;
     margin: 4rem auto;
+  }
+
+  #swiss-screen {
+    border-radius: 1rem;
   }
 }
 
