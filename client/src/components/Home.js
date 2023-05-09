@@ -104,7 +104,7 @@ const Home = () => {
             </div>
             <div id="thanks-copy-container">
               <h3>Thanks!</h3>
-              <p className="tile-text">Thanks for making it down this far. It was quite the journey! Hit me up using the links below to contact me for developer roles. Muchos gracias.</p>
+              <p className="tile-text">Thanks for making it down this far. It was quite the journey! Hit me up using the links below to contact me for developer roles. Muchas gracias.</p>
               <div className="contact-buttons"><Contact /></div>
             </div>
           </div>
