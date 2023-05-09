@@ -46,19 +46,9 @@
 
 .contact-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin: 2rem 0;
-
-  .contact-email, .contact-linkedIn {
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-      transform: translateY(-3px);
-      color: adjust-color(rgb(16, 185, 129), $lightness: -10%);
-      background-color: rgba(213,242,232,255);
-    }
-  }
 }
 
 // PROFILE PIC
@@ -285,4 +275,5 @@ section {
 footer {
   margin: 2rem 0;
   text-align: center;
+  font-size: small;
 }

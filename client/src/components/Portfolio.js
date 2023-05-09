@@ -42,7 +42,7 @@ const Portfolio = () => {
         <Link to="https://james-gulland.github.io/battleships/" target="_blank" rel="noopener noreferrer">
           <div className="tile-vertical">
             <h3>Celebrity Battleships</h3>
-            <p className="tile-text">A tongue-in-cheek battleships game featuring celebrity dictators, built with JavaScript, HTML5 and CSS.</p>
+            <p className="tile-text">A tongue-in-cheek remake of the classic battleships game, built with JavaScript, HTML5 and CSS.</p>
           </div>
           <div id="image-container">
             <img id="battleships-screen" src={battleships} alt="Wanderlust" />
