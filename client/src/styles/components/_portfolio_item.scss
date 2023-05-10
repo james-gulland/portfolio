@@ -1,0 +1,20 @@
+
+.portfolio-hero-container {
+
+  .hero-image {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+  justify-content: center;
+}
+
+.portfolio-copy {
+  line-height: 2.5rem;
+}

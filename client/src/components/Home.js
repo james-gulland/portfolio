@@ -4,7 +4,8 @@ import profilePic from '../assets/me.jpg'
 import Contact from './Contact'
 import Portfolio from './Portfolio'
 import Career from './Career'
-import Skills from './Skills'
+import SkillPill from './SkillPill'
+import Thanks from './Thanks'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCompassDrafting, faTimeline, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 import confetti from 'canvas-confetti'
@@ -35,7 +36,7 @@ const Home = () => {
     <>
       {/* INTRO SECTION */}
       <header id="intro-container" ref={containerRef}>
-        <div id="current-status" className="pill" onClick={handleClick}><span id="pill-emoji" >☻</span> Open to work</div>
+        <div id="current-status" className="pill active" onClick={handleClick}><span id="pill-emoji" >☻</span> Open to work</div>
         <div id="profile-pic">
           <Link to="/about"><img src={profilePic} alt="Profile" /></Link>
         </div>
@@ -79,7 +80,7 @@ const Home = () => {
           </div>
 
           <div id="skills-container">
-            <Skills />
+            <SkillPill selectedSkills={'all'} />
           </div>
         </section>
 
@@ -98,16 +99,7 @@ const Home = () => {
 
         {/* THANKS SECTION */}
         <section>
-          <div id="thanks-container">
-            <div id="profile-pic">
-              <img src={profilePic} alt="Profile" />
-            </div>
-            <div id="thanks-copy-container">
-              <h3>Thank you!</h3>
-              <p className="tile-text">Thanks for making it down this far. It was quite the journey! Hit me up using the links below to contact me for developer roles. Muchas gracias.</p>
-              <div className="contact-buttons"><Contact /></div>
-            </div>
-          </div>
+          <Thanks />
         </section>
 
         <footer>

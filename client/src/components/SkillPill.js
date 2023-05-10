@@ -17,12 +17,19 @@ const skills = [
   { name: 'Git/Github', icon: faGithub }
 ]
 
-const Skills = () => {
+const SkillPill = ({ selectedSkills }) => {
+  let filteredSkills = skills
+
+  if (selectedSkills !== 'all') {
+    filteredSkills = skills.filter(skill =>
+      selectedSkills.includes(skill.name)
+    )
+  }
 
   return (
     <ul>
-      {skills.map(skill => (
-        <li key={skill.name}>
+      {filteredSkills.map((skill, index) => (
+        <li key={index} className="pill">
           <FontAwesomeIcon className="icon" icon={skill.icon} alt={skill.name} />
           <span>{skill.name}</span>
         </li>
@@ -31,4 +38,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default SkillPill

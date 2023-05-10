@@ -10,14 +10,14 @@ const Portfolio = () => {
     <>
       {/* 1ST ITEM */}
       <div className="portfolio-item tile-large">
-        <Link to="https://spectrum.gives/" target="_blank" rel="noopener noreferrer"> 
+        <Link to="/spectrum/" as={Link}> 
           <div className="tile-centre">  
             <h3>spectrum</h3>
             <p className="tile-text">Music app that brings together all your favourite mixes from around the web, including Soundcloud and Youtube.</p>
             <p className="tile-text">Built a full-stack app from scratch using Python and Django to serve data from a PostgreSQL database, which was then consumed by React.js app.</p>
           </div>
         </Link>
-        <Link to="https://spectrum.gives/" target="_blank" rel="noopener noreferrer">
+        <Link to="/spectrum/" as={Link}>
           <div className="tile-right">
             <img id="spectrum-screen" src={spectrumScreen} alt="Spectrum" />
           </div>

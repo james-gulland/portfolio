@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import Back from './Back'
 import swiss from '../assets/swiss.png'
 
 const About = () => {
@@ -8,9 +6,7 @@ const About = () => {
   return (
     <>
       <header id="header-about">
-        <Link className="profile" to={'/'} as={Link}>
-          <div className="button back"><FontAwesomeIcon className="icon" icon={faArrowLeft} />Back to home</div>
-        </Link>
+        <Back />
       </header>
 
       <section>
