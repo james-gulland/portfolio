@@ -6,6 +6,7 @@ import Portfolio from './Portfolio'
 import Career from './Career'
 import SkillPill from './SkillPill'
 import Thanks from './Thanks'
+import Footer from './Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCompassDrafting, faTimeline, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 import confetti from 'canvas-confetti'
@@ -101,13 +102,9 @@ const Home = () => {
         <section>
           <Thanks />
         </section>
-
-        <footer>
-          <p>This site was made from scratch using my bare hands and half a brain, thanks to React.js, JavaScript, and SASS.</p>
-        </footer>
-
       </main>
-    
+
+      <Footer />
     </>
 
   )
