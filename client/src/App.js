@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Home from './components/Home'
 import About from './components/About'
 import Spectrum from './components/Spectrum'
+import Wanderlust from './components/Wanderlust'
+import Battleships from './components/Battleships'
+import Journalinspace from './components/Journalinspace'
 
 // scrolls page to top when loading the page
 const ScrollToTop = () => {
@@ -25,6 +28,9 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/spectrum" element={<Spectrum />} />
+          <Route path="/wanderlust" element={<Wanderlust />} />
+          <Route path="/battleships" element={<Battleships />} />
+          <Route path="/journalinspace" element={<Journalinspace />} />
         </Routes>
       </BrowserRouter>
     </div>

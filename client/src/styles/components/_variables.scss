@@ -20,12 +20,13 @@ $main-font: 'Sofia Sans', sans-serif;
 $size-mid: 1.15rem;
 $size-regular: 1.4rem;
 $size-larger: 2rem;
+$size-smallbertha: 3rem;
 $size-bigbertha: 4.5rem;
 
 // headings
 
 h1 {
-  font-size: $size-bigbertha;
+  font-size: $size-smallbertha; 
   font-weight: 400;
   margin: 0;
 }

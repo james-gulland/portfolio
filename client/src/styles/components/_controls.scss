@@ -36,3 +36,32 @@
     }
   }
 }
+
+// LINKS
+.link {
+  text-decoration: underline dashed;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 6px;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -0.5%;
+    bottom: 10%;
+    height: 4px;
+    width: 0;
+    background-color: var(--black);
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    text-decoration: none;
+    width: 100%;
+  }
+}
+
+.link-small {
+  text-underline-offset: 8px;
+}

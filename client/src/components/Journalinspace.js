@@ -6,11 +6,11 @@ import Back from './Back'
 import SkillPill from './SkillPill'
 import Thanks from './Thanks'
 import Footer from './Footer'
-import screen1 from '../assets/spectrum-1.png'
+import screen1 from '../assets/space-1.png'
 
-const Spectrum = () => {
+const Journalinspace = () => {
 
-  const selectedSkills = ['React.js', 'HTML5', 'SASS', 'Python', 'Django', 'PostgreSQL']
+  const selectedSkills = ['JavaScript', 'React.js', 'HTML5', 'SASS', 'Node.js']
 
   return (
     <>
@@ -22,8 +22,8 @@ const Spectrum = () => {
         {/* TITLE */}
         <section>
           <div id="title-container">
-            <h1>spectrum</h1>
-            <p className="para">Music app that brings together all your favourite mixes from around the web, including Soundcloud and Youtube</p>
+            <h1>Journal in Space</h1>
+            <p className="para">Developed a React.js app that consumed the NASA Picture of the Day API, to resemble a daily journal through space</p>
           </div>
 
           {/* HERO AREA */}
@@ -31,10 +31,10 @@ const Spectrum = () => {
             <img className="hero-image" src={screen1} alt="Spectrum Home" ></img>
             <div>
               <ul>
-                <Link to="https://spectrum.gives/" target="_blank" rel="noopener noreferrer">
+                <Link to="https://journalinspace.com/" target="_blank" rel="noopener noreferrer">
                   <li className="pill active"><FontAwesomeIcon className="icon" icon={faEarthAmericas} alt="GitHub" />Link to Website</li>
                 </Link>
-                <Link to="https://github.com/james-gulland/spectrum/" target="_blank" rel="noopener noreferrer">
+                <Link to="https://github.com/james-gulland/space/" target="_blank" rel="noopener noreferrer">
                   <li className="pill active"><FontAwesomeIcon className="icon" icon={faGithub} alt="GitHub" />Link to GitHub</li>
                 </Link>
               </ul>
@@ -44,9 +44,9 @@ const Spectrum = () => {
 
         {/* MAIN COPY */}
         <section className="portfolio-copy">
-          <p className="para black">During the final two weeks of the GA Software Engineering immersive course, I was tasked with developing a full-stack app from scratch using a Python Django API and Django REST framework to serve data from a Postgres database, which was then consumed by a separate front-end build with React.js and SASS.</p>
-          <p className="para black">I came up with the idea of a project I have always wanted to do; a music app that enables users to curate a personalised playlist of mixtapes from various online sources, including Youtube, Soundcloud, and Mixcloud; a central repository for all your mixes! The app also allows for playback of the playlist based on the user&apos;s present mood.</p>
-          <p className="para black">You can read up more about the full development process <span className="link"><Link to="https://github.com/james-gulland/spectrum/#readme" target="_blank" rel="noopener noreferrer">here</Link></span>.</p>
+          <p className="para black">The second GA Software Engineering immersive course project was in week 7 of the course, with the brief of building a React app that consumes a public API.</p>
+          <p className="para black">We chose an Open API provided by NASA called Astronomy Picture of the Day (APOD), which updates daily with NASA photography, an explanation, along with other data, that we would display in our React app and then deploy to the web.</p>
+          <p className="para black">You can read up more about the full development process <span className="link"><Link to="https://github.com/james-gulland/space/#readme" target="_blank" rel="noopener noreferrer">here</Link></span>.</p>
         </section>
 
         {/* TECH USED SECTION */}
@@ -64,8 +64,8 @@ const Spectrum = () => {
       {/* FOOTER */}
       <Footer />
     </>
-  )
 
+  )
 }
 
-export default Spectrum
+export default Journalinspace

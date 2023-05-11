@@ -22,14 +22,15 @@
       // color: var(--primary);
       // padding: 0.5rem;
       // font-weight: 400;
-      // &:hover {
-      //   color: adjust-color(rgb(16, 185, 129), $lightness: -10%);
-      //   background-color: rgba(213,242,232,255);
-      // }
+      &:hover {
+        color: adjust-color(rgb(16, 185, 129), $lightness: -10%);
+        background-color: rgba(213,242,232,255);
+      }
     }
 
     & #pill-emoji {
       font-size: 1.25rem;
+      // padding: 0.5rem;
     }
   }
 
@@ -57,33 +58,6 @@
   border: 3px dashed var(--black);
   padding: 4px;
   margin-bottom: 1rem;
-}
-
-// LINKS
-#link {
-  text-decoration: underline dashed;
-  text-decoration-skip-ink: none;
-  // text-underline-offset: 0.45rem;
-  text-underline-offset: 6px;
-  position: relative;
-  display: inline-block;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: -0.5%;
-    bottom: 10%;
-    height: 4px;
-    width: 0;
-    // background-color: var(--primary);
-    background-color: var(--black);
-    transition: width 0.3s ease-in-out;
-  }
-
-  &:hover::after {
-    text-decoration: none;
-    width: 100%;
-  }
 }
 
 // LET'S BOUNCE

@@ -10,14 +10,14 @@ const Portfolio = () => {
     <>
       {/* 1ST ITEM */}
       <div className="portfolio-item tile-large">
-        <Link to="/spectrum/" as={Link}> 
+        <Link to="/spectrum" as={Link}> 
           <div className="tile-centre">  
             <h3>spectrum</h3>
             <p className="tile-text">Music app that brings together all your favourite mixes from around the web, including Soundcloud and Youtube.</p>
             <p className="tile-text">Built a full-stack app from scratch using Python and Django to serve data from a PostgreSQL database, which was then consumed by React.js app.</p>
           </div>
         </Link>
-        <Link to="/spectrum/" as={Link}>
+        <Link to="/spectrum" as={Link}>
           <div className="tile-right">
             <img id="spectrum-screen" src={spectrumScreen} alt="Spectrum" />
           </div>
@@ -26,7 +26,7 @@ const Portfolio = () => {
 
       {/* 2ND ITEM */}
       <div className="portfolio-item tile-small">
-        <Link to="https://wanderlust-project-3.herokuapp.com/" target="_blank" rel="noopener noreferrer"> 
+        <Link to="/wanderlust" as={Link}> 
           <div className="tile-vertical">
             <h3>Wanderlust</h3>
             <p className="tile-text">Travel website that displays the best destinations based on the current weather in that location right now</p>
@@ -39,7 +39,7 @@ const Portfolio = () => {
 
       {/* 3RD ITEM */}
       <div className="portfolio-item tile-small">
-        <Link to="https://james-gulland.github.io/battleships/" target="_blank" rel="noopener noreferrer">
+        <Link to="/battleships" as={Link}>
           <div className="tile-vertical">
             <h3>Celebrity Battleships</h3>
             <p className="tile-text">A tongue-in-cheek remake of the classic battleships game, built with JavaScript, HTML5 and CSS.</p>
@@ -52,13 +52,13 @@ const Portfolio = () => {
 
       {/* 4TH ITEM */}
       <div className="portfolio-item tile-large">
-        <Link to="https://journalinspace.com/" target="_blank" rel="noopener noreferrer"> 
+        <Link to="/journalinspace" as={Link}> 
           <div className="tile-left">
             <img id="spectrum-screen" src={journalinspace} alt="Spectrum" />
           </div>
         </Link>
 
-        <Link to="https://journalinspace.com/" target="_blank" rel="noopener noreferrer"> 
+        <Link to="/journalinspace" as={Link}> 
           <div className="tile-centre">
             <h3>Journal in Space</h3>
             <p className="tile-text">Experience a daily voyage through space, directly from NASA.</p>
