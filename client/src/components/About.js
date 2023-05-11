@@ -1,4 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPersonHiking, faMusic, faGamepad } from '@fortawesome/free-solid-svg-icons'
+
 import Back from './Back'
+import Thanks from './Thanks'
+import Footer from './Footer'
 import swiss from '../assets/swiss.png'
 
 const About = () => {
@@ -9,10 +14,11 @@ const About = () => {
         <Back />
       </header>
 
+      {/* ABOUT ME SECTION */}
       <section>
         <div id="title-container">
           <h1>James Gulland</h1>
-          <p className="para">Have a seat... would you like a coffee or tea, or perhaps just a water?   Haha, yes, terrible weather isn&apos;t it?</p>
+          <p className="para">Have a seat... would you like a tea or coffee, or perhaps just a water?   Haha, yes, terrible weather isn&apos;t it?</p>
         </div>
 
         <div id="about-container">
@@ -34,6 +40,31 @@ const About = () => {
       <section id="me-image">
         <img id="swiss-screen" src={swiss} alt="Switzerland" />
       </section>
+
+      {/* INTERESTS SECTION */}
+      <section>
+        <div id="interests-container">
+          <h2>What do I do outside of work?</h2>
+          <p className="para black">Find below ice-breakers for our interview:</p>
+
+          <div className="para black interest-icon"><FontAwesomeIcon className="icon accent-colour" icon={faPersonHiking} alt="Person Hiking" />Travelling:</div>
+          <p className="para black">When I am not enjoying the delights that London has to offer, I am quite often out of the country exploring new cultures and ways of life.  My favourite trip was spending 5 months out in south-east Asia, where my brother and I hired out motorbikes and toured countries finding new places to see, and meeting new people along the way.  We always liked going off the beaten track; not to tick tourist attractions off a list (although we did do some of that!) but to actually understand the fundamental way of life for people in those countries.  Which meant talking to local people about the culture, the politics, the religion and many other topics of interest.</p>
+          
+          <div className="para black interest-icon"><FontAwesomeIcon className="icon accent-colour" icon={faMusic} alt="Person Hiking" />Music:</div>
+          <p className="para black">I have a pretty eclectic taste in music; anything from ambient, to jazz, to electronica, to drum & bass.  I spend a lot of my free time researching new artists and styles, scouring online shops and old record stores to find unknown tracks.  I&apos;m a bit too old to go clubbing these days like I used to, but I still get a great deal of satisfaction in putting together mixtapes for friends.</p>
+
+          <div className="para black interest-icon"><FontAwesomeIcon className="icon accent-colour" icon={faGamepad} alt="Person Hiking" />Computer Games:</div>
+          <p className="para black">In the rare event I actually have any time left, I like to relax by playing PS5 and PC games. I grew up in a time of the Commodore 64, NES, and SNES; computer games were my life as a child, it&apos;s in my blood!  I like RTS (real-time strategy) games, as well as action and adventure games.  Some personal favourites include: Fallout, Mario, Zelda, Skyrim.</p>
+        </div>
+      </section>
+
+      {/* THANKS SECTION */}
+      <section>
+        <Thanks />
+      </section>
+
+      {/* FOOTER */}
+      <Footer />
     </>
 
   )
