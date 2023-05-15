@@ -18,7 +18,7 @@ const About = () => {
       <section>
         <div id="title-container">
           <h1>James Gulland</h1>
-          <p className="para">Have a seat... would you like a tea or coffee, or perhaps just a water?   Haha, yes, terrible weather isn&apos;t it?</p>
+          <p className="para">Have a seat... Would you like a tea or coffee, or perhaps just a water?   Haha, yes, terrible weather isn&apos;t it?</p>
         </div>
 
         <div id="about-container">
@@ -27,12 +27,11 @@ const About = () => {
             I studied in Business Information Technology, so basically half business, half technology.  
             From my degree, I started out programming but quickly moved into managerial roles, because I like working with people, and then got into a love affair with product management.</p>
           
-          <p className="para black">Fast forward over a decade, I have had the privilege to work with some truly amazing developers, who have inspired me to start a coding career of my own. Returning back to my roots, I am currently transitioning to become a full-stack software engineer, with a passion for clean and functional UIs.</p>
+          <p className="para black">Fast forward over a decade, I have had the privilege to work with some truly amazing developers, who have inspired me to start a coding career of my own. Returning back to my roots, I am currently transitioning to become a full-stack software engineer, with a passion for creating clean and functional UIs.</p>
           <h2>What am I looking for?</h2>
           <p className="para black">That is a bit of a deep, existential question, isn&apos;t it?!  Oh... you mean job-wise?  Well, I am looking for a full-stack role with an emphasis on the front-end; somewhere I can flex my product and UX chops, whilst satisfying the logical side of my brain, by integrating with APIs, databases, and all things data.</p>
           <p className="para black">I love connecting dots. I love attention to detail. I love solving the right problems.
-          Working in product has taught me the immense value that software engineering can bring to organisations, and I&apos;m deeply excited to keep progressing my full-stack coding skills whilst bringing my evident UX and business knowledge to the forefront.</p>
-          <p className="para black">I will need a little bit of support whilst I get to grips with the tech that is new to me, but I feel at home here, and I am a quick learner. I can&apos;t wait to meet you and I can&apos;t wait to start!</p>
+          Working in product has taught me the immense value that software engineering can bring to organisations, and I&apos;m deeply excited to keep progressing my full-stack coding skills whilst bringing my evident UX and business knowledge to the forefront.</p>          <p className="para black">I will need a little bit of support whilst I get to grips with the tech that is new to me, but I feel at home here, and I am a quick learner. I can&apos;t wait to meet you and I can&apos;t wait to start!</p>
         </div>
       </section>
       
@@ -45,16 +44,16 @@ const About = () => {
       <section>
         <div id="interests-container">
           <h2>What do I do outside of work?</h2>
-          <p className="para black">Find below ice-breakers for our interview:</p>
+          <p className="para black">Need some inspiration for an ice-breaker during our interview?  Look no further:</p>
 
           <div className="para black interest-icon"><FontAwesomeIcon className="icon accent-colour" icon={faPersonHiking} alt="Person Hiking" />Travelling:</div>
-          <p className="para black">When I am not enjoying the delights that London has to offer, I am quite often out of the country exploring new cultures and ways of life.  My favourite trip was spending 5 months out in south-east Asia, where my brother and I hired out motorbikes and toured countries finding new places to see, and meeting new people along the way.  We always liked going off the beaten track; not to tick tourist attractions off a list (although we did do some of that!) but to actually understand the fundamental way of life for people in those countries.  Which meant talking to local people about the culture, the politics, the religion and many other topics of interest.</p>
+          <p className="para black">When I am not enjoying the delights that London has to offer, I frequently venture beyond borders to immerse myself in diverse cultures and lifestyles.  One of my most cherished journeys involved a five-month expedition across Southeast Asia, where my brother and I embarked on an exhilarating exploration of the continent. By renting motorbikes, we were able to venture off the beaten path, frequently unveiling the hidden gems that awaited our discovery.</p>
           
           <div className="para black interest-icon"><FontAwesomeIcon className="icon accent-colour" icon={faMusic} alt="Person Hiking" />Music:</div>
-          <p className="para black">I have a pretty eclectic taste in music; anything from ambient, to jazz, to electronica, to drum & bass.  I spend a lot of my free time researching new artists and styles, scouring online shops and old record stores to find unknown tracks.  I&apos;m a bit too old to go clubbing these days like I used to, but I still get a great deal of satisfaction in putting together mixtapes for friends.</p>
+          <p className="para black">I have a pretty eclectic taste in music; anything from ambient, to jazz, to electronica, to drum & bass.  I dedicate a significant portion of my free time to exploring new artists and genres, scouring online shops to find unknown tracks.  Although I may have outgrown the clubbing scene I once enjoyed, I still get a great deal of satisfaction in curating mixtapes for my friends.</p>
 
           <div className="para black interest-icon"><FontAwesomeIcon className="icon accent-colour" icon={faGamepad} alt="Person Hiking" />Computer Games:</div>
-          <p className="para black">In the rare event I actually have any time left, I like to relax by playing PS5 and PC games. I grew up in a time of the Commodore 64, NES, and SNES; computer games were my life as a child, it&apos;s in my blood!  I like RTS (real-time strategy) games, as well as action and adventure games.  Some personal favourites include: Fallout, Mario, Zelda, Skyrim.</p>
+          <p className="para black">On the rare occasion when I find myself with a moment to spare, I like to unwind by playing on the PS5 or PC. Having grown up during the era of the Commodore 64, NES, and SNES, video games have been an integral part of my life since childhood. I have a particular fondness for real-time strategy (RTS) games, as well as action and adventure titles. Among my personal favorites are Fallout, Mario, Quake, and Skyrim.</p>
         </div>
       </section>
 
