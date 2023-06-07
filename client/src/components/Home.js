@@ -42,7 +42,7 @@ const Home = () => {
           <Link to="/about"><img src={profilePic} alt="Profile" /></Link>
         </div>
         <p className="heading">Hello there!</p>
-        <p id="profile-description" className="heading">I&apos;m <span className="link"><Link to="/about">James</Link></span>, a full-stack junior&nbsp;  
+        <p id="profile-description" className="heading">I&apos;m <span className="link"><Link to="/about">James</Link></span>, a full-stack web&nbsp;  
           {/* LET'S BOUNCE, MY FRIENDS */}
           <span id="bounce-text"> 
             <span className="accent-colour letter">d</span>
