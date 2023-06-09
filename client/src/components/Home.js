@@ -39,7 +39,7 @@ const Home = () => {
       <header id="intro-container" ref={containerRef}>
         <div id="current-status" className="pill active" onClick={handleClick}><span id="pill-emoji" >☺️</span> Open to work</div>
         <div id="profile-pic">
-          <Link to="/about"><img src={profilePic} alt="Profile" /></Link>
+          <Link to="/about"><img src={profilePic} alt="Profile" loading="lazy" /></Link>
         </div>
         <p className="heading">Hello there!</p>
         <p id="profile-description" className="heading">I&apos;m <span className="link"><Link to="/about">James</Link></span>, a full-stack web&nbsp;  
