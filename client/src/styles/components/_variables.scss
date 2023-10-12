@@ -11,6 +11,8 @@
   --greyLightBg: rgb(249, 250, 251);
   --greyLight: rgb(229, 231, 235);
   --greyDark: rgb(161, 161, 170);
+  --nonActive: rgb(255, 195, 0);
+  --nonActiveLighter: adjust-color(rgb(255, 195, 0), $lightness: -10%);
 }
 
 // fonts
