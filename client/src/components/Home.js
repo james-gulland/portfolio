@@ -93,12 +93,8 @@ const Home = () => {
             <h2><FontAwesomeIcon className="icon" icon={faScrewdriverWrench} />Key Skills</h2>
             <p className="para">Here are a few of the key languages and frameworks that I have been using, and will continue to add as I learn:</p>
           </div>
-
-          <div id="skills-container">
-            <SkillPill selectedSkills={'all'} />
-          </div>
+          <SkillPill selectedSkills={'all'} />
         </section>
-
 
         {/* TIMELINE SECTION */}
         <section>

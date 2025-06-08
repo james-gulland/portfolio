@@ -27,14 +27,16 @@ const SkillPill = ({ selectedSkills }) => {
   }
 
   return (
-    <ul>
-      {filteredSkills.map((skill, index) => (
-        <li key={index} className="pill">
-          <FontAwesomeIcon className="icon" icon={skill.icon} alt={skill.name} />
-          <span>{skill.name}</span>
-        </li>
-      ))}
-    </ul>
+    <div className="skills-container">
+      <ul>
+        {filteredSkills.map((skill, index) => (
+          <li key={index} className="pill">
+            <FontAwesomeIcon className="icon" icon={skill.icon} alt={skill.name} />
+            <span>{skill.name}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 
