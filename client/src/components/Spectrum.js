@@ -31,9 +31,6 @@ const Spectrum = () => {
             <img className="hero-image" src={screen1} alt="Spectrum Home" ></img>
             <div>
               <ul>
-                <Link to="https://spectrum.gives/" target="_blank" rel="noopener noreferrer">
-                  <li className="pill active"><FontAwesomeIcon className="icon" icon={faEarthAmericas} alt="GitHub" />Link to Website</li>
-                </Link>
                 <Link to="https://github.com/james-gulland/spectrum/" target="_blank" rel="noopener noreferrer">
                   <li className="pill active"><FontAwesomeIcon className="icon" icon={faGithub} alt="GitHub" />Link to GitHub</li>
                 </Link>
