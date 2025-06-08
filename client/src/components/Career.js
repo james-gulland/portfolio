@@ -7,6 +7,20 @@ import TimelineDot from '@mui/lab/TimelineDot'
 
 const career = [
   {
+    companyName: 'Node London',
+    jobTitle: 'Software Engineer',
+    startDate: '2023',
+    endDate: 'Present',
+    description: 'Building various projects for high-value clients (i.e. BBC StoryWorks) using Next.js, React, TypeScript and Tailwind. Working across the full-stack including CMS integration, API development, and deployment using AWS and Vercel.',
+  },
+  {
+    companyName: 'Coherent Healthcare',
+    jobTitle: 'Junior Software Developer',
+    startDate: '2023',
+    endDate: '2023',
+    description: 'First-hire developer, working with CTO to build out initial go-to-market product - Scoping and building out the front-end from scratch using Vue.js with Vite, and integrating with PostgreSQL back-end',
+  },
+  {
     companyName: 'General Assembly',
     jobTitle: 'Software Engineering Immersive',
     startDate: '2023',
