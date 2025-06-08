@@ -29,7 +29,7 @@ const Wanderlust = () => {
           {/* HERO AREA */}
           <div className="portfolio-hero-container">
             <img className="hero-image" src={screen1} alt="Spectrum Home" ></img>
-            <div>
+            <div className="links-container">
               <ul>
                 <Link to="https://github.com/james-gulland/wanderlust/" target="_blank" rel="noopener noreferrer">
                   <li className="pill active"><FontAwesomeIcon className="icon" icon={faGithub} alt="GitHub" />Link to GitHub</li>

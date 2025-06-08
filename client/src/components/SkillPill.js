@@ -27,7 +27,7 @@ const SkillPill = ({ selectedSkills }) => {
   }
 
   return (
-    <div className="skills-container">
+    <div className="pills-container">
       <ul>
         {filteredSkills.map((skill, index) => (
           <li key={index} className="pill">

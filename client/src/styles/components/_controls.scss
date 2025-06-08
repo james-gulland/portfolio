@@ -67,8 +67,28 @@
   text-underline-offset: 0.45rem;
 }
 
-// SKILLS STYLES
-.skills-container {
+.links-container {
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 1rem;
+        justify-content: center;
+
+        li {
+            display: flex;
+            border: 3px solid var(--primary);
+            color: var(--primary);
+            font-weight: 400;
+            background-color: var(--primary-light);
+            border-radius: 2rem;
+            padding: 0.75rem;
+        }
+    }
+}
+
+.pills-container {
     ul {
         list-style-type: none;
         display: flex;

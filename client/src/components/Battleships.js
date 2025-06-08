@@ -29,7 +29,7 @@ const Battleships = () => {
           {/* HERO AREA */}
           <div className="portfolio-hero-container">
             <img className="hero-image" src={screen1} alt="Spectrum Home" ></img>
-            <div>
+            <div className="links-container">
               <ul>
                 <Link to="https://james-gulland.github.io/battleships/" target="_blank" rel="noopener noreferrer">
                   <li className="pill active"><FontAwesomeIcon className="icon" icon={faEarthAmericas} alt="GitHub" />Link to Website</li>

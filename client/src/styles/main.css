@@ -411,7 +411,25 @@ footer {
   text-underline-offset: 0.45rem;
 }
 
-.skills-container ul {
+.links-container ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+}
+.links-container ul li {
+  display: flex;
+  border: 3px solid var(--primary);
+  color: var(--primary);
+  font-weight: 400;
+  background-color: var(--primary-light);
+  border-radius: 2rem;
+  padding: 0.75rem;
+}
+
+.pills-container ul {
   list-style-type: none;
   display: flex;
   gap: 1rem;
@@ -420,12 +438,12 @@ footer {
   justify-content: center;
 }
 @media (max-width: 416px) {
-  .skills-container ul {
+  .pills-container ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, max-content));
   }
 }
-.skills-container ul li {
+.pills-container ul li {
   display: flex;
   border: 3px solid var(--primary);
   color: var(--primary);
