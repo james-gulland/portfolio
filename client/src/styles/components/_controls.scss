@@ -46,32 +46,18 @@
 
 // LINKS
 .link {
-  text-decoration: underline dashed;
-  text-decoration-skip-ink: none;
-  text-underline-offset: 6px;
-  position: relative;
-  display: inline-block;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: -0.5%;
-    bottom: 10%;
-    height: 4px;
-    width: 0;
-    background-color: var(--black);
-    transition: width 0.3s ease-in-out;
-  }
-
-  &:hover::after {
-    text-decoration: none;
-    width: 100%;
-  }
+  background: 
+    linear-gradient(to right, var(--greyLight)),
+    linear-gradient(to right, var(--greyDark), var(--primary));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 250ms;
 }
 
-.link-small {
-  // text-underline-offset: 8px;
-  text-underline-offset: 0.45rem;
+.link:hover,
+a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
 }
 
 .links-container {
