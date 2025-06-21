@@ -91,7 +91,7 @@ const Home = () => {
         <section>
           <div id="title-container">
             <h2><FontAwesomeIcon className="icon" icon={faScrewdriverWrench} />Key Skills</h2>
-            <p className="para">Here are a few of the key languages and frameworks that I have been using, and will continue to add as I learn:</p>
+            <p className="para">Here are a few of the key languages, frameworks, and tools that I have been using, and will continue to add as I learn:</p>
           </div>
           <SkillPill selectedSkills={'all'} />
         </section>
