@@ -25,8 +25,11 @@ $size-larger: 2rem;
 $size-smallbertha: 3rem;
 $size-bigbertha: 4.5rem;
 
-// headings
+html::selection {
+    background-color: var(--primary-light);
+}
 
+// headings
 h1 {
   font-size: $size-smallbertha; 
   font-weight: 400;
