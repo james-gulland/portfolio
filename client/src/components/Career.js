@@ -25,7 +25,7 @@ const career = [
     jobTitle: 'Software Engineering Immersive',
     startDate: '2023',
     endDate: '2023',
-    description: '12-week immersive course that covered full-stack capabilities, including JavaScript, React.js, HTML, CSS and Python. Involved individual, paired, and group projects, using agile practices such as stand-ups, pair programming, and showcases.',
+    description: '12-week immersive course that covered full-stack capabilities, including JavaScript, React, HTML, CSS and Python. Involved individual, paired, and group projects, using agile practices such as stand-ups, pair programming, and showcases.',
   },
   {
     companyName: 'Numan',

@@ -10,7 +10,7 @@ import screen1 from '../assets/wanderlust-1.png'
 
 const Wanderlust = () => {
 
-  const selectedSkills = ['JavaScript', 'React.js', 'HTML5', 'SASS', 'Node.js', 'MongoDB', 'Express']
+  const selectedSkills = ['JavaScript', 'React', 'HTML5', 'SASS', 'Node.js', 'MongoDB', 'Express']
 
   return (
     <>
@@ -41,7 +41,7 @@ const Wanderlust = () => {
 
         {/* MAIN COPY */}
         <section className="portfolio-copy">
-          <p className="para black">During the eighth week of the GA Software Engineering immersive course, we were tasked with developing a full-stack app from scratch using the MERN (MongoDB, Express, React.js, and Node.js) framework.</p>
+          <p className="para black">During the eighth week of the GA Software Engineering immersive course, we were tasked with developing a full-stack app from scratch using the MERN (MongoDB, Express, React, and Node.js) framework.</p>
           <p className="para black">The inspiration came from a cold, wet, wintery March here in the UK, and all I wanted to know is what destinations are the perfect get-away for this time of year. So, we created Wanderlust - which will automatically tell you the best destinations based on the current weather in that location, and according to what type of holiday you are looking for: heat for lying by the beach, sunny for sightseeing, milder temperatures for activities/adventure, or snow for skiing.</p>
           <p className="para black">I learnt a lot about creating a responsive grid for showing the results, creating schemas and models for the database, and integrating with Open-Meteo weather and Mapbox APIs to drive an awesome user experience.</p>
           <p className="para black">You can read up more about the full development process <span className="link link-small"><Link to="https://github.com/james-gulland/wanderlust/#readme" target="_blank" rel="noopener noreferrer">here</Link></span>.</p>

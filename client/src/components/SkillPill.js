@@ -13,7 +13,7 @@ import postgresql from '../assets/icons/postgresql.svg'
 import sass from '../assets/icons/sass.svg'
 
 const skills = [
-  { name: 'React.js', icon: react },
+  { name: 'React', icon: react },
   { name: 'Next.js', icon: nextjs },
   { name: 'JavaScript', icon: javacript },
   { name: 'TypeScript', icon: typescript },

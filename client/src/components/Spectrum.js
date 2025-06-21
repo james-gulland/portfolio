@@ -10,7 +10,7 @@ import screen1 from '../assets/spectrum-1.png'
 
 const Spectrum = () => {
 
-  const selectedSkills = ['React.js', 'HTML5', 'SASS', 'Python', 'Django', 'PostgreSQL']
+  const selectedSkills = ['React', 'HTML5', 'SASS', 'Python', 'Django', 'PostgreSQL']
 
   return (
     <>
@@ -41,7 +41,7 @@ const Spectrum = () => {
 
         {/* MAIN COPY */}
         <section className="portfolio-copy">
-          <p className="para black">During the final two weeks of the GA Software Engineering immersive course, I was tasked with developing a full-stack app from scratch using a Python Django API and Django REST framework to serve data from a Postgres database, which was then consumed by a separate front-end build with React.js and SASS.</p>
+          <p className="para black">During the final two weeks of the GA Software Engineering immersive course, I was tasked with developing a full-stack app from scratch using a Python Django API and Django REST framework to serve data from a Postgres database, which was then consumed by a separate front-end build with React and SASS.</p>
           <p className="para black">I came up with the idea of a project I have always wanted to do; create a music app where I can bring together all my favourite mixtapes from around the web, from different sources such as Soundcloud and Youtube, and then filter down by whatever mood I am in. It is more geared toward 1hr+ mixes, rather than individual tracks or albums, so you can get really lost in the music.</p>
           <p className="para black">I took a lot inspiration from an old app I used to use back in the day, Winamp, and gave it a really clean and modern but retro feel to it. In a world where every music app wants to look like Spotify, I decided to do a twist on the formula, with a fresh new neumorphic design.</p>
           <p className="para black">It is a fully complete product with multiple relationships and CRUD functionality, API integrations with 3rd party services such as Youtube and Soundcloud, and a fully mobile responsive design.</p>

@@ -14,7 +14,7 @@ const Portfolio = () => {
           <div className="tile-centre">  
             <h3>spectrum</h3>
             <p className="tile-text">Music app that brings together all your favourite mixes from around the web, including Soundcloud and Youtube.</p>
-            <p className="tile-text">Built a full-stack app from scratch using Python and Django to serve data from a PostgreSQL database, which was then consumed by React.js app.</p>
+            <p className="tile-text">Built a full-stack app from scratch using Python and Django to serve data from a PostgreSQL database, which was then consumed by React app.</p>
           </div>
         </Link>
         <Link to="/spectrum" as={Link}>
@@ -62,7 +62,7 @@ const Portfolio = () => {
           <div className="tile-centre">
             <h3>Journal in Space</h3>
             <p className="tile-text">Experience a daily voyage through space, directly from NASA.</p>
-            <p className="tile-text">Developed a React.js app that consumed the official NASA Picture of the Day API, to resemble a daily journal through space.</p>
+            <p className="tile-text">Developed a React app that consumed the official NASA Picture of the Day API, to resemble a daily journal through space.</p>
           </div>
         </Link>
       </div>

@@ -10,7 +10,7 @@ import screen1 from '../assets/space-1.png'
 
 const Journalinspace = () => {
 
-  const selectedSkills = ['JavaScript', 'React.js', 'HTML5', 'SASS', 'Node.js']
+  const selectedSkills = ['JavaScript', 'React', 'HTML5', 'SASS', 'Node.js']
 
   return (
     <>
@@ -23,7 +23,7 @@ const Journalinspace = () => {
         <section>
           <div id="title-container">
             <h1>Journal in Space</h1>
-            <p className="para">Developed a React.js app that consumed the NASA Picture of the Day API, to resemble a daily journal through space</p>
+            <p className="para">Developed a React app that consumed the NASA Picture of the Day API, to resemble a daily journal through space</p>
           </div>
 
           {/* HERO AREA */}

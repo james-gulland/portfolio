@@ -2,7 +2,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <p>This site was made from scratch using my bare hands and half a brain, thanks to React.js, JavaScript, and SASS.</p>
+      <p>This site was made from scratch using my bare hands and half a brain, thanks to React, JavaScript, and SASS.</p>
     </footer>
   )
 }
