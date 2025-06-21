@@ -1,20 +1,31 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBolt, faDatabase, faTruckFast } from '@fortawesome/free-solid-svg-icons'
-import { faSquareJs, faReact, faHtml5, faSass, faPython, faNodeJs, faNpm, faGithub } from '@fortawesome/free-brands-svg-icons'
+import javacript from '../assets/icons/javascript.svg'
+import typescript from '../assets/icons/typescript.svg'
+import html5 from '../assets/icons/html5.svg'
+import react from '../assets/icons/react.svg'
+import python from '../assets/icons/python.svg'
+import nextjs from '../assets/icons/next-js.svg'
+import nodejs from '../assets/icons/nodejs.svg'
+import tailwind from '../assets/icons/tailwind.svg'
+import vercel from '../assets/icons/vercel.svg'
+import aws from '../assets/icons/aws.svg'
+import github from '../assets/icons/github.svg'
+import postgresql from '../assets/icons/postgresql.svg'
+import sass from '../assets/icons/sass.svg'
 
 const skills = [
-  { name: 'JavaScript', icon: faSquareJs },
-  { name: 'React.js', icon: faReact },
-  { name: 'HTML5', icon: faHtml5 },
-  { name: 'SASS', icon: faSass },
-  { name: 'Python', icon: faPython },
-  { name: 'Django', icon: faBolt },
-  { name: 'Node.js', icon: faNodeJs },
-  { name: 'MongoDB', icon: faDatabase },
-  { name: 'Express', icon: faTruckFast },
-  { name: 'PostgreSQL', icon: faDatabase },
-  { name: 'npm/pip', icon: faNpm },
-  { name: 'Git/Github', icon: faGithub }
+  { name: 'React.js', icon: react },
+  { name: 'Next.js', icon: nextjs },
+  { name: 'JavaScript', icon: javacript },
+  { name: 'TypeScript', icon: typescript },
+  { name: 'Tailwind', icon: tailwind },
+  { name: 'HTML5', icon: html5 },
+  { name: 'CSS/SASS', icon: sass },
+  { name: 'Node.js', icon: nodejs },
+  { name: 'PostgreSQL', icon: postgresql },
+  { name: 'Python', icon: python },
+  { name: 'AWS', icon: aws },
+  { name: 'Vercel', icon: vercel },
+  { name: 'GitHub', icon: github }
 ]
 
 const SkillPill = ({ selectedSkills }) => {
@@ -31,7 +42,7 @@ const SkillPill = ({ selectedSkills }) => {
       <ul>
         {filteredSkills.map((skill, index) => (
           <li key={index} className="pill">
-            <FontAwesomeIcon className="icon" icon={skill.icon} alt={skill.name} />
+            <img className="logo" src={`${skill.icon}`} alt={skill.name} />
             <span>{skill.name}</span>
           </li>
         ))}
