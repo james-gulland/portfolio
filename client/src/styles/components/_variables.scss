@@ -26,8 +26,10 @@ $size-smallbertha: 3rem;
 $size-bigbertha: 4.5rem;
 
 html::selection {
-    background-color: var(--primary-light);
+    background-color: var(--primary);
+    color: var(--white);
 }
+
 
 // headings
 h1 {

@@ -7,13 +7,13 @@ const Contact = () => {
 
   return (
     <>
-      <Link className="profile" to={'mailto:jamesgulland@gmail.com'} as={Link} target="_blank">
+      <a className="profile" href='mailto:jamesgulland@gmail.com'>
         <div className="button contact-email"><FontAwesomeIcon className="icon" icon={faEnvelope} />Email</div>
-      </Link>
-      <Link className="profile" to={'https://www.linkedin.com/in/jamesgulland/'} as={Link} target="_blank">
+      </a>
+      <Link className="profile" to={'https://www.linkedin.com/in/jamesgulland/'} target="_blank" rel="noopener noreferrer">
         <div className="button contact-linkedIn"><FontAwesomeIcon className="icon" icon={faLinkedin} />LinkedIn</div>
       </Link>
-      <Link className="profile" to={'https://github.com/james-gulland/'} as={Link} target="_blank">
+      <Link className="profile" to={'https://github.com/james-gulland/'} target="_blank" rel="noopener noreferrer">
         <div className="button contact-github"><FontAwesomeIcon className="icon" icon={faGithub} />GitHub</div>
       </Link>
     </>

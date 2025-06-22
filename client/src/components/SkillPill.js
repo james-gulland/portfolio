@@ -11,6 +11,7 @@ import aws from '../assets/icons/aws.svg'
 import github from '../assets/icons/github.svg'
 import postgresql from '../assets/icons/postgresql.svg'
 import sass from '../assets/icons/sass.svg'
+import payload from '../assets/icons/payload.svg'
 
 const skills = [
   { name: 'React', icon: react },
@@ -21,8 +22,9 @@ const skills = [
   { name: 'CSS/SASS', icon: sass },
   { name: 'Tailwind', icon: tailwind },
   { name: 'Node.js', icon: nodejs },
-  { name: 'Python', icon: python },
+  { name: 'Payload', icon: payload },
   { name: 'PostgreSQL', icon: postgresql },
+  { name: 'Python', icon: python },
   { name: 'AWS', icon: aws },
   { name: 'Vercel', icon: vercel },
   { name: 'GitHub', icon: github }

@@ -48,11 +48,11 @@
 .link {
   background: 
     linear-gradient(to right, var(--greyLight)),
-    linear-gradient(to right, var(--greyLight), var(--primary));
+    linear-gradient(to right, var(--black));
   background-size: 100% 0.1em, 0 0.1em;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  transition: background-size 250ms;
+  transition: background-size 200ms;
 }
 
 .link:hover,
