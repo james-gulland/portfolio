@@ -49,9 +49,14 @@
 #profile-pic img {
   height: 8rem;
   border-radius: 50%;
-  border: 3px dashed var(--black);
   padding: 4px;
   margin-bottom: 1rem;
+  border: 3px solid var(--greyLight);
+  transition: border-color 0.3s ease, border-width 0.3s ease;
+}
+
+#profile-pic.active img:hover {
+  border: 3px solid var(--black);
 }
 
 // LET'S BOUNCE

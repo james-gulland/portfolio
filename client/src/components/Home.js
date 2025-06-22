@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react'
+import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import profilePic from '../assets/me.jpg'
 import Contact from './Contact'
@@ -12,14 +12,6 @@ import { faCompassDrafting, faTimeline, faScrewdriverWrench } from '@fortawesome
 import confetti from 'canvas-confetti'
 
 const Home = () => {
-
-  const [imgLoaded, setImgLoaded] = useState(false)
-
-  useEffect(() => {
-    Promise.all(profilePic)
-      .then(() => setImgLoaded(true))
-      .catch(err => console.log('Failed to load image', err))
-  }, [])
 
   const containerRef = useRef(null)
 
@@ -45,15 +37,13 @@ const Home = () => {
     <>
       {/* INTRO SECTION */}
       <header id="intro-container" ref={containerRef}>
-        <div id="current-status" className="pill active" onClick={handleClick}><span id="pill-emoji" >☺️</span> Currently busy</div>
-        <div id="profile-pic">
-          {imgLoaded ? (
-            <Link to="/about">
-              <img src={profilePic} alt="Profile" loading="lazy" />
-            </Link>
-          ) : (
-            <Link to="/about"></Link>
-          )}
+        <div id="current-status" className="pill active" onClick={handleClick}>
+          <span id="pill-emoji" >☺️</span> Currently busy
+        </div>
+        <div id="profile-pic" className="active">
+          <Link to="/about">
+            <img src={profilePic} alt="Profile" />
+          </Link>
         </div>
         <p className="heading">Hello there!</p>
         <p id="profile-description" className="heading">I&apos;m <span className="link"><Link to="/about">James</Link></span>, a full-stack web&nbsp;  
