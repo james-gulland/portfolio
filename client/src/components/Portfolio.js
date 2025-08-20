@@ -3,8 +3,9 @@ import spectrumScreen from '../assets/spectrum-demo.png'
 import bbcStoryWorks from '../assets/bbc-storyworks.png'
 import wanderlust from '../assets/wanderlust-crop.png'
 import battleships from '../assets/battleships.png'
-import journalinspace from '../assets/journalinspace.png'
+// import journalinspace from '../assets/journalinspace.png'
 import fortyFi from '../assets/40fi-mob.png'
+import journalinspace from '../assets/nasa.png'
 
 const Portfolio = () => {
 
@@ -36,23 +37,21 @@ const Portfolio = () => {
       </div>
 
       {/* 3RD ITEM */}
-      <div className="portfolio-item tile-small">
-        <Link to="/battleships" as={Link}>
-          <div className="tile-vertical">
-            <h3>Journal in Space</h3>
-            <p className="tile-text">Experience a daily voyage through space, directly from NASA.</p>
-          </div>
-          <div id="image-container">
-            <img id="battleships-screen" src={battleships} alt="Wanderlust" />
-          </div>
-        </Link>
-      </div>
+      <Link to="/journalinspace" as={Link} className="portfolio-item tile-small">
+        <div className="tile-vertical">
+          <h3>Journal in Space</h3>
+          <p className="tile-text">Experience a daily voyage through space. Built with React, fueled by the NASA Picture of the Day API.</p>
+        </div>
+        <div id="image-container">
+          <img id="second-screen" src={journalinspace} alt="Wanderlust" />
+        </div>
+      </Link>
 
       {/* 4TH ITEM */}
       <div className="portfolio-item tile-large">
         <Link to="/journalinspace" as={Link}> 
           <div className="tile-left">
-            <img id="first-screen" src={journalinspace} alt="Spectrum" />
+            <img id="first-screen" src={bbcStoryWorks} alt="Spectrum" />
           </div>
         </Link>
 

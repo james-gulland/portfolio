@@ -252,7 +252,7 @@ section .portfolio-item #image-container {
   display: grid;
   justify-content: center;
 }
-section .portfolio-item #image-container #battleships-screen {
+section .portfolio-item #image-container #third-screen {
   width: 100%;
   align-items: end;
 }
@@ -264,7 +264,7 @@ section .portfolio-item #wanderlust-screen {
   margin: 0;
   justify-content: center;
 }
-section .portfolio-item #battleships-screen {
+section .portfolio-item #third-screen {
   padding: 0 1rem;
 }
 section .portfolio-item:hover {
