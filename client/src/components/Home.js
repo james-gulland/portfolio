@@ -69,7 +69,7 @@ const Home = () => {
         <section>
           <div id="title-container">
             <h2><FontAwesomeIcon className="icon" icon={faCompassDrafting} />Selected Projects</h2>
-            <p className="para">These are the projects and side hustles I have been working on, building from scratch across the front and back-end:</p>
+            <p className="para">These are some key projects and side hustles I have worked on, building from scratch across the front and back-end:</p>
           </div>
 
           <div id="portfolio-container">

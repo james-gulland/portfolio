@@ -6,6 +6,7 @@ import battleships from '../assets/battleships.png'
 // import journalinspace from '../assets/journalinspace.png'
 import fortyFi from '../assets/40fi-mob.png'
 import journalinspace from '../assets/nasa.png'
+import allThree from '../assets/all3.png'
 
 const Portfolio = () => {
 
@@ -31,7 +32,7 @@ const Portfolio = () => {
             <p className="tile-text">Overhaul of 40fis website, content powered by Payload CMS integration with Next.js, TypeScript and Tailwind.</p>
           </div>
           <div id="image-container">
-            <img id="second-screen" src={fortyFi} alt="Wanderlust" />
+            <img id="second-screen" src={fortyFi} alt="40fi" />
           </div>
         </Link>
       </div>
@@ -48,21 +49,16 @@ const Portfolio = () => {
       </Link>
 
       {/* 4TH ITEM */}
-      <div className="portfolio-item tile-large">
-        <Link to="/journalinspace" as={Link}> 
-          <div className="tile-left">
-            <img id="first-screen" src={bbcStoryWorks} alt="Spectrum" />
-          </div>
-        </Link>
-
-        <Link to="/journalinspace" as={Link}> 
-          <div className="tile-centre">
-            <h3>All3Media</h3>
-            <p className="tile-text">Rebuild of All3Medias web experience from scratch.</p>
-            <p className="tile-text">Timeline-driven GSAP animation throughout </p>
-          </div>
-        </Link>
-      </div>
+      <Link to="/journalinspace" as={Link} className="portfolio-item tile-large"> 
+        <div className="tile-left">
+          <img id="last-screen" src={allThree} alt="All3Media screenshot" />
+        </div>
+        <div className="tile-centre">
+          <h3>All3Media</h3>
+          <p className="tile-text">Rebuild of All3Medias web experience using Next.js and WordPress CMS.</p>
+          <p className="tile-text">Full-stack integration of CMS back-end, in addition to complex timeline-driven GSAP scroll animations throughout. </p>
+        </div>
+      </Link>
     </>
   )
 

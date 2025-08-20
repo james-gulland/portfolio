@@ -172,7 +172,7 @@ section {
       height: 16rem;
       margin: 0;
       justify-content: center;
-      transform: matrix3d(0.999992, -0.00110315, 0.00384755, -3.84755e-06, 0, 0.961269, 0.275611, -0.000275611, -0.00400257, -0.275608, 0.961262, -0.000961262, 0, 0, 0, 1) translateY(40px);
+      transform: matrix3d(0.999992, -0.00110315, 0.00384755, -3.84755e-06, 0, 0.961269, 0.275611, -0.000275611, -0.00400257, -0.275608, 0.961262, -0.000961262, 0, 0, 0, 1) translateY(30px);
       transition: transform 0.2s ease;
       filter: drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.15));
     }
@@ -180,6 +180,15 @@ section {
     & #third-screen {
       padding: 0 2rem;
       transform: matrix3d(0.999992, -0.00110315, 0.00384755, -3.84755e-06, 0, 0.961269, 0.275611, -0.000275611, -0.00400257, -0.275608, 0.961262, -0.000961262, 0, 0, 0, 1);
+      transition: transform 0.2s ease;
+    }
+
+    & #last-screen {
+      max-width: 20rem;
+      transform: perspective(1000px) rotateX(-0.810895deg) rotateY(-10deg) scale3d(1, 1, 1) translateX(-40px);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px 0px;
+      border-radius: 5px;
+      margin-inline: auto;
       transition: transform 0.2s ease;
     }
 
@@ -232,17 +241,16 @@ section {
 
 }
 
-    #third-screen img {
-        max-height: 40px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px 0px;
-    }
-
   a:hover #first-screen {
     transform: perspective(1000px) rotateX(0.810895deg) rotateY(-10deg) scale3d(1, 1, 1);
   }
 
   a:hover #second-screen, a:hover #third-screen {
     transform: none;
+  }
+
+  a:hover #last-screen {
+    transform: perspective(1000px) rotateX(-0.810895deg) rotateY(10deg) scale3d(1, 1, 1);
   }
 
 footer {
