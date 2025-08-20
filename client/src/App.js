@@ -31,6 +31,7 @@ const App = () => {
           <Route path="/wanderlust" element={<Wanderlust />} />
           <Route path="/battleships" element={<Battleships />} />
           <Route path="/journalinspace" element={<Journalinspace />} />
+          <Route path="/bbc-storyworks" element={<Journalinspace />} />
         </Routes>
       </BrowserRouter>
     </div>
