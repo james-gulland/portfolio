@@ -4,6 +4,7 @@ import bbcStoryWorks from '../assets/bbc-storyworks.png'
 import wanderlust from '../assets/wanderlust-crop.png'
 import battleships from '../assets/battleships.png'
 import journalinspace from '../assets/journalinspace.png'
+import fortyFi from '../assets/40fi-mob.png'
 
 const Portfolio = () => {
 
@@ -11,18 +12,14 @@ const Portfolio = () => {
     <>
       {/* 1ST ITEM */}
       <Link to="/spectrum" as={Link} className="portfolio-item tile-large"> 
-        {/* <div className="portfolio-item tile-large"> */}
         <div className="tile-centre">  
           <h3>BBC StoryWorks</h3>
           <p className="tile-text">A collection of projects from the prestigious BBC StoryWorks division.</p>
           <p className="tile-text">Highly interactive, timeline-driven web experiences powered by the GSAP animation library, Next.js, TypeScript, and Tailwind.</p>
         </div>
-        {/* </Link> */}
-        {/* <Link to="/spectrum" as={Link}> */}
         <div className="tile-right">
           <img id="first-screen" src={bbcStoryWorks} alt="Spectrum" />
         </div>
-        {/* </div> */}
       </Link>
 
       {/* 2ND ITEM */}
@@ -33,7 +30,7 @@ const Portfolio = () => {
             <p className="tile-text">Overhaul of 40fis website, content powered by Payload CMS integration with Next.js, TypeScript and Tailwind.</p>
           </div>
           <div id="image-container">
-            <img id="wanderlust-screen" src={wanderlust} alt="Wanderlust" />
+            <img id="second-screen" src={fortyFi} alt="Wanderlust" />
           </div>
         </Link>
       </div>
