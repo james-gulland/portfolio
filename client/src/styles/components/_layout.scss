@@ -131,9 +131,10 @@ section {
     
     & .tile-right {
       display: grid;
-      justify-content: end;
+    //   justify-content: end;
       align-items: center;
       margin: 0 0 2rem 0;
+      padding-right: 20px;
     }
 
     & .tile-left {
@@ -158,14 +159,20 @@ section {
       }
     }
 
-    & #spectrum-screen {
-      height: 20rem;
+    & #first-screen {
+      max-width: 20rem;
+      transform: perspective(1000px) rotateX(0.810895deg) rotateY(10deg) scale3d(1, 1, 1);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 40px 0px;
+      border-radius: 5px;
+      margin-inline: auto;
+      transition: transform 0.2s ease;
     }
 
     & #wanderlust-screen {
       height: 16rem;
       margin: 0;
       justify-content: center;
+      transform: matrix3d(0.999992, -0.00110315, 0.00384755, -3.84755e-06, 0, 0.961269, 0.275611, -0.000275611, -0.00400257, -0.275608, 0.961262, -0.000961262, 0, 0, 0, 1)
     }
 
     & #battleships-screen {
@@ -220,6 +227,12 @@ section {
   }
 
 }
+
+  a:hover #first-screen {
+    // transform: perspective(1000px) rotateX(0.810895deg) rotateY(10deg) scale3d(1, 1, 1);
+    // transform: none;
+    transform: perspective(1000px) rotateX(0.810895deg) rotateY(-10deg) scale3d(1, 1, 1);
+  }
 
 footer {
   margin: 2rem 0;

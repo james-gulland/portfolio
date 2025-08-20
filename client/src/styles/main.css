@@ -256,7 +256,7 @@ section .portfolio-item #image-container #battleships-screen {
   width: 100%;
   align-items: end;
 }
-section .portfolio-item #spectrum-screen {
+section .portfolio-item #first-screen {
   height: 20rem;
 }
 section .portfolio-item #wanderlust-screen {
@@ -449,6 +449,11 @@ footer {
     align-items: center;
     margin-bottom: 0;
   }
+
+  .tile-right {
+  grid-column: 2;
+  justify-self: end; 
+}
   #thanks-container {
     display: flex;
     flex-direction: row;
@@ -514,6 +519,7 @@ footer {
   .portfolio-item.tile-right {
     margin: 0;
   }
+
   #about-container, #me-image, #interests-container {
     width: 80%;
     margin: 4rem auto;
