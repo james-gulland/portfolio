@@ -44,6 +44,8 @@ const BbcStoryWorks = () => {
                 autoPlay
                 loop
                 muted
+                priority="high"
+                poster="https://node-london-eu.s3.eu-west-1.amazonaws.com/TheClimateAndUsPoster-1.jpg"
                 playsInline
                 style={{
                   maxWidth: "100%",
