@@ -1,74 +1,77 @@
-import { Link } from 'react-router-dom'
-import spectrumScreen from '../assets/spectrum-demo.png'
-import wanderlust from '../assets/wanderlust-crop.png'
-import battleships from '../assets/battleships.png'
-import journalinspace from '../assets/journalinspace.png'
+import { Link } from "react-router-dom";
+import bbcStoryWorks from "../assets/bbc-storyworks.png";
+import fortyFi from "../assets/40fi-2.png";
+import journalinspace from "../assets/nasa.png";
+import allThree from "../assets/all3.png";
 
 const Portfolio = () => {
-
   return (
     <>
       {/* 1ST ITEM */}
-      <div className="portfolio-item tile-large">
-        <Link to="/spectrum" as={Link}> 
-          <div className="tile-centre">  
-            <h3>spectrum</h3>
-            <p className="tile-text">Music app that brings together all your favourite mixes from around the web, including Soundcloud and Youtube.</p>
-            <p className="tile-text">Built a full-stack app from scratch using Python and Django to serve data from a PostgreSQL database, which was then consumed by React app.</p>
-          </div>
-        </Link>
-        <Link to="/spectrum" as={Link}>
-          <div className="tile-right">
-            <img id="spectrum-screen" src={spectrumScreen} alt="Spectrum" />
-          </div>
-        </Link>
-      </div>
+      <Link to="/bbc-storyworks" as={Link} className="portfolio-item tile-large">
+        <div className="tile-centre">
+          <h3>BBC StoryWorks</h3>
+          <p className="tile-text">
+            A collection of projects for the prestigious BBC StoryWorks division.
+          </p>
+          <p className="tile-text">
+            Highly interactive, timeline-driven web experiences powered by the GSAP animation
+            library, Next.js, TypeScript, and Tailwind.
+          </p>
+        </div>
+        <div className="tile-right">
+          <img id="first-screen" src={bbcStoryWorks} alt="Spectrum" />
+        </div>
+      </Link>
 
       {/* 2ND ITEM */}
       <div className="portfolio-item tile-small">
-        <Link to="/wanderlust" as={Link}> 
+        <Link to="/40fi" as={Link}>
           <div className="tile-vertical">
-            <h3>Wanderlust</h3>
-            <p className="tile-text">Travel website that displays the best destinations based on the current weather in that location right now</p>
+            <h3>40fi</h3>
+            <p className="tile-text">
+              Overhaul of 40fi&#39;s website, content powered by Payload CMS integration with Next.js,
+              TypeScript and Tailwind.
+            </p>
           </div>
           <div id="image-container">
-            <img id="wanderlust-screen" src={wanderlust} alt="Wanderlust" />
+            <img id="second-screen" src={fortyFi} alt="40fi" />
           </div>
         </Link>
       </div>
 
       {/* 3RD ITEM */}
-      <div className="portfolio-item tile-small">
-        <Link to="/battleships" as={Link}>
-          <div className="tile-vertical">
-            <h3>Celebrity Battleships</h3>
-            <p className="tile-text">A tongue-in-cheek remake of the classic battleships game, built with JavaScript, HTML5 and CSS.</p>
-          </div>
-          <div id="image-container">
-            <img id="battleships-screen" src={battleships} alt="Wanderlust" />
-          </div>
-        </Link>
-      </div>
+      <Link to="/journalinspace" as={Link} className="portfolio-item tile-small">
+        <div className="tile-vertical">
+          <h3>Journal in Space</h3>
+          <p className="tile-text">
+            Experience a daily voyage through space. Built with React, fueled by the NASA Picture of
+            the Day API.
+          </p>
+        </div>
+        <div id="image-container">
+          <img id="second-screen" src={journalinspace} alt="Journal In Space screenshot" />
+        </div>
+      </Link>
 
       {/* 4TH ITEM */}
-      <div className="portfolio-item tile-large">
-        <Link to="/journalinspace" as={Link}> 
-          <div className="tile-left">
-            <img id="spectrum-screen" src={journalinspace} alt="Spectrum" />
-          </div>
-        </Link>
-
-        <Link to="/journalinspace" as={Link}> 
-          <div className="tile-centre">
-            <h3>Journal in Space</h3>
-            <p className="tile-text">Experience a daily voyage through space, directly from NASA.</p>
-            <p className="tile-text">Developed a React app that consumed the official NASA Picture of the Day API, to resemble a daily journal through space.</p>
-          </div>
-        </Link>
-      </div>
+      <Link to="/all3media" as={Link} className="portfolio-item tile-large">
+        <div className="tile-left">
+          <img id="last-screen" src={allThree} alt="All3Media screenshot" />
+        </div>
+        <div className="tile-centre">
+          <h3>All3Media</h3>
+          <p className="tile-text">
+            Rebuild of All3Medias web experience using Next.js and WordPress CMS.
+          </p>
+          <p className="tile-text">
+            Full-stack integration of CMS back-end, in addition to complex timeline-driven scroll
+            animations throughout.{" "}
+          </p>
+        </div>
+      </Link>
     </>
-  )
+  );
+};
 
-}
-
-export default Portfolio
+export default Portfolio;
