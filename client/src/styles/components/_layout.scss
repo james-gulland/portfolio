@@ -398,25 +398,26 @@ section {
 .recommendation-card::after {
   content: "”";
   position: absolute;
-  bottom: -1rem;
+  bottom: -0.25rem;
   right: -1rem;
   color: var(--primary);
   font-size: 6rem;
 }
 
 .recommendation-text {
-  font-size: 1rem;
   line-height: 1.5;
-  color: var(--greyDark);
+  color: var(--black);
   margin: 1rem 0 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 400;
   font-style: italic;
 }
 
 .recommendation-author {
   color: var(--greyDark);
-  font-size: 1rem;
+  font-size: 1.15rem;
   margin-top: 1rem;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .recommendation-dots-container {
@@ -455,7 +456,7 @@ section {
     max-width: 90%;
   }
 
-  .recommendation-text {
+  .recommendation-text, .recommendation-author {
     font-size: 1rem;
   }
 
