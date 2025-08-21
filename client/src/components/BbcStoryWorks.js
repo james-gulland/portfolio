@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEarthAmericas } from "@fortawesome/free-solid-svg-icons";
 import Back from "./Back";
 import SkillPill from "./SkillPill";
@@ -11,7 +10,7 @@ import wecMobile from "../assets/wec-mob.png";
 import { MacEmulator } from "./MacEmulator";
 
 const BbcStoryWorks = () => {
-  const selectedSkills = ["Next.js", "TypeScript", "React", "HTML5", "Tailwind", "Node.js"];
+  const selectedSkills = ["Next.js", "TypeScript", "React", "HTML5", "Tailwind", "Node.js", "AWS","Vercel"];
 
   return (
     <>
@@ -22,7 +21,7 @@ const BbcStoryWorks = () => {
       <main>
         {/* TITLE */}
         <section>
-          <div id="title-container">
+          <div id="title-container" style={{ gap: "2rem" }}>
             <h1>BBC StoryWorks</h1>
             <p className="para">
               A collection of projects from the prestigious BBC StoryWorks division.
@@ -96,10 +95,12 @@ const BbcStoryWorks = () => {
             reliability.
           </p>
         </section>
-
+        
+        {/* IMAGES AND LINKS */}
         <div
           style={{
             display: "flex",
+            flexWrap: "wrap",
             gap: "2rem",
             justifyContent: "center",
             alignItems: "flex-start",
@@ -114,7 +115,7 @@ const BbcStoryWorks = () => {
               style={{
                 height: "28.25rem",
                 width: "auto",
-                maxWidth: "100%",
+                maxWidth: "46rem",
                 objectFit: "fill",
                 display: "block",
               }}

@@ -42,7 +42,7 @@ const Home = () => {
         </div>
         <div id="profile-pic" className="active">
           <Link to="/about">
-            <img src={profilePic} alt="Profile" />
+            <img src={profilePic} alt="Profile" fetchPriority="high" priority loading="lazy" />
           </Link>
         </div>
         <p className="heading">Hello there!</p>
