@@ -361,8 +361,9 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 28rem;
+  min-height: 22rem;
   position: relative;
+  margin-top: 1rem;
 }
 
 .recommendation-card {
@@ -370,6 +371,7 @@ section {
   padding: 2rem 0;
   width: 100%;
   text-align: center;
+  text-wrap: pretty;
   position: relative;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -403,8 +405,8 @@ section {
 }
 
 .recommendation-text {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.5;
   color: var(--greyDark);
   margin: 1rem 0 1.5rem;
   font-style: italic;
