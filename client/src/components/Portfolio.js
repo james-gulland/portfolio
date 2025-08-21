@@ -16,7 +16,7 @@ const Portfolio = () => {
       <Link to="/bbc-storyworks" as={Link} className="portfolio-item tile-large"> 
         <div className="tile-centre">  
           <h3>BBC StoryWorks</h3>
-          <p className="tile-text">A collection of projects from the prestigious BBC StoryWorks division.</p>
+          <p className="tile-text">A collection of projects for the prestigious BBC StoryWorks division.</p>
           <p className="tile-text">Highly interactive, timeline-driven web experiences powered by the GSAP animation library, Next.js, TypeScript, and Tailwind.</p>
         </div>
         <div className="tile-right">

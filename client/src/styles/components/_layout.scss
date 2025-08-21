@@ -1,4 +1,4 @@
-@import './variables';
+@import "./variables";
 
 // INTRO SECTION
 #intro-container {
@@ -18,7 +18,7 @@
       right: 0;
       &:hover {
         color: adjust-color(rgb(16, 185, 129), $lightness: -10%);
-        background-color: rgba(213,242,232,255);
+        background-color: rgba(213, 242, 232, 255);
       }
     }
 
@@ -35,7 +35,6 @@
   #profile-description {
     line-height: 3rem;
   }
-
 }
 
 .contact-buttons {
@@ -128,10 +127,10 @@ section {
       justify-content: center;
       padding: 2rem;
     }
-    
+
     & .tile-right {
       display: grid;
-    //   justify-content: end;
+      //   justify-content: end;
       align-items: center;
       margin: 0 0 2rem 0;
       padding-right: 20px;
@@ -148,7 +147,6 @@ section {
       padding: 2rem;
     }
 
-
     & #image-container {
       display: grid;
       justify-content: center;
@@ -161,35 +159,78 @@ section {
 
     & #first-screen {
       width: 150%;
-      transform: perspective(1000px) rotateX(0.810895deg) rotateY(10deg) scale3d(1, 1, 1) translateX(40px);
+      transform: perspective(1000px) rotateX(0.810895deg) rotateY(10deg) scale3d(1, 1, 1)
+        translateX(40px);
       box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px 0px;
       border-radius: 5px;
       margin-inline: auto;
-      transition: transform 0.2s ease;
+      //   transition: transform 0.1s ease-in-out;
+      transition: transform 0.1s cubic-bezier(0, 0.1, 1, 1);
+      filter: drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.15));
     }
 
     & #second-screen {
       max-height: 16rem;
       margin: 0;
       justify-content: center;
-      transform: matrix3d(0.999992, -0.00110315, 0.00384755, -3.84755e-06, 0, 0.961269, 0.275611, -0.000275611, -0.00400257, -0.275608, 0.961262, -0.000961262, 0, 0, 0, 1) translateY(30px);
-      transition: transform 0.2s ease;
+      transform: matrix3d(
+          0.999992,
+          -0.00110315,
+          0.00384755,
+          -3.84755e-6,
+          0,
+          0.961269,
+          0.275611,
+          -0.000275611,
+          -0.00400257,
+          -0.275608,
+          0.961262,
+          -0.000961262,
+          0,
+          0,
+          0,
+          1
+        )
+        translateY(30px);
+      transition: transform 0.1s ease-in;
+      // transition: transform 0.1s cubic-bezier(0.1, 0.1, 1, 1);
       filter: drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.15));
     }
 
     & #third-screen {
       padding: 0 2rem;
-      transform: matrix3d(0.999992, -0.00110315, 0.00384755, -3.84755e-06, 0, 0.961269, 0.275611, -0.000275611, -0.00400257, -0.275608, 0.961262, -0.000961262, 0, 0, 0, 1);
-      transition: transform 0.2s ease;
+      transform: matrix3d(
+        0.999992,
+        -0.00110315,
+        0.00384755,
+        -3.84755e-6,
+        0,
+        0.961269,
+        0.275611,
+        -0.000275611,
+        -0.00400257,
+        -0.275608,
+        0.961262,
+        -0.000961262,
+        0,
+        0,
+        0,
+        1
+      );
+      transition: transform 0.1s ease-in;
+      // transition: transform 0.1s cubic-bezier(0.1, 0.15, 1, 1);
     }
 
     & #last-screen {
       width: 150%;
-      transform: perspective(1000px) rotateX(-0.810895deg) rotateY(-10deg) scale3d(1, 1, 1) translateX(-200px);
+      transform: perspective(1000px) rotateX(-0.810895deg) rotateY(-10deg) scale3d(1, 1, 1)
+        translateX(-200px);
       box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px 0px;
       border-radius: 5px;
       margin-inline: auto;
-      transition: transform 0.2s ease;
+      //   transition: transform 0.1s ease-in-out;
+      transition: transform 0.1s cubic-bezier(0.1, 0.15, 1, 1);
+      // transition: transform 0.3s cubic-bezier(0.1, 0.2, 0.2, 1);
     }
 
     &:hover {
@@ -199,17 +240,19 @@ section {
       box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     }
   }
-  
-    a:hover #first-screen {
+
+  a:hover #first-screen {
     transform: perspective(1000px) rotateX(0.810895deg) rotateY(-10deg) scale3d(1, 1, 1);
   }
 
-  a:hover #second-screen, a:hover #third-screen {
+  a:hover #second-screen,
+  a:hover #third-screen {
     transform: none;
   }
 
   a:hover #last-screen {
-    transform: perspective(1000px) rotateX(-0.810895deg) rotateY(10deg) scale3d(1, 1, 1) translateX(-160px);
+    transform: perspective(1000px) rotateX(-0.810895deg) rotateY(10deg) scale3d(1, 1, 1)
+      translateX(-160px);
   }
 
   // TIMELINE STLYES
@@ -250,10 +293,44 @@ section {
       gap: 1rem;
     }
   }
-
 }
 
+.mac-window {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+}
 
+.title-bar {
+  background: #ececec;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 8px;
+}
+
+.title-bar span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red {
+  background: #ff5f56;
+}
+.yellow {
+  background: #ffbd2e;
+}
+.green {
+  background: #27c93f;
+}
+
+.mac-window img {
+  display: block;
+}
 
 footer {
   margin: 2rem 0;

@@ -6,6 +6,7 @@ import Spectrum from './components/Spectrum'
 import Wanderlust from './components/Wanderlust'
 import Battleships from './components/Battleships'
 import Journalinspace from './components/Journalinspace'
+import BbcStoryWorks from './components/BbcStoryWorks'
 
 // scrolls page to top when loading the page
 const ScrollToTop = () => {
@@ -31,7 +32,7 @@ const App = () => {
           <Route path="/wanderlust" element={<Wanderlust />} />
           <Route path="/battleships" element={<Battleships />} />
           <Route path="/journalinspace" element={<Journalinspace />} />
-          <Route path="/bbc-storyworks" element={<Journalinspace />} />
+          <Route path="/bbc-storyworks" element={<BbcStoryWorks />} />
         </Routes>
       </BrowserRouter>
     </div>
