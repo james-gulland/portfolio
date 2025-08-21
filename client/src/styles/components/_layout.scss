@@ -329,17 +329,36 @@ section {
   display: block;
 }
 
-.two-col-content img:last-of-type {
-  height: 30rem;
-  width: auto;
-  filter: drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.15));
-}
+// .two-col-content .mac-window img:first-of-type {
+//   height: 28.25rem;
+//   width: auto;
+//   max-width: 46rem;
+//   object-fit: fill;
+// }
+
+// .two-col-content img:last-of-type {
+//   height: 30rem;
+//   width: auto;
+//   filter: drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.15));
+// }
 
 .two-col-content .mac-window img:first-of-type {
-  height: 28.25rem;
-  width: auto;
-  max-width: 46rem;
-  object-fit: fill;
+  width: 100%;
+  @media screen and (min-width: 1024px) {
+    height: 28.25rem;
+    width: auto;
+    max-width: 46rem;
+    object-fit: fill;
+  }
+}
+
+.two-col-content img:last-of-type {
+  max-height: 30rem;
+  @media screen and (min-width: 1024px) {
+    height: 30rem;
+    width: auto;
+    filter: drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.15));
+  }
 }
 
 footer {

@@ -87,40 +87,11 @@ const FortiFi = () => {
         </section>
 
         {/* IMAGES AND LINKS */}
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "2rem",
-            justifyContent: "center",
-            alignItems: "flex-start",
-            marginBottom: "2rem",
-            marginTop: "6rem",
-          }}
-        >
+        <div className="two-col-content">
           <MacEmulator>
-            <img
-              src={fortyFiContact}
-              alt="40fi contact page screenshot"
-              style={{
-                height: "28.25rem",
-                width: "auto",
-                objectFit: "fill",
-                display: "block",
-              }}
-            />
+            <img src={fortyFiContact} alt="40fi contact page screenshot" />
           </MacEmulator>
-
-          <img
-            src={fortyFiResources}
-            alt="40fi resources page screenshot"
-            style={{
-              height: "30rem",
-              width: "auto",
-              display: "block",
-              filter: "drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.15))",
-            }}
-          />
+          <img src={fortyFiResources} alt="40fi resources page screenshot" />
         </div>
 
         {/* TECH USED SECTION */}
