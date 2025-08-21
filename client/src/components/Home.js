@@ -135,8 +135,7 @@ const Home = () => {
               Recommendations
             </h2>
             <p className="para">
-              I've worked with some mega-legends in my time, who have said some nice things about
-              me:
+              A few kind words from the brilliant people I’ve had the privilege to work with throughout my career:
             </p>
           </div>
           <Recommendations items={recommendations} />

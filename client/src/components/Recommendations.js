@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Recommendations = ({ items = [] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
+  const [lastManualChange, setLastManualChange] = useState(Date.now());
 
   const activeRecommendations = items;
 
@@ -18,10 +19,19 @@ const Recommendations = ({ items = [] }) => {
         setCurrentIndex(prevIndex => (prevIndex + 1) % activeRecommendations.length);
         setIsVisible(true);
       }, 300);
-    }, 4000); // Change every 4 seconds
+    }, 10000); // Change every 10 seconds
 
     return () => clearInterval(interval);
-  }, [activeRecommendations.length]);
+  }, [activeRecommendations.length, lastManualChange]); // Reset interval when lastManualChange updates
+
+  const handleDotClick = index => {
+    setIsVisible(false);
+    setTimeout(() => {
+      setCurrentIndex(index);
+      setIsVisible(true);
+      setLastManualChange(Date.now()); // This will trigger useEffect to restart the interval
+    }, 300);
+  };
 
   if (activeRecommendations.length === 0) {
     return (
@@ -36,11 +46,16 @@ const Recommendations = ({ items = [] }) => {
   const currentRecommendation = activeRecommendations[currentIndex];
 
   return (
-    <div className="recommendations-container">
-      <div className={`recommendation-card ${isVisible ? "visible" : "hidden"}`}>
-        <p className="recommendation-text">{currentRecommendation.text}</p>
-        <div className="recommendation-author">
-          <strong>— {currentRecommendation.name}</strong>
+    <>
+      <div className="recommendations-container">
+        <div className={`recommendation-card ${isVisible ? "visible" : "hidden"}`}>
+          <p
+            className="recommendation-text"
+            dangerouslySetInnerHTML={{ __html: currentRecommendation.text }}
+          />
+          <div className="recommendation-author">
+            <strong>— {currentRecommendation.name}</strong>
+          </div>
         </div>
       </div>
 
@@ -51,19 +66,13 @@ const Recommendations = ({ items = [] }) => {
             <button
               key={index}
               className={`recommendation-dot ${index === currentIndex ? "active" : ""}`}
-              onClick={() => {
-                setIsVisible(false);
-                setTimeout(() => {
-                  setCurrentIndex(index);
-                  setIsVisible(true);
-                }, 300);
-              }}
+              onClick={() => handleDotClick(index)}
               aria-label={`View recommendation ${index + 1}`}
             />
           ))}
         </div>
       )}
-    </div>
+    </>
   );
 };
 
