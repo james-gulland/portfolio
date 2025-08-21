@@ -158,7 +158,6 @@ section {
 
     & #first-screen {
       width: 100%;
-      max-height: 80%;
       transform: perspective(1000px) rotateX(0.810895deg) rotateY(10deg) scale3d(1, 1, 1)
         translateX(40px);
       box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px 0px;
@@ -168,6 +167,7 @@ section {
       filter: drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.15));
 
       @media screen and (min-width: 600px) {
+        max-height: 80%;
         width: 150%;
         transform: perspective(1000px) rotateX(0.810895deg) rotateY(10deg) scale3d(1, 1, 1)
           translateX(40px);
@@ -206,16 +206,14 @@ section {
 
     & #last-screen {
       width: 100%;
-      max-height: 80%;
       transform: perspective(1000px) rotateX(-0.810895deg) rotateY(-10deg) scale3d(1, 1, 1)
         translateX(-20px) translateY(30px);
       box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px 0px;
       border-radius: 5px;
       margin-inline: auto;
-      //   transition: transform 0.1s ease-in-out;
       transition: transform 0.1s cubic-bezier(0.1, 0.15, 1, 1);
-      // transition: transform 0.3s cubic-bezier(0.1, 0.2, 0.2, 1);
       @media screen and (min-width: 600px) {
+        max-height: 80%;
         width: 150%;
         transform: perspective(1000px) rotateX(-0.810895deg) rotateY(-10deg) scale3d(1, 1, 1)
           translateX(-200px);
