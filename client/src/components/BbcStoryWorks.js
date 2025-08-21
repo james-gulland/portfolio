@@ -6,6 +6,8 @@ import Back from "./Back";
 import SkillPill from "./SkillPill";
 import Thanks from "./Thanks";
 import Footer from "./Footer";
+import throughFilm from "../assets/through-film.png";
+import wecMobile from "../assets/wec-mob.png";
 import { MacEmulator } from "./MacEmulator";
 
 const BbcStoryWorks = () => {
@@ -51,23 +53,21 @@ const BbcStoryWorks = () => {
 
             <div className="links-container">
               <ul>
-                <Link to="https://journalinspace.com/" target="_blank" rel="noopener noreferrer">
-                  <li className="pill active">
-                    <FontAwesomeIcon className="icon" icon={faEarthAmericas} alt="GitHub" />
-                    Link to Website
-                  </li>
-                </Link>
                 <Link
-                  to="https://github.com/james-gulland/space/"
+                  to="https://www.bbc.com/storyworks/specials/the-climate-and-us/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <li className="pill active">
-                    <FontAwesomeIcon className="icon" icon={faGithub} alt="GitHub" />
-                    Link to GitHub
+                    <FontAwesomeIcon className="icon" icon={faEarthAmericas} alt="GitHub" />
+                    The Climate and Us
                   </li>
                 </Link>
               </ul>
+              <div style={{ textAlign: "center" }}>
+                <span style={{ fontWeight: "bold" }}>Note:</span> Link only accessible outside the
+                UK, or through a VPN within the UK, due to BBC licensing.
+              </div>
             </div>
           </div>
         </section>
@@ -92,10 +92,75 @@ const BbcStoryWorks = () => {
             Tailwind CSS for styling and Node.js for server-side functionality. To bring pages to
             life and create engaging experiences, the GSAP animation library was often used,
             implementing scroll-triggered animations that enhanced storytelling and kept users
-            engaged.  The projects were hosted on AWS or Vercel, ensuring scalability and
+            engaged. The projects were hosted on AWS or Vercel, ensuring scalability and
             reliability.
           </p>
         </section>
+
+        <div
+          style={{
+            display: "flex",
+            gap: "2rem",
+            justifyContent: "center",
+            alignItems: "flex-start",
+            marginBottom: "2rem",
+            marginTop: "6rem",
+          }}
+        >
+          <MacEmulator>
+            <img
+              src={throughFilm}
+              alt="America Through Film screenshot"
+              style={{
+                height: "28.25rem",
+                width: "auto",
+                maxWidth: "100%",
+                objectFit: "fill",
+                display: "block",
+              }}
+            />
+          </MacEmulator>
+
+          <img
+            src={wecMobile}
+            alt="America Through Film screenshot"
+            style={{
+              height: "30rem",
+              width: "auto",
+              display: "block",
+              filter: "drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.15))",
+            }}
+          />
+        </div>
+
+        <div className="links-container">
+          <ul>
+            <Link
+              to="https://www.bbc.com/storyworks/specials/united-states-of-america-through-film/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li className="pill active">
+                <FontAwesomeIcon className="icon" icon={faEarthAmericas} alt="GitHub" />
+                America Through Film
+              </li>
+            </Link>
+            <Link
+              to="https://www.bbc.com/storyworks/specials/humanising-energy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li className="pill active">
+                <FontAwesomeIcon className="icon" icon={faEarthAmericas} alt="GitHub" />
+                Humanising Energy
+              </li>
+            </Link>
+          </ul>
+          <div style={{ textAlign: "center" }}>
+            <span style={{ fontWeight: "bold" }}>Note:</span> Links only accessible outside the UK,
+            or through a VPN within the UK, due to BBC licensing.
+          </div>
+        </div>
 
         {/* TECH USED SECTION */}
         <section>
