@@ -20,7 +20,7 @@ const FortiFi = () => {
     "Node.js",
     "AWS",
     "Vercel",
-    "Payload CMS",
+    "Payload",
     "PostgreSQL",
   ];
 

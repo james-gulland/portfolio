@@ -8,6 +8,7 @@ import Battleships from "./components/Battleships";
 import Journalinspace from "./components/Journalinspace";
 import BbcStoryWorks from "./components/BbcStoryWorks";
 import FortiFi from "./components/FortiFi";
+import All3Media from "./components/All3Media";
 
 // scrolls page to top when loading the page
 const ScrollToTop = () => {
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/journalinspace" element={<Journalinspace />} />
           <Route path="/bbc-storyworks" element={<BbcStoryWorks />} />
           <Route path="/40fi" element={<FortiFi />} />
+          <Route path="/all3media" element={<All3Media />} />
         </Routes>
       </BrowserRouter>
     </div>
