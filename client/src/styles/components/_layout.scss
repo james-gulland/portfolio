@@ -228,17 +228,21 @@ section {
     }
   }
 
-  a:hover #first-screen {
-    transform: perspective(1000px) rotateX(0.810895deg) rotateY(-10deg) scale3d(1, 1, 1);
+  @media (hover: hover) and (pointer: fine) and (min-width: 600px) {
+    a:hover #first-screen {
+      transform: perspective(1000px) rotateX(0.810895deg) rotateY(-10deg) scale3d(1, 1, 1);
+    }
   }
 
   a:hover #second-screen {
     transform: none;
   }
 
-  a:hover #last-screen {
-    transform: perspective(1000px) rotateX(-0.810895deg) rotateY(10deg) scale3d(1, 1, 1)
-      translateX(-160px);
+  @media (hover: hover) and (pointer: fine) and (min-width: 600px) {
+    a:hover #last-screen {
+      transform: perspective(1000px) rotateX(-0.810895deg) rotateY(10deg) scale3d(1, 1, 1)
+        translateX(-160px);
+    }
   }
 
   // TIMELINE STLYES
@@ -281,6 +285,7 @@ section {
   }
 }
 
+// TWO-COLUMN LAYOUT + MAC WINDOW
 .two-col-content {
   display: flex;
   flex-wrap: wrap;
@@ -288,7 +293,10 @@ section {
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 2rem;
-  margin-top: 6rem;
+  margin-top: 4rem;
+  @media screen and (min-width: 600px) {
+    margin-top: 6rem;
+  }
 }
 
 .mac-window {

@@ -90,7 +90,7 @@ a:focus {
         padding: 1rem;
         justify-content: center;
 
-        @media (max-width: 416px) {
+        @media (max-width: 530px) {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(140px, max-content));
         }

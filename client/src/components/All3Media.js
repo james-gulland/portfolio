@@ -110,17 +110,7 @@ const All3Media = () => {
         </section>
 
         {/* IMAGES AND LINKS */}
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "2rem",
-            justifyContent: "center",
-            alignItems: "flex-start",
-            marginBottom: "2rem",
-            marginTop: "6rem",
-          }}
-        >
+        <div className="two-col-content">
           <MacEmulator>
             <video
               autoPlay
