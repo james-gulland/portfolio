@@ -10,7 +10,16 @@ import wecMobile from "../assets/wec-mob.png";
 import { MacEmulator } from "./MacEmulator";
 
 const BbcStoryWorks = () => {
-  const selectedSkills = ["Next.js", "TypeScript", "React", "HTML5", "Tailwind", "Node.js", "AWS","Vercel"];
+  const selectedSkills = [
+    "Next.js",
+    "TypeScript",
+    "React",
+    "HTML5",
+    "Tailwind",
+    "Node.js",
+    "AWS",
+    "Vercel",
+  ];
 
   return (
     <>
@@ -95,43 +104,13 @@ const BbcStoryWorks = () => {
             reliability.
           </p>
         </section>
-        
-        {/* IMAGES AND LINKS */}
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "2rem",
-            justifyContent: "center",
-            alignItems: "flex-start",
-            marginBottom: "2rem",
-            marginTop: "6rem",
-          }}
-        >
-          <MacEmulator>
-            <img
-              src={throughFilm}
-              alt="America Through Film screenshot"
-              style={{
-                height: "28.25rem",
-                width: "auto",
-                maxWidth: "46rem",
-                objectFit: "fill",
-                display: "block",
-              }}
-            />
-          </MacEmulator>
 
-          <img
-            src={wecMobile}
-            alt="America Through Film screenshot"
-            style={{
-              height: "30rem",
-              width: "auto",
-              display: "block",
-              filter: "drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.15))",
-            }}
-          />
+        {/* IMAGES AND LINKS */}
+        <div className="two-col-content">
+          <MacEmulator>
+            <img src={throughFilm} alt="America Through Film screenshot" />
+          </MacEmulator>
+          <img src={wecMobile} alt="America Through Film screenshot" />
         </div>
 
         <div className="links-container">
