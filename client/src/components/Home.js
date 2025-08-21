@@ -1,26 +1,31 @@
-import { useRef } from 'react'
-import { Link } from 'react-router-dom'
-import profilePic from '../assets/me.jpg'
-import Contact from './Contact'
-import Portfolio from './Portfolio'
-import Career from './Career'
-import SkillPill from './SkillPill'
-import Thanks from './Thanks'
-import Footer from './Footer'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCompassDrafting, faTimeline, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
-import confetti from 'canvas-confetti'
+import { useRef } from "react";
+import { Link } from "react-router-dom";
+import profilePic from "../assets/me.jpg";
+import Contact from "./Contact";
+import Portfolio from "./Portfolio";
+import Career from "./Career";
+import SkillPill from "./SkillPill";
+import Recommendations from "./Recommendations";
+import Thanks from "./Thanks";
+import Footer from "./Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCompassDrafting,
+  faTimeline,
+  faScrewdriverWrench,
+  faCommentDots,
+} from "@fortawesome/free-solid-svg-icons";
+import confetti from "canvas-confetti";
+import { recommendations } from "../data/recommendations";
 
 const Home = () => {
-
-  const containerRef = useRef(null)
+  const containerRef = useRef(null);
 
   // little easter egg ;)
   function handleClick() {
-
-    const container = containerRef.current
-    const left = (1 - (container.offsetLeft / window.innerWidth)) - 0.05
-    const top = container.offsetTop / container.offsetHeight
+    const container = containerRef.current;
+    const left = 1 - container.offsetLeft / window.innerWidth - 0.05;
+    const top = container.offsetTop / container.offsetHeight;
 
     confetti({
       particleCount: 100,
@@ -29,8 +34,7 @@ const Home = () => {
         x: left,
         y: top,
       },
-    })
-    
+    });
   }
 
   return (
@@ -38,7 +42,7 @@ const Home = () => {
       {/* INTRO SECTION */}
       <header id="intro-container" ref={containerRef}>
         <div id="current-status" className="pill active" onClick={handleClick}>
-          <span id="pill-emoji" >☺️</span> Currently busy
+          <span id="pill-emoji">☺️</span> Currently busy
         </div>
         <div id="profile-pic" className="active">
           <Link to="/about">
@@ -46,9 +50,14 @@ const Home = () => {
           </Link>
         </div>
         <p className="heading">Hello there!</p>
-        <p id="profile-description" className="heading">I&apos;m <span className="link"><Link to="/about">James</Link></span>, a full-stack web&nbsp;  
+        <p id="profile-description" className="heading">
+          I&apos;m{" "}
+          <span className="link">
+            <Link to="/about">James</Link>
+          </span>
+          , a full-stack web&nbsp;
           {/* LET'S BOUNCE, MY FRIENDS */}
-          <span id="bounce-text"> 
+          <span id="bounce-text">
             <span className="accent-colour letter">d</span>
             <span className="accent-colour letter">e</span>
             <span className="accent-colour letter">v</span>
@@ -58,7 +67,9 @@ const Home = () => {
             <span className="accent-colour letter">p</span>
             <span className="accent-colour letter">e</span>
             <span className="accent-colour letter">r</span>
-          </span> with a background in product management.</p>
+          </span>{" "}
+          with a background in product management.
+        </p>
         <div className="contact-buttons">
           <Contact />
         </div>
@@ -68,8 +79,14 @@ const Home = () => {
         {/* PORTFOLIO SECTION */}
         <section>
           <div id="title-container">
-            <h2><FontAwesomeIcon className="icon" icon={faCompassDrafting} />Selected Projects</h2>
-            <p className="para">These are some key projects and side hustles I have worked on, building from scratch across the front and back-end:</p>
+            <h2>
+              <FontAwesomeIcon className="icon" icon={faCompassDrafting} />
+              Selected Projects
+            </h2>
+            <p className="para">
+              These are some key projects and side hustles I have worked on, building from scratch
+              across the front and back-end:
+            </p>
           </div>
 
           <div id="portfolio-container">
@@ -80,22 +97,49 @@ const Home = () => {
         {/* SKILLS SECTION */}
         <section>
           <div id="title-container">
-            <h2><FontAwesomeIcon className="icon" icon={faScrewdriverWrench} />Key Skills</h2>
-            <p className="para">Here are a few of the key languages, frameworks, and tools that I have been using, and will continue to add as I learn:</p>
+            <h2>
+              <FontAwesomeIcon className="icon" icon={faScrewdriverWrench} />
+              Key Skills
+            </h2>
+            <p className="para">
+              Here are a few of the key languages, frameworks, and tools that I have been using, and
+              will continue to add as I learn:
+            </p>
           </div>
-          <SkillPill selectedSkills={'all'} />
+          <SkillPill selectedSkills={"all"} />
         </section>
 
         {/* TIMELINE SECTION */}
         <section>
           <div id="title-container">
-            <h2><FontAwesomeIcon className="icon" icon={faTimeline} />Career Timeline</h2>
-            <p className="para">I wasn&apos;t always a developer! I have over a decade of experience working in technology on some awesome projects: </p>
+            <h2>
+              <FontAwesomeIcon className="icon" icon={faTimeline} />
+              Career Timeline
+            </h2>
+            <p className="para">
+              I wasn&apos;t always a developer! I have over a decade of experience working in
+              technology on some awesome projects:{" "}
+            </p>
           </div>
 
           <div id="timeline-container">
             <Career />
           </div>
+        </section>
+
+        {/* RECOMMENDATION SECTION */}
+        <section>
+          <div id="title-container">
+            <h2>
+              <FontAwesomeIcon className="icon" icon={faCommentDots} />
+              Recommendations
+            </h2>
+            <p className="para">
+              I've worked with some mega-legends in my time, who have said some nice things about
+              me:
+            </p>
+          </div>
+          <Recommendations items={recommendations} />
         </section>
 
         {/* THANKS SECTION */}
@@ -106,8 +150,7 @@ const Home = () => {
 
       <Footer />
     </>
+  );
+};
 
-  )
-}
-
-export default Home
+export default Home;

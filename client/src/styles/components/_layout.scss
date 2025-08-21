@@ -356,6 +356,119 @@ section {
   }
 }
 
+// RECOMMENDATIONS
+.recommendations-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  position: relative;
+}
+
+.recommendation-card {
+  //   background: var(--white);
+  //   border-radius: 25px;
+  //   border: 1px solid var(--greyLight);
+  padding: 2.5rem 0;
+  max-width: 80%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.recommendation-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.recommendation-card.hidden {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.recommendation-card::before {
+  content: "“";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--primary);
+  font-size: 6rem;
+}
+
+.recommendation-card::after {
+  content: "”";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: var(--primary);
+  font-size: 6rem;
+}
+
+.quote-mark {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.3);
+  line-height: 1;
+  margin-bottom: -1rem;
+  font-family: serif;
+}
+
+.recommendation-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--greyDark);
+  margin: 1rem 0 1.5rem;
+  font-style: italic;
+}
+
+.recommendation-author {
+  color: var(--greyDark);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.recommendation-dots-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.recommendation-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: var(--greyLight);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.recommendation-dot:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
+}
+
+.recommendation-dot.active {
+  background: var(--primary);
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .recommendation-card {
+    padding: 2rem 1.5rem;
+    margin: 0 1rem;
+  }
+
+  .recommendation-text {
+    font-size: 1rem;
+  }
+
+  .recommendation-quote-mark {
+    font-size: 3rem;
+  }
+}
+
+// FOOTER
 footer {
   margin: 2rem 0;
   text-align: center;
