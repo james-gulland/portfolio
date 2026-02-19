@@ -380,13 +380,20 @@ section {
   transition:
     opacity 0.3s ease-in-out,
     transform 0.3s ease-in-out,
-    box-shadow 0.3s ease;
+    box-shadow 0.1s ease,
+    outline 0.1s ease;
   background: white;
-  border-radius: 12px;
-  box-shadow:
-    0 2px 8px rgba(0, 0, 0, 0.08),
-    0 1px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 25px;
+  border: 1px solid var(--greyLight);
   border-left: 4px solid var(--primary);
+  cursor: pointer;
+}
+
+.recommendation-card:hover {
+  outline: 3px solid var(--greyLight);
+  box-shadow:
+    rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
 .recommendation-card.visible {

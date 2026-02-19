@@ -4,11 +4,12 @@ const Recommendations = ({ items = [] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const [lastManualChange, setLastManualChange] = useState(Date.now());
+  const [isPaused, setIsPaused] = useState(false);
 
   const activeRecommendations = items;
 
   useEffect(() => {
-    if (activeRecommendations.length <= 1) return;
+    if (activeRecommendations.length <= 1 || isPaused) return;
 
     const interval = setInterval(() => {
       // Start fade out
@@ -22,7 +23,7 @@ const Recommendations = ({ items = [] }) => {
     }, 10000); // Change every 10 seconds
 
     return () => clearInterval(interval);
-  }, [activeRecommendations.length, lastManualChange]); // Reset interval when lastManualChange updates
+  }, [activeRecommendations.length, lastManualChange, isPaused]); // Reset interval when lastManualChange or isPaused updates
 
   const handleDotClick = index => {
     setIsVisible(false);
@@ -48,7 +49,11 @@ const Recommendations = ({ items = [] }) => {
   return (
     <>
       <div className="recommendations-container">
-        <div className={`recommendation-card ${isVisible ? "visible" : "hidden"}`}>
+        <div
+          className={`recommendation-card ${isVisible ? "visible" : "hidden"}`}
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
           <p
             className="recommendation-text"
             dangerouslySetInnerHTML={{ __html: currentRecommendation.text }}
