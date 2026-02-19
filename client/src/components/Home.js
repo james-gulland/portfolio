@@ -109,6 +109,21 @@ const Home = () => {
           <SkillPill selectedSkills={"all"} />
         </section>
 
+        {/* RECOMMENDATION SECTION */}
+        <section>
+          <div id="title-container">
+            <h2>
+              <FontAwesomeIcon className="icon" icon={faCommentDots} />
+              Recommendations
+            </h2>
+            <p className="para">
+              A few kind words from the brilliant people I’ve had the privilege to work with
+              throughout my career:
+            </p>
+          </div>
+          <Recommendations items={recommendations} />
+        </section>
+
         {/* TIMELINE SECTION */}
         <section>
           <div id="title-container">
@@ -125,21 +140,6 @@ const Home = () => {
           <div id="timeline-container">
             <Career />
           </div>
-        </section>
-
-        {/* RECOMMENDATION SECTION */}
-        <section>
-          <div id="title-container">
-            <h2>
-              <FontAwesomeIcon className="icon" icon={faCommentDots} />
-              Recommendations
-            </h2>
-            <p className="para">
-              A few kind words from the brilliant people I’ve had the privilege to work with
-              throughout my career:
-            </p>
-          </div>
-          <Recommendations items={recommendations} />
         </section>
 
         {/* THANKS SECTION */}
