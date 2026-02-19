@@ -368,12 +368,16 @@ section {
 
 .recommendation-card {
   max-width: 80%;
-  padding: 2rem 0;
+  padding: 2.5rem 3rem;
   width: 100%;
-  text-align: center;
+  text-align: left;
   text-wrap: pretty;
   position: relative;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid var(--primary);
 }
 
 .recommendation-card.visible {
@@ -389,35 +393,44 @@ section {
 .recommendation-card::before {
   content: "“";
   position: absolute;
-  top: -1rem;
-  left: -1rem;
+  top: 1.5rem;
+  left: 1.5rem;
   color: var(--primary);
-  font-size: 6rem;
+  font-size: 4.5rem;
+  opacity: 0.15;
+  line-height: 1;
 }
 
 .recommendation-card::after {
   content: "”";
   position: absolute;
-  bottom: -0.25rem;
-  right: -1rem;
+  bottom: 1.5rem;
+  right: 1.5rem;
   color: var(--primary);
-  font-size: 6rem;
+  font-size: 4.5rem;
+  opacity: 0.15;
+  line-height: 1;
 }
 
 .recommendation-text {
-  line-height: 1.5;
+  line-height: 1.7;
   color: var(--black);
-  margin: 1rem 0 1.5rem;
-  font-size: 1.15rem;
+  margin: 0 0 1.5rem;
+  font-size: 1.05rem;
   font-weight: 400;
   font-style: italic;
+  position: relative;
+  z-index: 1;
 }
 
 .recommendation-author {
   color: var(--greyDark);
-  font-size: 1.15rem;
+  font-size: 1rem;
   margin-top: 1rem;
-  font-weight: 400;
+  font-weight: 500;
+  text-align: right;
+  position: relative;
+  z-index: 1;
 }
 
 .recommendation-dots-container {
@@ -454,13 +467,15 @@ section {
 
   .recommendation-card {
     max-width: 90%;
+    padding: 2rem 2rem;
   }
 
   .recommendation-text, .recommendation-author {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
-  .recommendation-quote-mark {
+  .recommendation-card::before,
+  .recommendation-card::after {
     font-size: 3rem;
   }
 }
