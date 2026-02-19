@@ -51,7 +51,9 @@
   padding: 4px;
   margin-bottom: 1rem;
   border: 3px solid var(--greyLight);
-  transition: border-color 0.3s ease, border-width 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    border-width 0.3s ease;
 }
 
 #profile-pic.active img:hover {
@@ -224,7 +226,9 @@ section {
       cursor: pointer;
       outline: 3px solid var(--greyLight);
       // transform: translateY(-3px);
-      box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+      box-shadow:
+        rgba(17, 17, 26, 0.05) 0px 4px 16px,
+        rgba(17, 17, 26, 0.05) 0px 8px 32px;
     }
   }
 
@@ -373,10 +377,15 @@ section {
   text-align: left;
   text-wrap: pretty;
   position: relative;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.06);
   border-left: 4px solid var(--primary);
 }
 
@@ -394,7 +403,7 @@ section {
   content: "“";
   position: absolute;
   top: 1.5rem;
-  left: 1.5rem;
+  left: 0.75rem;
   color: var(--primary);
   font-size: 4.5rem;
   opacity: 0.15;
@@ -470,7 +479,8 @@ section {
     padding: 2rem 2rem;
   }
 
-  .recommendation-text, .recommendation-author {
+  .recommendation-text,
+  .recommendation-author {
     font-size: 0.95rem;
   }
 
