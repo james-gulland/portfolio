@@ -386,7 +386,7 @@ section {
   border-radius: 25px;
   border: 1px solid var(--greyLight);
   border-left: 4px solid var(--primary);
-  cursor: pointer;
+  cursor: wait;
 }
 
 .recommendation-card:hover {
@@ -478,7 +478,7 @@ section {
 
 @media (max-width: 768px) {
   .recommendations-container {
-    min-height: 32rem;
+    min-height: auto;
   }
 
   .recommendation-card {
