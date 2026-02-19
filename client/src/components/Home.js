@@ -45,8 +45,8 @@ const Home = () => {
           <span id="pill-emoji">☺️</span> Currently busy
         </div>
         <div id="profile-pic" className="active">
-          <Link to="/about">
-            <img src={profilePic} alt="Profile" fetchPriority="high" priority loading="lazy" />
+          <Link to="/about" preload="true">
+            <img src={profilePic} width="128" height="128" alt="Profile" />
           </Link>
         </div>
         <p className="heading">Hello there!</p>
@@ -135,7 +135,8 @@ const Home = () => {
               Recommendations
             </h2>
             <p className="para">
-              A few kind words from the brilliant people I’ve had the privilege to work with throughout my career:
+              A few kind words from the brilliant people I’ve had the privilege to work with
+              throughout my career:
             </p>
           </div>
           <Recommendations items={recommendations} />
