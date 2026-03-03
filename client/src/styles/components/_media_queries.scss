@@ -1,6 +1,5 @@
 // MOBILE
 @media only screen and (min-width: 600px) {
-
   h1 {
     font-size: $size-bigbertha;
   }
@@ -36,8 +35,7 @@
 }
 
 // SMALL LAPTOP / TABLET
-@media only screen and (min-width: 601px) and (max-width: 991px){
-
+@media only screen and (min-width: 601px) and (max-width: 991px) {
   section {
     #portfolio-container {
       grid-template-columns: 1fr;
@@ -70,12 +68,10 @@
 
 // DESKTOP SIZING
 @media only screen and (min-width: 992px) {
-
   // INTRO SECTION
   #intro-container {
-
     #profile-description {
-      max-width: 70%;
+      max-width: 60%;
     }
   }
 
@@ -108,7 +104,8 @@
     }
 
     // TIMELINE SECTION
-    .timeline-wrapper, #thanks-container {
+    .timeline-wrapper,
+    #thanks-container {
       max-width: 80%;
       margin: auto;
     }
@@ -125,7 +122,9 @@
   }
 
   // ABOUT ME PAGE
-  #about-container, #me-image, #interests-container {
+  #about-container,
+  #me-image,
+  #interests-container {
     width: 80%;
     margin: 4rem auto;
   }
@@ -134,4 +133,3 @@
     border-radius: 1rem;
   }
 }
-

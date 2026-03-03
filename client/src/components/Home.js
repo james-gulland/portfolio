@@ -55,20 +55,19 @@ const Home = () => {
           <span className="link">
             <Link to="/about">James</Link>
           </span>
-          , a full-stack web&nbsp;
+          , a full-stack product&nbsp;
           {/* LET'S BOUNCE, MY FRIENDS */}
           <span id="bounce-text">
-            <span className="accent-colour letter">d</span>
             <span className="accent-colour letter">e</span>
-            <span className="accent-colour letter">v</span>
+            <span className="accent-colour letter">n</span>
+            <span className="accent-colour letter">g</span>
+            <span className="accent-colour letter">i</span>
+            <span className="accent-colour letter">n</span>
             <span className="accent-colour letter">e</span>
-            <span className="accent-colour letter">l</span>
-            <span className="accent-colour letter">o</span>
-            <span className="accent-colour letter">p</span>
             <span className="accent-colour letter">e</span>
             <span className="accent-colour letter">r</span>
           </span>{" "}
-          with a background in product management.
+          with a strong front-end focus.
         </p>
         <div className="contact-buttons">
           <Contact />
