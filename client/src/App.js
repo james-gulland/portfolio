@@ -9,6 +9,7 @@ import Journalinspace from "./components/Journalinspace";
 import BbcStoryWorks from "./components/BbcStoryWorks";
 import FortiFi from "./components/FortiFi";
 import All3Media from "./components/All3Media";
+import NotFound from "./components/NotFound";
 
 // scrolls page to top when loading the page
 const ScrollToTop = () => {
@@ -36,6 +37,7 @@ const App = () => {
           <Route path="/bbc-storyworks" element={<BbcStoryWorks />} />
           <Route path="/40fi" element={<FortiFi />} />
           <Route path="/all3media" element={<All3Media />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>

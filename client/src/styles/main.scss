@@ -1,10 +1,11 @@
-@import 'components/variables';
-@import 'components/layout';
-@import 'components/about_layout';
-@import 'components/portfolio_item';
-@import 'components/controls';
-@import 'components/animations';
-@import 'components/media_queries';
+@import "components/variables";
+@import "components/layout";
+@import "components/about_layout";
+@import "components/portfolio_item";
+@import "components/controls";
+@import "components/animations";
+@import "components/not_found";
+@import "components/media_queries";
 
 * {
   box-sizing: border-box;
@@ -23,7 +24,10 @@ body {
   padding: 0 1rem;
 }
 
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
   color: inherit;
   text-decoration: none;
 }
