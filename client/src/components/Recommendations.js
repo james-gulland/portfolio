@@ -1,15 +1,26 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Recommendations = ({ items = [] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const [lastManualChange, setLastManualChange] = useState(Date.now());
   const [isPaused, setIsPaused] = useState(false);
+  const [isInView, setIsInView] = useState(false);
+  const containerRef = useRef(null);
 
   const activeRecommendations = items;
 
   useEffect(() => {
-    if (activeRecommendations.length <= 1 || isPaused) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsInView(entry.isIntersecting),
+      { threshold: 0.1 }
+    );
+    if (containerRef.current) observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (activeRecommendations.length <= 1 || isPaused || !isInView) return;
 
     const interval = setInterval(() => {
       // Start fade out
@@ -23,7 +34,7 @@ const Recommendations = ({ items = [] }) => {
     }, 10000); // Change every 10 seconds
 
     return () => clearInterval(interval);
-  }, [activeRecommendations.length, lastManualChange, isPaused]); // Reset interval when lastManualChange or isPaused updates
+  }, [activeRecommendations.length, lastManualChange, isPaused, isInView]); // Reset interval when lastManualChange, isPaused, or isInView updates
 
   const handleDotClick = index => {
     setIsVisible(false);
@@ -48,7 +59,7 @@ const Recommendations = ({ items = [] }) => {
 
   return (
     <>
-      <div className="recommendations-container">
+      <div className="recommendations-container" ref={containerRef}>
         <div
           className={`recommendation-card ${isVisible ? "visible" : "hidden"}`}
           onMouseEnter={() => setIsPaused(true)}
