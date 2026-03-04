@@ -125,6 +125,7 @@ const Career = () => {
     <Timeline
       className="timeline-wrapper"
       sx={{
+        padding: 0,
         [`& .${timelineItemClasses.root}:before`]: {
           flex: 0,
           padding: 0,

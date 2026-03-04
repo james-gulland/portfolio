@@ -11,10 +11,9 @@ const Recommendations = ({ items = [] }) => {
   const activeRecommendations = items;
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => setIsInView(entry.isIntersecting),
-      { threshold: 0.1 }
-    );
+    const observer = new IntersectionObserver(([entry]) => setIsInView(entry.isIntersecting), {
+      threshold: 0.1,
+    });
     if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();
   }, []);
