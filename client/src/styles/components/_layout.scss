@@ -5,6 +5,34 @@
   margin: 2rem 0;
   position: relative;
 
+  .heading,
+  #profile-description,
+  .contact-buttons {
+    opacity: 0;
+    animation: introFadeUp 0.5s ease-out both;
+  }
+
+  .heading {
+    animation-delay: 0.1s;
+  }
+
+  #profile-description {
+    animation-delay: 0.2s;
+  }
+
+  .contact-buttons {
+    animation-delay: 0.3s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .heading,
+    #profile-description,
+    .contact-buttons {
+      opacity: 1;
+      animation: none;
+    }
+  }
+
   // job status pill at the top
   #current-status {
     display: flex;

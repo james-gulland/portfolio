@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;300;400&display=swap');
-
 :root {
   // primary colours
-  --primary-light: rgba(52, 211, 153, .1);
+  --primary-light: rgba(52, 211, 153, 0.1);
   --primary: rgb(16, 185, 129);
 
   // supplementary colours
-  --white: #FFFFFF;
+  --white: #ffffff;
   --black: rgb(24, 24, 27);
   --greyLightBg: rgb(249, 250, 251);
   --greyLight: rgb(229, 231, 235);
@@ -16,7 +14,7 @@
 }
 
 // fonts
-$main-font: 'Sofia Sans', sans-serif;
+$main-font: "Sofia Sans", sans-serif;
 
 // sizes for fonts
 $size-mid: 1.15rem;
@@ -26,25 +24,26 @@ $size-smallbertha: 3rem;
 $size-bigbertha: 4.5rem;
 
 html::selection {
-    background-color: var(--primary);
-    color: var(--white);
+  background-color: var(--primary);
+  color: var(--white);
 }
-
 
 // headings
 h1 {
-  font-size: $size-smallbertha; 
+  font-size: $size-smallbertha;
   font-weight: 400;
   margin: 0;
   line-height: 5rem;
 }
 
-h2, .heading {
+h2,
+.heading {
   font-size: $size-larger;
   font-weight: 400;
 }
 
-h3, .para {
+h3,
+.para {
   font-size: $size-regular;
   font-weight: 400;
   margin: 0;
@@ -79,4 +78,3 @@ h4 {
   line-height: 1.5rem;
   font-weight: 400;
 }
-

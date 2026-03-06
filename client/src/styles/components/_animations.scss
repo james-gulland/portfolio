@@ -17,3 +17,12 @@
     opacity: 0.3;
   }
 }
+
+@keyframes introFadeUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
