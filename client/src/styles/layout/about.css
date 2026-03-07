@@ -1,0 +1,38 @@
+#about-container,
+#interests-container {
+  line-height: 2.5rem;
+}
+
+#me-image {
+  display: flex;
+  justify-content: center;
+  margin: 1rem -2rem;
+}
+
+#me-image #swiss-screen {
+  width: 100%;
+}
+
+.interest-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.interest-item .interest-icon {
+  font-size: var(--size-large);
+}
+
+@media only screen and (min-width: 992px) {
+  #about-container,
+  #me-image,
+  #interests-container {
+    width: 80%;
+    margin: 4rem auto;
+  }
+
+  #swiss-screen {
+    border-radius: 1rem;
+  }
+}

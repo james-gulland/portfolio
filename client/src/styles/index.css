@@ -1,4 +1,7 @@
 @import "./animations.css";
 @import "./global.css";
-@import "./sections.css";
+@import "./layout/rest.css";
+@import "./layout/home.css";
+@import "./layout/about.css";
+@import "./layout/not-found.css";
 @import "./ui.css";

@@ -1,0 +1,153 @@
+section {
+  margin-top: 4rem;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+#profile-pic img {
+  height: 8rem;
+  border-radius: 50%;
+  padding: 4px;
+  margin-bottom: 1rem;
+  border: 3px solid var(--greyLight);
+  transition:
+    border-color 0.3s ease,
+    border-width 0.3s ease;
+}
+
+#header-about {
+  display: flex;
+  margin-top: 3rem;
+}
+
+section #thanks-container {
+  gap: 2rem;
+  border: 1px solid var(--greyLight);
+  border-radius: 25px;
+  padding: 2rem 2rem 0 2rem;
+  margin-bottom: 4rem;
+  background-color: var(--white);
+}
+
+section #thanks-container #thanks-contact {
+  display: flex;
+  gap: 1rem;
+}
+
+.two-col-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.mac-window {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+}
+
+.title-bar {
+  background: #ececec;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 8px;
+}
+
+.title-bar span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red {
+  background: #ff5f56;
+}
+
+.yellow {
+  background: #ffbd2e;
+}
+
+.green {
+  background: #27c93f;
+}
+
+.mac-window img,
+.mac-window video {
+  display: block;
+}
+
+.two-col-content .mac-window img:first-of-type {
+  width: 100%;
+}
+
+.two-col-content img:last-of-type {
+  max-height: 30rem;
+}
+
+.portfolio-hero-container .hero-image {
+  width: 100%;
+}
+
+.portfolio-copy {
+  line-height: 2.5rem;
+}
+
+footer {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: small;
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    margin-top: 6rem;
+  }
+
+  #thanks-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #thanks-container #profile-pic {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .two-col-content {
+    margin-top: 6rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #title-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+  }
+
+  .two-col-content .mac-window img:first-of-type {
+    height: 28.25rem;
+    width: auto;
+    max-width: 46rem;
+    object-fit: fill;
+  }
+
+  .two-col-content img:last-of-type {
+    height: 30rem;
+    width: auto;
+    filter: drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.15));
+  }
+}
