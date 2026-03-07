@@ -285,7 +285,12 @@ section {
   }
 
   .timeline-container {
-    cursor: pointer;
+    cursor: default;
+
+    * {
+      cursor: default;
+    }
+
     &:hover {
       color: var(--primary);
     }
