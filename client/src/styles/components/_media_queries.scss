@@ -69,12 +69,6 @@
 // DESKTOP SIZING
 @media only screen and (min-width: 992px) {
   // INTRO SECTION
-  #intro-container {
-    #profile-description {
-      max-width: 60%;
-    }
-  }
-
   #title-container {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
