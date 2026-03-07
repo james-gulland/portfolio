@@ -1,0 +1,194 @@
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: var(--size-big-bertha);
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+
+  section #portfolio-container {
+    grid-template-columns: 1fr;
+  }
+
+  section .portfolio-item.tile-large {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  section .portfolio-item .tile-right {
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  #thanks-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #thanks-container #profile-pic {
+    justify-content: center;
+    align-items: center;
+  }
+
+  section .portfolio-item #first-screen {
+    max-height: 80%;
+    width: 150%;
+    transform: perspective(1000px) rotateX(0.810895deg) rotateY(10deg) scale3d(1, 1, 1)
+      translateX(40px);
+  }
+
+  section .portfolio-item #second-screen {
+    transform: matrix3d(
+        0.999992,
+        -0.00110315,
+        0.00384755,
+        -3.84755e-6,
+        0,
+        0.961269,
+        0.275611,
+        -0.000275611,
+        -0.00400257,
+        -0.275608,
+        0.961262,
+        -0.000961262,
+        0,
+        0,
+        0,
+        1
+      )
+      translateY(30px);
+  }
+
+  section .portfolio-item #last-screen {
+    max-height: 80%;
+    width: 150%;
+    transform: perspective(1000px) rotateX(-0.810895deg) rotateY(-10deg) scale3d(1, 1, 1)
+      translateX(-200px);
+  }
+
+  .two-col-content {
+    margin-top: 6rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (min-width: 600px) {
+  section a:hover #first-screen {
+    transform: perspective(1000px) rotateX(0.810895deg) rotateY(-10deg) scale3d(1, 1, 1);
+  }
+
+  section a:hover #last-screen {
+    transform: perspective(1000px) rotateX(-0.810895deg) rotateY(10deg) scale3d(1, 1, 1)
+      translateX(-160px);
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  section #portfolio-container {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section .portfolio-item.tile-large {
+    grid-template-columns: 1fr 1fr;
+    grid-column: span 2;
+    padding: 0;
+    align-items: center;
+  }
+
+  section .portfolio-item .tile-right {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #title-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+  }
+
+  section #portfolio-container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  section .portfolio-item.tile-large {
+    grid-template-columns: 1fr 1fr;
+    grid-column: span 2;
+    padding: 0;
+    align-items: center;
+  }
+
+  section .portfolio-item .tile-right {
+    margin: 0;
+  }
+
+  section .timeline-wrapper,
+  section #thanks-container {
+    max-width: 75%;
+    margin: auto;
+  }
+
+  .portfolio-item.tile-large {
+    grid-template-columns: 1fr 1fr;
+    grid-column: span 2;
+  }
+
+  .portfolio-item.tile-right {
+    margin: 0;
+  }
+
+  #about-container,
+  #me-image,
+  #interests-container {
+    width: 80%;
+    margin: 4rem auto;
+  }
+
+  #swiss-screen {
+    border-radius: 1rem;
+  }
+
+  .two-col-content .mac-window img:first-of-type {
+    height: 28.25rem;
+    width: auto;
+    max-width: 46rem;
+    object-fit: fill;
+  }
+
+  .two-col-content img:last-of-type {
+    height: 30rem;
+    width: auto;
+    filter: drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.15));
+  }
+}
+
+@media (max-width: 768px) {
+  .recommendations-container {
+    min-height: auto;
+  }
+
+  .recommendation-card {
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  .recommendation-text,
+  .recommendation-author {
+    font-size: 0.95rem;
+  }
+
+  .recommendation-card::before,
+  .recommendation-card::after {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .pills-container ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, max-content));
+  }
+}

@@ -1,0 +1,96 @@
+#header-about {
+  display: flex;
+  margin-top: 3rem;
+}
+
+#about-container,
+#interests-container {
+  line-height: 2.5rem;
+}
+
+#me-image {
+  display: flex;
+  justify-content: center;
+  margin: 1rem -2rem;
+}
+
+#me-image #swiss-screen {
+  width: 100%;
+}
+
+.interest-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.interest-item .interest-icon {
+  font-size: var(--size-large);
+}
+
+.portfolio-hero-container .hero-image {
+  width: 100%;
+}
+
+.portfolio-copy {
+  line-height: 2.5rem;
+}
+
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.not-found .not-found-content {
+  text-align: center;
+  max-width: 500px;
+}
+
+.not-found .not-found-content .not-found-icon {
+  font-size: 5rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  animation: punchyBounce 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+}
+
+.not-found .not-found-content h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+  color: var(--black);
+}
+
+.not-found .not-found-content h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+  color: var(--greyDark);
+}
+
+.not-found .not-found-content p {
+  font-size: 1.1rem;
+  margin: 0 0 2rem 0;
+  color: var(--greyDark);
+}
+
+.not-found .not-found-content .not-found-button {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  background-color: var(--primary-light);
+  color: var(--primary);
+  border-radius: 12px;
+  font-size: var(--size-mid);
+  font-weight: 400;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.not-found .not-found-content .not-found-button:hover {
+  transform: translateY(-3px);
+  color: var(--primary-hover);
+  background-color: var(--primary-hover-bg);
+}

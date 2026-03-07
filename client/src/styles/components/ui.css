@@ -1,0 +1,86 @@
+.button {
+  font-size: var(--size-mid);
+  font-weight: 400;
+  background-color: var(--primary-light);
+  color: var(--primary);
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  color: var(--primary-hover);
+  background-color: var(--primary-hover-bg);
+}
+
+.icon {
+  margin-right: 0.75rem;
+}
+
+.logo {
+  margin-right: 0.5rem;
+  width: 18px;
+  aspect-ratio: 1 / 1;
+  border-radius: 2px;
+}
+
+.pill {
+  font-weight: 400;
+  border-radius: 2rem;
+  padding: 0.75rem;
+  border: 3px solid var(--primary);
+  color: var(--primary);
+  background-color: var(--primary-light);
+  justify-content: center;
+}
+
+.pill.active {
+  cursor: pointer;
+}
+
+.pill.active:hover {
+  color: var(--primary-hover);
+  background-color: var(--primary-hover-bg);
+}
+
+.link {
+  background: linear-gradient(to right, var(--greyLight)), linear-gradient(to right, var(--black));
+  background-size:
+    100% 0.1em,
+    0 0.1em;
+  background-position:
+    100% 100%,
+    0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 200ms;
+}
+
+.link:hover,
+a:focus {
+  background-size:
+    0 0.1em,
+    100% 0.1em;
+}
+
+.links-container ul,
+.pills-container ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.links-container ul li,
+.pills-container ul li {
+  display: flex;
+  border: 3px solid var(--primary);
+  color: var(--primary);
+  font-weight: 400;
+  background-color: var(--primary-light);
+  border-radius: 2rem;
+  padding: 0.75rem;
+}
