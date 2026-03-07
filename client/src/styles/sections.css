@@ -1,3 +1,4 @@
+/* INTRO SECTION */
 #intro-container {
   margin: 2rem 0;
   position: relative;
@@ -122,6 +123,7 @@
   animation-delay: 0.8s;
 }
 
+/* PORTFOLIO SECTION */
 section {
   margin-top: 4rem;
 }
@@ -223,6 +225,7 @@ section a:hover #second-screen {
   transform: none;
 }
 
+/* TIMELINE SECTION */
 section #timeline-container {
   margin-top: 2rem;
 }
@@ -252,6 +255,7 @@ section .timelinedot {
   background-color: var(--primary);
 }
 
+/* THANKS SECTION */
 section #thanks-container {
   gap: 2rem;
   border: 1px solid var(--greyLight);
@@ -266,6 +270,7 @@ section #thanks-container #thanks-contact {
   gap: 1rem;
 }
 
+/* MAC WINDOW */
 .two-col-content {
   display: flex;
   flex-wrap: wrap;
@@ -323,6 +328,8 @@ section #thanks-container #thanks-contact {
 .two-col-content img:last-of-type {
   max-height: 30rem;
 }
+
+/* RECOMMENDATIONS SECTION */
 
 .recommendations-container {
   display: flex;
@@ -449,12 +456,14 @@ section #thanks-container #thanks-contact {
   transform: scale(1.2);
 }
 
+/* FOOTER SECTION */
 footer {
   margin: 2rem 0;
   text-align: center;
   font-size: small;
 }
 
+/* HEADER IN PORTFOLIO PAGES */
 #header-about {
   display: flex;
   margin-top: 3rem;
@@ -494,6 +503,7 @@ footer {
   line-height: 2.5rem;
 }
 
+/* NOT FOUND SECTION */
 .not-found {
   display: flex;
   align-items: center;
