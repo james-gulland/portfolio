@@ -34,6 +34,7 @@ h2,
 .heading {
   font-size: var(--size-large);
   font-weight: 400;
+  line-height: normal;
 }
 
 h3,

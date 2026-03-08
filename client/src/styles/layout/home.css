@@ -66,6 +66,10 @@
   margin: 1rem 0;
 }
 
+#profile-pic {
+  margin-bottom: 2rem;
+}
+
 #profile-pic.active img:hover {
   border: 3px solid var(--black);
 }

@@ -14,7 +14,6 @@ section {
   height: 8rem;
   border-radius: 50%;
   padding: 4px;
-  margin-bottom: 1rem;
   border: 3px solid var(--greyLight);
   transition:
     border-color 0.3s ease,

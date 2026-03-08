@@ -58,9 +58,7 @@ const Home = () => {
             <img src={profilePic} width="128" height="128" alt="Profile" />
           </Link>
         </div>
-        <h1 className="heading" style={{ marginTop: "1rem", lineHeight: "normal" }}>
-          Hello there!
-        </h1>
+        <h1 className="heading">Hello there!</h1>
         <p id="profile-description" className="heading">
           I&apos;m{" "}
           <span className="link">
