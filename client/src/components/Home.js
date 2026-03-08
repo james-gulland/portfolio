@@ -41,15 +41,26 @@ const Home = () => {
     <>
       {/* INTRO SECTION */}
       <header id="intro-container" ref={containerRef}>
-        <div id="current-status" className="pill active" onClick={handleClick}>
-          <span id="pill-emoji">☺️</span> Currently busy
-        </div>
+        <button
+          id="current-status"
+          className="pill active"
+          type="button"
+          onClick={handleClick}
+          aria-label="Currently busy status. Activate for confetti."
+        >
+          <span id="pill-emoji" aria-hidden="true">
+            ☺️
+          </span>{" "}
+          Currently busy
+        </button>
         <div id="profile-pic" className="active">
           <Link to="/about" preload="true">
             <img src={profilePic} width="128" height="128" alt="Profile" />
           </Link>
         </div>
-        <p className="heading">Hello there!</p>
+        <h1 className="heading" style={{ marginTop: "1rem", lineHeight: "normal" }}>
+          Hello there!
+        </h1>
         <p id="profile-description" className="heading">
           I&apos;m{" "}
           <span className="link">
@@ -74,7 +85,7 @@ const Home = () => {
         </div>
       </header>
 
-      <main>
+      <main id="main-content">
         {/* PORTFOLIO SECTION */}
         <section>
           <div id="title-container">

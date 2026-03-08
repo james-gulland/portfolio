@@ -20,14 +20,13 @@ const BbcStoryWorks = () => {
     "AWS",
     "Vercel",
   ];
-
   return (
     <>
       <header id="header-about">
         <Back />
       </header>
 
-      <main>
+      <main id="main-content">
         {/* TITLE */}
         <section>
           <div id="title-container" style={{ gap: "2rem" }}>

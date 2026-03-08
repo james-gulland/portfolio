@@ -58,7 +58,7 @@
 }
 
 .link:hover,
-a:focus {
+a:focus-visible {
   background-size:
     0 0.1em,
     100% 0.1em;

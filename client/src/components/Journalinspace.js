@@ -19,7 +19,7 @@ const Journalinspace = () => {
         <Back />
       </header>
 
-      <main>
+      <main id="main-content">
         {/* TITLE */}
         <section>
           <div id="title-container">
@@ -72,7 +72,10 @@ const Journalinspace = () => {
         </section>
 
         {/* MAIN COPY */}
-        <section className="portfolio-copy" style={{ display: "flex", flexWrap: "wrap", gap: "2rem" }}>
+        <section
+          className="portfolio-copy"
+          style={{ display: "flex", flexWrap: "wrap", gap: "2rem" }}
+        >
           <div style={{ flex: "1", minWidth: "18.75rem" }}>
             <p className="para black">
               This is an older project that I am still rather fond of! It was built during my time

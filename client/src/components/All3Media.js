@@ -20,14 +20,13 @@ const All3Media = () => {
     "AWS",
     "WordPress",
   ];
-
   return (
     <>
       <header id="header-about">
         <Back />
       </header>
 
-      <main>
+      <main id="main-content">
         {/* TITLE */}
         <section>
           <div id="title-container" style={{ gap: "2rem" }}>
@@ -118,7 +117,7 @@ const All3Media = () => {
               muted
               playsInline
               style={{
-                width: "100%"
+                width: "100%",
               }}
             >
               <source src={all3video} type="video/mp4" />

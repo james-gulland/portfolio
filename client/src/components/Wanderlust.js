@@ -16,7 +16,7 @@ const Wanderlust = () => {
         <Back />
       </header>
 
-      <main>
+      <main id="main-content">
         {/* TITLE */}
         <section>
           <div id="title-container">

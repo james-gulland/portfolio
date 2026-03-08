@@ -4,7 +4,7 @@ import { faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
 
 const NotFound = () => {
   return (
-    <div className="not-found">
+    <main id="main-content" className="not-found">
       <div className="not-found-content">
         <FontAwesomeIcon icon={faTriangleExclamation} className="not-found-icon" />
         <h1>I AM DISAPPOINT.</h1>
@@ -14,7 +14,7 @@ const NotFound = () => {
           Take me home!
         </Link>
       </div>
-    </div>
+    </main>
   );
 };
 
