@@ -1,11 +1,11 @@
 export const recommendations = [
   {
     name: "At, Co-Founder @ node london",
-    text: "Legend. Hero. Superstar. All nouns that have been used to describe James by his colleagues, myself included. Dedicated, thorough, helpful and always keen to learn anything new, are all the traits that make him an asset and an absolute pleasure to work alongside. I will temper my glowing praise so as not to rouse suspicions of hyperbole but before I do I must say: I can't recommend James highly enough to anybody who may need his experience as a developer, covering a wide array of tools.<br /><br />James, keep on being AWESOME!",
+    text: "Legend. Hero. Superstar. All nouns that have been used to describe James by his colleagues, myself included. Dedicated, thorough, helpful and always keen to learn anything new, are all the traits that make him an asset and an absolute pleasure to work alongside.<br /><br />I will temper my glowing praise so as not to rouse suspicions of hyperbole but before I do I must say: I can't recommend James highly enough to anybody who may need his experience as a developer, covering a wide array of tools.<br /><br />James, keep on being AWESOME!",
   },
   {
     name: "Dan, Founder @ Websultancy",
-    text: "What a pleasure it was to have James on my team. He joined us as an entry-level developer, but I could immediately tell he would thrive.<br/><br/>James brought with him extensive experience as a product owner, which proved to be an exceptional asset. His background gave him a sharp eye for detail, both in terms of how websites functioned for end users and in ensuring clean, reusable code for future maintenance.<br />He has a positive attitude, is highly articulate, eager to learn, and an all-around pleasure to work with every day.<br /><br/>Thank you James!",
+    text: "What a pleasure it was to have James on my team. He joined us as an entry-level developer, but I could immediately tell he would thrive.<br/><br/>James brought with him extensive experience as a product owner, which proved to be an exceptional asset. His background gave him a sharp eye for detail, both in terms of how websites functioned for end users and in ensuring clean, reusable code for future maintenance.<br /><br />He has a positive attitude, is highly articulate, eager to learn, and an all-around pleasure to work with every day.  Thank you James!",
   },
   {
     name: "Lucia, Data Strategy Leader",
