@@ -5,6 +5,7 @@ import Back from "./Back";
 import SkillPill from "./SkillPill";
 import Thanks from "./Thanks";
 import Footer from "./Footer";
+import Meta from "./Meta";
 import screen1 from "../assets/spectrum-1.png";
 
 const Spectrum = () => {
@@ -12,6 +13,11 @@ const Spectrum = () => {
 
   return (
     <>
+      <Meta
+        title="Spectrum"
+        description="Case study for Spectrum, a full-stack project built with React, Django, and PostgreSQL."
+      />
+
       <header id="header-about">
         <Back />
       </header>

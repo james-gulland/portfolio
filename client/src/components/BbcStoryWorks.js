@@ -5,6 +5,7 @@ import Back from "./Back";
 import SkillPill from "./SkillPill";
 import Thanks from "./Thanks";
 import Footer from "./Footer";
+import Meta from "./Meta";
 import throughFilm from "../assets/through-film.png";
 import wecMobile from "../assets/wec-mob.png";
 import { MacEmulator } from "./MacEmulator";
@@ -22,6 +23,11 @@ const BbcStoryWorks = () => {
   ];
   return (
     <>
+      <Meta
+        title="BBC StoryWorks"
+        description="Case study for BBC StoryWorks projects delivered with React, Next.js, TypeScript, and performance-focused storytelling experiences."
+      />
+
       <header id="header-about">
         <Back />
       </header>

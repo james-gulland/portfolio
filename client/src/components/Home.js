@@ -8,6 +8,7 @@ import SkillPill from "./SkillPill";
 import Recommendations from "./Recommendations";
 import Thanks from "./Thanks";
 import Footer from "./Footer";
+import Meta from "./Meta";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCompassDrafting,

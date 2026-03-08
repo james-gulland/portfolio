@@ -4,11 +4,17 @@ import { faPersonHiking, faMusic, faGamepad } from "@fortawesome/free-solid-svg-
 import Back from "./Back";
 import Thanks from "./Thanks";
 import Footer from "./Footer";
+import Meta from "./Meta";
 import swiss from "../assets/swiss.png";
 
 const About = () => {
   return (
     <>
+      <Meta
+        title="About"
+        description="Learn more about James Gulland, his background in product and engineering, and what he is looking for next."
+      />
+
       <header id="header-about">
         <Back />
       </header>

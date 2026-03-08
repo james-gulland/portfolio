@@ -5,6 +5,7 @@ import Back from "./Back";
 import SkillPill from "./SkillPill";
 import Thanks from "./Thanks";
 import Footer from "./Footer";
+import Meta from "./Meta";
 import screen1 from "../assets/wanderlust-1.png";
 
 const Wanderlust = () => {
@@ -12,6 +13,11 @@ const Wanderlust = () => {
 
   return (
     <>
+      <Meta
+        title="Wanderlust"
+        description="Case study for Wanderlust, a full-stack travel project using React, Node.js, Express, and MongoDB."
+      />
+
       <header id="header-about">
         <Back />
       </header>

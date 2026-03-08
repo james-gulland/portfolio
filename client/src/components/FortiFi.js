@@ -5,6 +5,7 @@ import Back from "./Back";
 import SkillPill from "./SkillPill";
 import Thanks from "./Thanks";
 import Footer from "./Footer";
+import Meta from "./Meta";
 import { MacEmulator } from "./MacEmulator";
 import fortyFi from "../assets/40fi.png";
 import fortyFiContact from "../assets/40fi-contact.png";
@@ -26,6 +27,11 @@ const FortiFi = () => {
 
   return (
     <>
+      <Meta
+        title="40fi"
+        description="Case study for the 40fi website overhaul using Next.js, TypeScript, Tailwind, and Payload CMS integration."
+      />
+
       <header id="header-about">
         <Back />
       </header>

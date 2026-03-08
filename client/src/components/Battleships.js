@@ -6,6 +6,7 @@ import Back from "./Back";
 import SkillPill from "./SkillPill";
 import Thanks from "./Thanks";
 import Footer from "./Footer";
+import Meta from "./Meta";
 import screen1 from "../assets/battleships-1.png";
 
 const Battleships = () => {
@@ -13,6 +14,11 @@ const Battleships = () => {
 
   return (
     <>
+      <Meta
+        title="Celebrity Battleships"
+        description="Case study for Celebrity Battleships, a JavaScript browser game inspired by the classic Battleships format."
+      />
+
       <header id="header-about">
         <Back />
       </header>

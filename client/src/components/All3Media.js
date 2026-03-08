@@ -5,6 +5,7 @@ import Back from "./Back";
 import SkillPill from "./SkillPill";
 import Thanks from "./Thanks";
 import Footer from "./Footer";
+import Meta from "./Meta";
 import { MacEmulator } from "./MacEmulator";
 import all3media from "../assets/all3media.png";
 import all3video from "../assets/all3-video.mp4";
@@ -22,6 +23,11 @@ const All3Media = () => {
   ];
   return (
     <>
+      <Meta
+        title="All3Media"
+        description="Case study for the All3Media rebuild using Next.js, TypeScript, Tailwind, and headless WordPress CMS integration."
+      />
+
       <header id="header-about">
         <Back />
       </header>

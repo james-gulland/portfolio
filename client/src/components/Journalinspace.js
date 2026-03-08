@@ -6,6 +6,7 @@ import Back from "./Back";
 import SkillPill from "./SkillPill";
 import Thanks from "./Thanks";
 import Footer from "./Footer";
+import Meta from "./Meta";
 import { MacEmulator } from "./MacEmulator";
 import journalInSpaceVideo from "../assets/journalinspace.mp4";
 import nasaMobVideo from "../assets/nasa-mob.mp4";
@@ -15,6 +16,11 @@ const Journalinspace = () => {
 
   return (
     <>
+      <Meta
+        title="Journal in Space"
+        description="Case study for Journal in Space, a React app that consumes NASA's API to create a daily space journal experience."
+      />
+
       <header id="header-about">
         <Back />
       </header>
