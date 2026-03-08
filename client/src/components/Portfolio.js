@@ -25,20 +25,18 @@ const Portfolio = () => {
       </Link>
 
       {/* 2ND ITEM */}
-      <div className="portfolio-item tile-small">
-        <Link to="/40fi" as={Link}>
-          <div className="tile-vertical">
-            <h3>40fi</h3>
-            <p className="tile-text">
-              Overhaul of 40fi&#39;s website, content powered by Payload CMS integration with Next.js,
-              TypeScript and Tailwind.
-            </p>
-          </div>
-          <div id="image-container">
-            <img id="second-screen" src={fortyFi} alt="40fi" />
-          </div>
-        </Link>
-      </div>
+      <Link to="/40fi" as={Link} className="portfolio-item tile-small">
+        <div className="tile-vertical">
+          <h3>40fi</h3>
+          <p className="tile-text">
+            Overhaul of 40fi&#39;s website, content powered by Payload CMS integration with Next.js,
+            TypeScript and Tailwind.
+          </p>
+        </div>
+        <div id="image-container">
+          <img id="second-screen" src={fortyFi} alt="40fi" />
+        </div>
+      </Link>
 
       {/* 3RD ITEM */}
       <Link to="/journalinspace" as={Link} className="portfolio-item tile-small">
