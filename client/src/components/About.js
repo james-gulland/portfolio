@@ -5,7 +5,6 @@ import Back from "./Back";
 import Thanks from "./Thanks";
 import Footer from "./Footer";
 import Meta from "./Meta";
-import swiss from "../assets/swiss.png";
 
 const About = () => {
   return (
@@ -68,7 +67,11 @@ const About = () => {
 
         {/* IMAGE SECTION */}
         <section id="me-image">
-          <img id="swiss-screen" src={swiss} alt="Switzerland" />
+          <img
+            id="swiss-screen"
+            src="https://res.cloudinary.com/drrscrxod/image/upload/q_auto/f_auto/swiss_w5styf.webp"
+            alt="Switzerland"
+          />
         </section>
 
         {/* INTERESTS SECTION */}

@@ -7,9 +7,6 @@ import Thanks from "./Thanks";
 import Footer from "./Footer";
 import Meta from "./Meta";
 import { MacEmulator } from "./MacEmulator";
-import fortyFi from "../assets/40fi.png";
-import fortyFiContact from "../assets/40fi-contact.png";
-import fortyFiResources from "../assets/40fi-resource.png";
 
 const FortiFi = () => {
   const selectedSkills = [
@@ -50,7 +47,11 @@ const FortiFi = () => {
           {/* HERO AREA */}
           <div className="portfolio-hero-container" style={{ marginTop: "3rem" }}>
             <MacEmulator>
-              <img src={fortyFi} alt="40fi screenshot" style={{ width: "100%", height: "auto" }} />
+              <img
+                src="https://res.cloudinary.com/drrscrxod/image/upload/q_auto/f_auto/40fi_ftupsr.webp"
+                alt="40fi screenshot"
+                style={{ width: "100%", height: "auto" }}
+              />
             </MacEmulator>
 
             <div className="links-container">
@@ -95,9 +96,15 @@ const FortiFi = () => {
         {/* IMAGES AND LINKS */}
         <div className="two-col-content">
           <MacEmulator>
-            <img src={fortyFiContact} alt="40fi contact page screenshot" />
+            <img
+              src="https://res.cloudinary.com/drrscrxod/image/upload/q_auto/f_auto/40fi-contact_xs8ohm.webp"
+              alt="40fi contact page screenshot"
+            />
           </MacEmulator>
-          <img src={fortyFiResources} alt="40fi resources page screenshot" />
+          <img
+            src="https://res.cloudinary.com/drrscrxod/image/upload/c_scale,w_500/q_auto/f_auto/40fi-resource_uogwpr.webp"
+            alt="40fi resources page screenshot"
+          />
         </div>
 
         {/* TECH USED SECTION */}

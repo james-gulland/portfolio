@@ -7,8 +7,6 @@ import Thanks from "./Thanks";
 import Footer from "./Footer";
 import Meta from "./Meta";
 import { MacEmulator } from "./MacEmulator";
-import all3media from "../assets/all3media.png";
-import all3video from "../assets/all3-video.mp4";
 
 const All3Media = () => {
   const selectedSkills = [
@@ -46,7 +44,7 @@ const All3Media = () => {
           <div className="portfolio-hero-container" style={{ marginTop: "3rem" }}>
             <MacEmulator>
               <img
-                src={all3media}
+                src="https://res.cloudinary.com/drrscrxod/image/upload/q_auto/f_auto/all3media_gcxotg.webp"
                 alt="All3Media screenshot"
                 style={{ width: "100%", height: "auto" }}
               />
@@ -86,7 +84,7 @@ const All3Media = () => {
             loop
             muted
             playsInline
-            poster="https://node-london-eu.s3.eu-west-1.amazonaws.com/all_3_poster.jpg"
+            poster="https://res.cloudinary.com/drrscrxod/image/upload/c_scale,w_1000/q_auto/f_auto/all_3_poster_u7hlsa.webp"
             style={{
               width: "100%",
               borderRadius: "20px",
@@ -96,7 +94,7 @@ const All3Media = () => {
             }}
           >
             <source
-              src="https://node-london-eu.s3.eu-west-1.amazonaws.com/All3.mp4"
+              src="https://res.cloudinary.com/drrscrxod/video/upload/c_scale,w_1000/q_auto/f_auto/All3_bcdmno.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
@@ -126,7 +124,10 @@ const All3Media = () => {
                 width: "100%",
               }}
             >
-              <source src={all3video} type="video/mp4" />
+              <source
+                src="https://res.cloudinary.com/drrscrxod/video/upload/q_auto/f_auto/all3-video_qxxjmy.mp4"
+                type="video/mp4"
+              />
               Your browser does not support the video tag.
             </video>
           </MacEmulator>

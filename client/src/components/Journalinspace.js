@@ -8,8 +8,6 @@ import Thanks from "./Thanks";
 import Footer from "./Footer";
 import Meta from "./Meta";
 import { MacEmulator } from "./MacEmulator";
-import journalInSpaceVideo from "../assets/journalinspace.mp4";
-import nasaMobVideo from "../assets/nasa-mob.mp4";
 
 const Journalinspace = () => {
   const selectedSkills = ["JavaScript", "React", "HTML5", "SASS", "Node.js"];
@@ -50,7 +48,10 @@ const Journalinspace = () => {
                   display: "block",
                 }}
               >
-                <source src={journalInSpaceVideo} type="video/mp4" />
+                <source
+                  src="https://res.cloudinary.com/drrscrxod/video/upload/q_auto/f_auto/journalinspace_bf2q59.mp4"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
             </MacEmulator>
@@ -119,7 +120,10 @@ const Journalinspace = () => {
                   display: "block",
                 }}
               >
-                <source src={nasaMobVideo} type="video/mp4" />
+                <source
+                  src="https://res.cloudinary.com/drrscrxod/video/upload/q_auto/f_auto/nasa-mob_b2jzca.mp4"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
             </MacEmulator>
