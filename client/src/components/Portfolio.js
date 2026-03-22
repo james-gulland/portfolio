@@ -1,8 +1,4 @@
 import { Link } from "react-router-dom";
-import bbcStoryWorks from "../assets/bbc-storyworks.png";
-import fortyFi from "../assets/40fi-2.png";
-import journalinspace from "../assets/nasa.png";
-import allThree from "../assets/all3.png";
 
 const Portfolio = () => {
   return (
@@ -20,7 +16,11 @@ const Portfolio = () => {
           </p>
         </div>
         <div className="tile-right">
-          <img id="first-screen" src={bbcStoryWorks} alt="Spectrum" />
+          <img
+            id="first-screen"
+            src="https://res.cloudinary.com/drrscrxod/image/upload/q_auto/f_auto/bbc-storyworks_wzdowj.webp"
+            alt="BBC StoryWorks portfolio screenshot"
+          />
         </div>
       </Link>
 
@@ -34,7 +34,11 @@ const Portfolio = () => {
           </p>
         </div>
         <div id="image-container">
-          <img id="second-screen" src={fortyFi} alt="40fi" />
+          <img
+            id="second-screen"
+            src="https://res.cloudinary.com/drrscrxod/image/upload/q_auto/f_auto/40fi-2_rko0jp.webp"
+            alt="40fi portfolio screenshot"
+          />
         </div>
       </Link>
 
@@ -48,14 +52,22 @@ const Portfolio = () => {
           </p>
         </div>
         <div id="image-container">
-          <img id="second-screen" src={journalinspace} alt="Journal In Space screenshot" />
+          <img
+            id="second-screen"
+            src="https://res.cloudinary.com/drrscrxod/image/upload/q_auto/f_auto/nasa_ebkrss.webp"
+            alt="Journal In Space portfolio screenshot"
+          />
         </div>
       </Link>
 
       {/* 4TH ITEM */}
       <Link to="/all3media" as={Link} className="portfolio-item tile-large">
         <div className="tile-left">
-          <img id="last-screen" src={allThree} alt="All3Media screenshot" />
+          <img
+            id="last-screen"
+            src="https://res.cloudinary.com/drrscrxod/image/upload/q_auto/f_auto/all3_occcgt.webp"
+            alt="All3Media portfolio screenshot"
+          />
         </div>
         <div className="tile-centre">
           <h3>All3Media</h3>

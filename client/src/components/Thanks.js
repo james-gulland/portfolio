@@ -1,11 +1,13 @@
-import profilePic from "../assets/me.jpg";
 import Contact from "./Contact";
 
 const Thanks = () => {
   return (
     <div id="thanks-container">
       <div id="profile-pic">
-        <img src={profilePic} alt="Profile" />
+        <img
+          src="https://res.cloudinary.com/drrscrxod/image/upload/c_scale,w_500/q_auto/f_auto/me_exxbpi.webp"
+          alt="Profile"
+        />
       </div>
       <div id="thanks-copy-container">
         <h3>Thank you!</h3>

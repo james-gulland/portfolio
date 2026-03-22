@@ -42,6 +42,7 @@
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  text-box-edge: cap alphabetic;
 }
 
 #intro-container #current-status.pill {
@@ -60,6 +61,11 @@
 
 #intro-container #current-status #pill-emoji {
   font-size: 1.25rem;
+  margin-right: 2px;
+}
+
+#intro-container #current-status #pill-text {
+  text-box-trim: trim-both;
 }
 
 #intro-container p {

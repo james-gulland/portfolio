@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import profilePic from "../assets/me.jpg";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import Career from "./Career";
@@ -50,12 +49,17 @@ const Home = () => {
         >
           <span id="pill-emoji" aria-hidden="true">
             ☺️
-          </span>{" "}
-          Currently busy
+          </span>
+          <span id="pill-text">Currently busy</span>
         </button>
         <div id="profile-pic" className="active">
           <Link to="/about" preload="true">
-            <img src={profilePic} width="128" height="128" alt="Profile" />
+            <img
+              src="https://res.cloudinary.com/drrscrxod/image/upload/c_scale,w_500/q_auto/f_auto/me_exxbpi.webp"
+              width="128"
+              height="128"
+              alt="Profile"
+            />
           </Link>
         </div>
         <h1 className="heading">Hello there!</h1>
