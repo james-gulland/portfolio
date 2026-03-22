@@ -6,8 +6,6 @@ import SkillPill from "./SkillPill";
 import Thanks from "./Thanks";
 import Footer from "./Footer";
 import Meta from "./Meta";
-import throughFilm from "../assets/through-film.png";
-import wecMobile from "../assets/wec-mob.png";
 import { MacEmulator } from "./MacEmulator";
 
 const BbcStoryWorks = () => {
@@ -49,8 +47,8 @@ const BbcStoryWorks = () => {
                 autoPlay
                 loop
                 muted
-                priority="high"
-                poster="https://node-london-eu.s3.eu-west-1.amazonaws.com/TheClimateAndUsPoster-1.jpg"
+                poster="https://res.cloudinary.com/drrscrxod/image/upload/q_auto/f_auto/TheClimateAndUsPoster_jv3sko.webp"
+                loading="priority"
                 playsInline
                 style={{
                   maxWidth: "100%",
@@ -59,7 +57,7 @@ const BbcStoryWorks = () => {
                 }}
               >
                 <source
-                  src="https://node-london-eu.s3.eu-west-1.amazonaws.com/The%20Climate%20and%20Us.mp4"
+                  src="https://res.cloudinary.com/drrscrxod/video/upload/q_auto/f_auto/The_Climate_and_Us_apvfdf.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
@@ -115,9 +113,15 @@ const BbcStoryWorks = () => {
         {/* IMAGES AND LINKS */}
         <div className="two-col-content">
           <MacEmulator>
-            <img src={throughFilm} alt="America Through Film screenshot" />
+            <img
+              src="https://res.cloudinary.com/drrscrxod/image/upload/c_scale,w_800/q_auto/f_auto/through-film_hdsy4e.webp"
+              alt="America Through Film screenshot"
+            />
           </MacEmulator>
-          <img src={wecMobile} alt="America Through Film screenshot" />
+          <img
+            src="https://res.cloudinary.com/drrscrxod/image/upload/q_auto/f_auto/wec-mob_tgnz7p.webp"
+            alt="Humanising Energy screenshot"
+          />
         </div>
 
         <div className="links-container">
