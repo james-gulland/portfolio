@@ -252,7 +252,7 @@ section .timelinedot {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 26rem;
+  min-height: 24rem;
   position: relative;
   margin-top: 2rem;
 }
@@ -272,7 +272,6 @@ section .timelinedot {
   background: var(--white);
   border-radius: 25px;
   border: 1px solid var(--greyLight);
-  border-left: 4px solid var(--primary);
 }
 
 .recommendation-card.visible {
@@ -286,24 +285,24 @@ section .timelinedot {
 }
 
 .recommendation-card::before {
-  content: "“";
+  content: "❝";
   position: absolute;
-  top: 1.5rem;
-  left: 0.75rem;
+  top: 0.5rem;
+  left: 1rem;
   color: var(--primary);
-  font-size: 4.5rem;
-  opacity: 0.15;
+  font-size: 8rem;
+  opacity: 0.25;
   line-height: 1;
 }
 
 .recommendation-card::after {
-  content: "”";
+  content: "❞";
   position: absolute;
-  bottom: 2.5rem;
-  right: 0.75rem;
+  bottom: 1rem;
+  right: 1rem;
   color: var(--primary);
-  font-size: 4.5rem;
-  opacity: 0.15;
+  font-size: 8rem;
+  opacity: 0.25;
   line-height: 1;
 }
 
@@ -311,7 +310,7 @@ section .timelinedot {
   line-height: 1.7;
   color: var(--black);
   margin: 0 0 1.5rem;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 400;
   font-style: italic;
   position: relative;
@@ -505,6 +504,6 @@ section .timelinedot {
 
   .recommendation-card::before,
   .recommendation-card::after {
-    font-size: 3rem;
+    font-size: 5.5rem;
   }
 }

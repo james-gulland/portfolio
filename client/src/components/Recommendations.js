@@ -68,9 +68,7 @@ const Recommendations = ({ items = [] }) => {
             className="recommendation-text"
             dangerouslySetInnerHTML={{ __html: currentRecommendation.text }}
           />
-          <div className="recommendation-author">
-            <strong>— {currentRecommendation.name}</strong>
-          </div>
+          <div className="recommendation-author">— {currentRecommendation.name}</div>
           {isPaused && (
             <div className="pause-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
