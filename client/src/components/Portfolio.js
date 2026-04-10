@@ -61,22 +61,23 @@ const Portfolio = () => {
       </Link>
 
       {/* 4TH ITEM */}
-      <Link to="/all3media" as={Link} className="portfolio-item tile-large">
+      <Link to="/eventogy" as={Link} className="portfolio-item tile-large">
         <div className="tile-left">
           <img
             id="last-screen"
-            src="https://res.cloudinary.com/drrscrxod/image/upload/q_auto/f_auto/all3_occcgt.webp"
-            alt="All3Media portfolio screenshot"
+            src="https://res.cloudinary.com/drrscrxod/image/upload/q_auto/f_auto/eventogy-table_c8zqlj.avif"
+            alt="Eventogy portfolio screenshot"
           />
         </div>
         <div className="tile-centre">
-          <h3>All3Media</h3>
+          <h3>Eventogy</h3>
           <p className="tile-text">
-            Rebuild of All3Medias web experience using Next.js and WordPress CMS.
+            Rebuild of Eventogy&#39;s SaaS platform from the ground up using Next.js 15 and React
+            19.
           </p>
           <p className="tile-text">
-            Full-stack integration of CMS back-end, in addition to complex timeline-driven scroll
-            animations throughout.{" "}
+            Fast, responsive interface that could handle complex, data-heavy workflows without
+            feeling clunky.
           </p>
         </div>
       </Link>
