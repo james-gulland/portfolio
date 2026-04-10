@@ -56,7 +56,7 @@
     100% 100%,
     0 100%;
   background-repeat: no-repeat;
-  transition: background-size 200ms;
+  transition: background-size 150ms;
 }
 
 .link:hover,
