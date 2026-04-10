@@ -10,7 +10,7 @@ const Thanks = () => {
         />
       </div>
       <div id="thanks-copy-container">
-        <h3>Thank you!</h3>
+        <h3 style={{ marginBottom: "1rem" }}>Thank you!</h3>
         <p className="tile-text">
           Thanks for making it down this far. It was quite the journey! Hit me up using the links
           below to contact me for developer roles. Muchas gracias.
