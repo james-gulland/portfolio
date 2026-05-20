@@ -50,7 +50,7 @@ const Home = () => {
           <span id="pill-emoji" aria-hidden="true">
             ☺️
           </span>
-          <span id="pill-text">Currently busy</span>
+          <span id="pill-text">Available for hire!</span>
         </button>
         <div id="profile-pic" className="active">
           <Link to="/about" preload="true">

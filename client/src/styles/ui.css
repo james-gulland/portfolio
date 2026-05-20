@@ -31,7 +31,7 @@
 .pill {
   font-weight: 400;
   border-radius: 2rem;
-  padding: 0.75rem;
+  padding: 0.5rem 0.75rem;
   border: 3px solid var(--primary);
   color: var(--primary);
   background-color: var(--primary-light);
@@ -64,6 +64,14 @@ a:focus-visible {
   background-size:
     0 0.1em,
     100% 0.1em;
+}
+
+.pills-container {
+  text-box-edge: cap alphabetic;
+
+  & span {
+    text-box-trim: trim-end;
+  }
 }
 
 .links-container ul,
