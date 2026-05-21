@@ -95,7 +95,7 @@ const Home = () => {
               <FontAwesomeIcon className="icon" icon={faCompassDrafting} />
               Selected Projects
             </h2>
-            <p className="para">
+            <p className="subtitle">
               These are some key projects and side hustles I have worked on, building from scratch
               across the front and back-end:
             </p>
@@ -113,7 +113,7 @@ const Home = () => {
               <FontAwesomeIcon className="icon" icon={faScrewdriverWrench} />
               Key Skills
             </h2>
-            <p className="para">
+            <p className="subtitle">
               Here are a few of the key languages, frameworks, and tools that I have been using, and
               will continue to add as I learn:
             </p>
@@ -128,7 +128,7 @@ const Home = () => {
               <FontAwesomeIcon className="icon" icon={faCommentDots} />
               Recommendations
             </h2>
-            <p className="para">
+            <p className="subtitle">
               A few kind words from the brilliant people I’ve had the privilege to work with
               throughout my career:
             </p>
@@ -143,7 +143,7 @@ const Home = () => {
               <FontAwesomeIcon className="icon" icon={faTimeline} />
               Career Timeline
             </h2>
-            <p className="para">
+            <p className="subtitle">
               I wasn&apos;t always a developer! I have over a decade of experience working in
               technology on some awesome projects:{" "}
             </p>

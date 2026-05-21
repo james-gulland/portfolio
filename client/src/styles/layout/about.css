@@ -24,6 +24,10 @@
   font-size: var(--size-large);
 }
 
+.copy-blocks-container h2 {
+  margin-top: 4rem;
+}
+
 @media only screen and (min-width: 992px) {
   #about-container,
   #me-image,
