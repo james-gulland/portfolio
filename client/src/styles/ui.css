@@ -100,4 +100,9 @@ a:focus-visible {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, max-content));
   }
+  .pills-container ul li:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 140px;
+  }
 }
