@@ -78,6 +78,7 @@ const About = () => {
                 <li>
                   Startup or early-stage company FTW - I love the energy and pace of smaller teams
                 </li>
+                <li>Permanent, contract, or freelance opportunities</li>
                 <li>
                   London-based with the option to work remotely. 2-3 days a week in the office is
                   ideal
