@@ -186,10 +186,6 @@ section .portfolio-item #image-container {
   justify-content: center;
 }
 
-section .portfolio-item img {
-  will-change: transform;
-}
-
 section .portfolio-item #first-screen {
   width: 100%;
   transform: perspective(1000px) rotateX(0.810895deg) rotateY(10deg) scale3d(1, 1, 1)
@@ -440,6 +436,10 @@ section .timelinedot {
 }
 
 @media (hover: hover) and (pointer: fine) and (min-width: 600px) {
+  section .portfolio-item img {
+    will-change: transform;
+  }
+
   section a:hover #first-screen {
     transform: perspective(1000px) rotateX(0.810895deg) rotateY(-10deg) scale3d(1, 1, 1);
   }
