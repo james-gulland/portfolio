@@ -1,23 +1,32 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) GA London React Template
+# sup!
 
-## Update the Proxy Server
+React frontend for [jamesgulland.com](https://jamesgulland.com/) — home, about, and case-study routes for portfolio work.
 
-By default, the proxy server is set up to point at port 8000, if you need to do so update in `setupProxy.js` where commented.
+## Prerequisites
 
-## Using NPM
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- npm (ships with Node)
 
-`npm run start` or `npm run dev`  to run the development server
+## Setup
 
-`npm run build` to create a build directory
+From `client` directory:
 
-## Using Yarn
+```bash
+npm install
+```
 
-`yarn start` or `yarn dev`  to run the development server
+## Scripts
 
-`yarn build` to create a build directory
+| Command         | Description                         |
+| --------------- | ----------------------------------- |
+| `npm run dev`   | Start the development server        |
+| `npm run build` | Production build output in `build/` |
 
-### ⚠️
+Development server defaults to [http://localhost:3000](http://localhost:3000).
 
-To prevent the `failed-to-compile` issue for linter errors like `no-unsed-vars`, rename the `.env.example` to `.env` and restart your development server. Note this will only change the behaviour of certain linter errors to now be warnings, and is added just to allow your code to compile in development. These errors should still be fixed and other errors will still result in the code being unable to compile
+## Stack (high level)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- React 19, React Router 6
+- Create React App (`react-scripts` 5)
+- MUI (`@mui/material`, `@mui/lab`) and Emotion
+- Font Awesome (React)

@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/common/scroll-to-top";
 import About from "./components/about";
 import Home from "./components/home";
 import Spectrum from "./components/portfolio/spectrum";
@@ -9,20 +9,6 @@ import BbcStoryWorks from "./components/portfolio/bbc-storyworks";
 import FortiFi from "./components/portfolio/40-fi";
 import All3Media from "./components/portfolio/all3-media";
 import NotFound from "./components/not-found";
-
-// scrolls page to top when loading the page
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-};
-
-const uniqueId = crypto.randomUUID();
-console.log(uniqueId);
 
 const App = () => {
   return (

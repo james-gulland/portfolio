@@ -68,22 +68,22 @@ const About = () => {
             </p>
             <p className="para black">
               In no particular order, here are a few things I am looking for:
-              <ul>
-                <li>Frontend-leaning engineer role, with some full-stack responsibilities</li>
-                <li>
-                  Tech-stack including something like (but not limited to): React, Next.js,
-                  TypeScript, Tailwind, Node.js, PostgreSQL, AWS, Vercel
-                </li>
-                <li>
-                  Startup or early-stage company FTW - I love the energy and pace of smaller teams
-                </li>
-                <li>Permanent, contract, or freelance opportunities</li>
-                <li>
-                  London-based with the option to work remotely. 2-3 days a week in the office is
-                  ideal
-                </li>
-              </ul>
             </p>
+            <ul className="para black">
+              <li>Frontend-leaning engineer role, with some full-stack responsibilities</li>
+              <li>
+                Tech-stack including something like (but not limited to): React, Next.js,
+                TypeScript, Tailwind, Node.js, PostgreSQL, AWS, Vercel
+              </li>
+              <li>
+                Startup or early-stage company FTW - I love the energy and pace of smaller teams
+              </li>
+              <li>Permanent, contract, or freelance opportunities</li>
+              <li>
+                London-based with the option to work remotely. 2-3 days a week in the office is
+                ideal
+              </li>
+            </ul>
             <p className="para black">
               Any questions, please don&apos;t hesitate to get in touch. I look forward to hearing
               from you!
