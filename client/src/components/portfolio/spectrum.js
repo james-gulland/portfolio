@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import Back from "./Back";
-import SkillPill from "./SkillPill";
-import Thanks from "./Thanks";
-import Footer from "./Footer";
-import Meta from "./Meta";
-import screen1 from "../assets/spectrum-1.png";
+import Back from "../common/back-button";
+import SkillPill from "../common/skill-pill";
+import Thanks from "../common/thanks";
+import Footer from "../common/footer";
+import Meta from "../common/meta";
+import screen1 from "../../assets/spectrum-1.png";
 
 const Spectrum = () => {
   const selectedSkills = ["React", "HTML5", "SASS", "Python", "Django", "PostgreSQL"];

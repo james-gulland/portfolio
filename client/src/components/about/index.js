@@ -1,10 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPersonHiking, faMusic, faGamepad } from "@fortawesome/free-solid-svg-icons";
-
-import Back from "./Back";
-import Thanks from "./Thanks";
-import Footer from "./Footer";
-import Meta from "./Meta";
+import Back from "../common/back-button";
+import Thanks from "../common/thanks";
+import Footer from "../common/footer";
+import Meta from "../common/meta";
 
 const About = () => {
   return (

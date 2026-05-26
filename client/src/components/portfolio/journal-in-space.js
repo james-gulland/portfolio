@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEarthAmericas } from "@fortawesome/free-solid-svg-icons";
-import Back from "./Back";
-import SkillPill from "./SkillPill";
-import Thanks from "./Thanks";
-import Footer from "./Footer";
-import Meta from "./Meta";
-import { MacEmulator } from "./MacEmulator";
+import Back from "../common/back-button";
+import SkillPill from "../common/skill-pill";
+import Thanks from "../common/thanks";
+import Footer from "../common/footer";
+import Meta from "../common/meta";
+import { MacEmulator } from "../common/mac-emulator";
 
 const Journalinspace = () => {
   const selectedSkills = ["JavaScript", "React", "HTML5", "SASS", "Node.js"];

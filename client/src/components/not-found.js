@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
-import Meta from "./Meta";
+import Meta from "./common/meta";
 
 const NotFound = () => {
   return (

@@ -1,17 +1,17 @@
 // Get icons from https://svgl.app
 
-import javacript from "../assets/icons/javascript.svg";
-import typescript from "../assets/icons/typescript.svg";
-import html5 from "../assets/icons/html5.svg";
-import react from "../assets/icons/react.svg";
-import python from "../assets/icons/python.svg";
-import nextjs from "../assets/icons/next-js.svg";
-import nodejs from "../assets/icons/nodejs.svg";
-import tailwind from "../assets/icons/tailwind.svg";
-import vercel from "../assets/icons/vercel.svg";
-import aws from "../assets/icons/aws.svg";
-import postgresql from "../assets/icons/postgresql.svg";
-import css from "../assets/icons/css.svg";
+import javacript from "../../assets/icons/javascript.svg";
+import typescript from "../../assets/icons/typescript.svg";
+import html5 from "../../assets/icons/html5.svg";
+import react from "../../assets/icons/react.svg";
+import python from "../../assets/icons/python.svg";
+import nextjs from "../../assets/icons/next-js.svg";
+import nodejs from "../../assets/icons/nodejs.svg";
+import tailwind from "../../assets/icons/tailwind.svg";
+import vercel from "../../assets/icons/vercel.svg";
+import aws from "../../assets/icons/aws.svg";
+import postgresql from "../../assets/icons/postgresql.svg";
+import css from "../../assets/icons/css.svg";
 
 const skills = [
   { name: "React", icon: react },

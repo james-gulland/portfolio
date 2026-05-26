@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Spectrum from "./components/Spectrum";
-import Eventogy from "./components/Eventogy";
-import Journalinspace from "./components/Journalinspace";
-import BbcStoryWorks from "./components/BbcStoryWorks";
-import FortiFi from "./components/FortiFi";
-import All3Media from "./components/All3Media";
-import NotFound from "./components/NotFound";
+import About from "./components/about";
+import Home from "./components/home";
+import Spectrum from "./components/portfolio/spectrum";
+import Eventogy from "./components/portfolio/eventogy";
+import Journalinspace from "./components/portfolio/journal-in-space";
+import BbcStoryWorks from "./components/portfolio/bbc-storyworks";
+import FortiFi from "./components/portfolio/40-fi";
+import All3Media from "./components/portfolio/all3-media";
+import NotFound from "./components/not-found";
 
 // scrolls page to top when loading the page
 const ScrollToTop = () => {
@@ -20,6 +20,9 @@ const ScrollToTop = () => {
 
   return null;
 };
+
+const uniqueId = crypto.randomUUID();
+console.log(uniqueId);
 
 const App = () => {
   return (
