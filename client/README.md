@@ -5,17 +5,16 @@ React frontend for [jamesgulland.com](https://jamesgulland.com/) — home, about
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (LTS recommended)
-- npm (ships with Node)
 
 ## Setup
-
-From `client` directory:
 
 ```bash
 npm install
 ```
 
 ## Scripts
+
+From `client` directory:
 
 | Command         | Description                         |
 | --------------- | ----------------------------------- |
@@ -27,6 +26,6 @@ Development server defaults to [http://localhost:3000](http://localhost:3000).
 ## Stack (high level)
 
 - React 19, React Router 6
-- Create React App (`react-scripts` 5)
 - MUI (`@mui/material`, `@mui/lab`) and Emotion
 - Font Awesome (React)
+- Vanilla CSS
