@@ -325,6 +325,7 @@ section .timelinedot {
   font-style: italic;
   position: relative;
   z-index: 1;
+  white-space: pre-line;
 }
 
 .recommendation-author {

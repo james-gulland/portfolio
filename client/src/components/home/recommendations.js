@@ -65,10 +65,7 @@ const Recommendations = () => {
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          <p
-            className="recommendation-text"
-            dangerouslySetInnerHTML={{ __html: currentRecommendation.text }}
-          />
+          <p className="recommendation-text">{currentRecommendation.text}</p>
           <div className="recommendation-author">— {currentRecommendation.name}</div>
           {isPaused && (
             <div className="pause-icon">
