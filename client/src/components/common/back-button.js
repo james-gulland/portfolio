@@ -5,7 +5,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 const Back = () => {
   return (
     <Link className="profile" to={"/"} as={Link}>
-      <button className="main-action">
+      <button type="button" className="main-action">
         <FontAwesomeIcon className="icon" icon={faArrowLeft} />
         Back to home
       </button>

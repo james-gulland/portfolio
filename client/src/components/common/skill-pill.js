@@ -10,8 +10,8 @@ const SkillPill = ({ selectedSkills }) => {
   return (
     <div className="pills-container">
       <ul>
-        {filteredSkills.map((skill, index) => (
-          <li key={index} className="pill">
+        {filteredSkills.map(skill => (
+          <li key={skill.id} className="pill">
             <img className="logo" src={`${skill.icon}`} alt={skill.name} />
             <span>{skill.name}</span>
           </li>
