@@ -8,9 +8,9 @@ import Footer from "../common/footer";
 import Meta from "../common/meta";
 import screen1 from "../../assets/spectrum-1.png";
 
-const Spectrum = () => {
-  const selectedSkills = ["React", "HTML5", "SASS", "Python", "Django", "PostgreSQL"];
+const selectedSkills = ["React", "HTML5", "SASS", "Python", "Django", "PostgreSQL"];
 
+const Spectrum = () => {
   return (
     <>
       <Meta

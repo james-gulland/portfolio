@@ -1,4 +1,4 @@
-# sup!
+# sup! 👋
 
 React frontend for [jamesgulland.com](https://jamesgulland.com/) — home, about, and case-study routes for portfolio work.
 

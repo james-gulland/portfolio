@@ -8,17 +8,18 @@ import Footer from "../common/footer";
 import Meta from "../common/meta";
 import { MacEmulator } from "../common/mac-emulator";
 
+const selectedSkills = [
+  "Next.js",
+  "TypeScript",
+  "React",
+  "HTML5",
+  "Tailwind",
+  "Node.js",
+  "AWS",
+  "Vercel",
+];
+
 const BbcStoryWorks = () => {
-  const selectedSkills = [
-    "Next.js",
-    "TypeScript",
-    "React",
-    "HTML5",
-    "Tailwind",
-    "Node.js",
-    "AWS",
-    "Vercel",
-  ];
   return (
     <>
       <Meta

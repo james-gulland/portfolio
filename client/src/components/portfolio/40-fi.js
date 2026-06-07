@@ -8,20 +8,20 @@ import Footer from "../common/footer";
 import Meta from "../common/meta";
 import { MacEmulator } from "../common/mac-emulator";
 
-const FortiFi = () => {
-  const selectedSkills = [
-    "Next.js",
-    "TypeScript",
-    "React",
-    "HTML5",
-    "Tailwind",
-    "Node.js",
-    "AWS",
-    "Vercel",
-    "Payload",
-    "PostgreSQL",
-  ];
+const selectedSkills = [
+  "Next.js",
+  "TypeScript",
+  "React",
+  "HTML5",
+  "Tailwind",
+  "Node.js",
+  "AWS",
+  "Vercel",
+  "Payload",
+  "PostgreSQL",
+];
 
+const FortiFi = () => {
   return (
     <>
       <Meta

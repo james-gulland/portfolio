@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
+import { recommendations } from "../../data/recommendations";
 
-const Recommendations = ({ items = [] }) => {
+const Recommendations = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const [lastManualChange, setLastManualChange] = useState(Date.now());
@@ -8,7 +9,7 @@ const Recommendations = ({ items = [] }) => {
   const [isInView, setIsInView] = useState(false);
   const containerRef = useRef(null);
 
-  const activeRecommendations = items;
+  const activeRecommendations = recommendations;
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => setIsInView(entry.isIntersecting), {
@@ -83,9 +84,9 @@ const Recommendations = ({ items = [] }) => {
       {/* Dots indicator */}
       {activeRecommendations.length > 1 && (
         <div className="recommendation-dots-container">
-          {activeRecommendations.map((_, index) => (
+          {activeRecommendations.map((recommendation, index) => (
             <button
-              key={index}
+              key={recommendation.id}
               className={`recommendation-dot ${index === currentIndex ? "active" : ""}`}
               onClick={() => handleDotClick(index)}
               aria-label={`View recommendation ${index + 1}`}

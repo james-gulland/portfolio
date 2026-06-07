@@ -8,9 +8,9 @@ import Footer from "../common/footer";
 import Meta from "../common/meta";
 import { MacEmulator } from "../common/mac-emulator";
 
-const Eventogy = () => {
-  const selectedSkills = ["Next.js", "TypeScript", "React", "HTML5", "Tailwind", "Node.js", "AWS"];
+const selectedSkills = ["Next.js", "TypeScript", "React", "HTML5", "Tailwind", "Node.js", "AWS"];
 
+const Eventogy = () => {
   return (
     <>
       <Meta

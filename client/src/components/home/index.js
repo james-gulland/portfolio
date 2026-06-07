@@ -12,7 +12,6 @@ import {
   faScrewdriverWrench,
   faCommentDots,
 } from "@fortawesome/free-solid-svg-icons";
-import { recommendations } from "../../data/recommendations";
 
 const Home = () => {
   return (
@@ -65,7 +64,7 @@ const Home = () => {
               throughout my career:
             </p>
           </div>
-          <Recommendations items={recommendations} />
+          <Recommendations />
         </section>
 
         {/* TIMELINE SECTION */}

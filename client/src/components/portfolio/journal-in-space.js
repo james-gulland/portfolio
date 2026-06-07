@@ -9,9 +9,9 @@ import Footer from "../common/footer";
 import Meta from "../common/meta";
 import { MacEmulator } from "../common/mac-emulator";
 
-const Journalinspace = () => {
-  const selectedSkills = ["JavaScript", "React", "HTML5", "SASS", "Node.js"];
+const selectedSkills = ["JavaScript", "React", "HTML5", "SASS", "Node.js"];
 
+const Journalinspace = () => {
   return (
     <>
       <Meta
