@@ -34,38 +34,11 @@
   }
 }
 
-#intro-container #current-status {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.25rem;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  text-box-edge: cap alphabetic;
-}
-
-#intro-container #current-status.pill {
+#intro-container #theme-toggle {
   position: absolute;
   top: 0;
   right: 0;
-  appearance: none;
-  -webkit-appearance: none;
-  border: 3px solid var(--primary);
-}
-
-#intro-container #current-status.pill:hover {
-  color: var(--primary-hover);
-  background-color: var(--primary-hover-bg);
-}
-
-#intro-container #current-status #pill-emoji {
-  font-size: 1.25rem;
-  margin-right: 2px;
-}
-
-#intro-container #current-status #pill-text {
-  text-box-trim: trim-both;
+  display: flex;
 }
 
 #intro-container p {
@@ -131,7 +104,10 @@ section .portfolio-item {
   background-color: var(--white);
   border-radius: 25px;
   overflow: hidden;
-  transition: box-shadow 0.1s ease;
+  transition:
+    box-shadow 0.1s ease,
+    background-color var(--theme-fade),
+    border-color var(--theme-fade);
 }
 
 section .portfolio-item.tile-large {
@@ -278,7 +254,9 @@ section .timelinedot {
     opacity 0.3s ease-in-out,
     transform 0.3s ease-in-out,
     box-shadow 0.1s ease,
-    outline 0.1s ease;
+    outline 0.1s ease,
+    background-color var(--theme-fade),
+    border-color var(--theme-fade);
   background: var(--white);
   border-radius: 25px;
   border: 1px solid var(--greyLight);

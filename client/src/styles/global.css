@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light;
   --primary-light: rgba(52, 211, 153, 0.1);
   --primary: rgb(16, 185, 129);
   --primary-hover: #0c8a60;
@@ -17,6 +18,33 @@
   --size-large: 2rem;
   --size-small-bertha: 3rem;
   --size-big-bertha: 4.5rem;
+  --theme-fade: 0.4s ease;
+}
+
+/*
+ * Night mode, set by the DaybreakSwitch in the intro header.
+ * The names stay the same and only their values flip, so every rule below
+ * keeps working: --white is the raised card surface, --black is body text,
+ * --greyLightBg is the page behind them.
+ */
+:root[data-theme="night"] {
+  color-scheme: dark;
+  --primary-light: rgba(52, 211, 153, 0.14);
+  --primary: rgb(52, 211, 153);
+  --primary-hover: rgb(110, 231, 183);
+  --primary-hover-bg: rgba(52, 211, 153, 0.24);
+  --white: rgb(30, 31, 36);
+  --black: rgb(244, 244, 245);
+  --greyLightBg: rgb(20, 20, 23);
+  --greyLight: rgb(56, 56, 62);
+  --greyDark: rgb(161, 161, 170);
+  --nonActive: rgb(255, 209, 71);
+  --nonActiveLighter: rgb(212, 165, 32);
+}
+
+/* MUI draws the career timeline connector with a hardcoded light grey */
+:root[data-theme="night"] .MuiTimelineConnector-root {
+  background-color: var(--greyLight);
 }
 
 html::selection {
@@ -98,6 +126,9 @@ body {
   color: var(--black);
   font-weight: 300;
   padding: 0 1rem;
+  transition:
+    background-color var(--theme-fade),
+    color var(--theme-fade);
 }
 
 p {
@@ -130,6 +161,12 @@ button:focus-visible,
   outline: 3px solid var(--black);
   outline-offset: 3px;
   border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --theme-fade: 0s;
+  }
 }
 
 @media screen and (min-width: 600px) {
