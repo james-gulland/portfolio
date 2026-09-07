@@ -33,13 +33,13 @@
   --primary: rgb(52, 211, 153);
   --primary-hover: rgb(110, 231, 183);
   --primary-hover-bg: rgba(52, 211, 153, 0.24);
-  --white: rgb(30, 31, 36);
-  --black: rgb(244, 244, 245);
-  --greyLightBg: rgb(20, 20, 23);
-  --greyLight: rgb(56, 56, 62);
-  --greyDark: rgb(161, 161, 170);
-  --nonActive: rgb(255, 209, 71);
-  --nonActiveLighter: rgb(212, 165, 32);
+  --white: rgb(42, 42, 39);
+  --black: rgb(218, 218, 215);
+  --greyLightBg: rgb(35, 35, 31);
+  --greyLight: rgb(63, 63, 59);
+  --greyDark: rgb(130, 130, 125);
+  --nonActive: rgb(242, 158, 13);
+  --nonActiveLighter: rgb(221, 117, 82);
 }
 
 /* MUI draws the career timeline connector with a hardcoded light grey */
