@@ -1,40 +1,11 @@
-import confetti from "canvas-confetti";
-import { useRef } from "react";
 import { Link } from "react-router-dom";
 import Contact from "../common/contact";
+import ThemeToggle from "../common/theme-toggle";
 
 const Header = () => {
-  const containerRef = useRef(null);
-
-  // little easter egg ;)
-  function handleClick() {
-    const container = containerRef.current;
-    const left = 1 - container.offsetLeft / window.innerWidth - 0.05;
-    const top = container.offsetTop / container.offsetHeight;
-
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: {
-        x: left,
-        y: top,
-      },
-    });
-  }
   return (
-    <header id="intro-container" ref={containerRef}>
-      <button
-        id="current-status"
-        className="pill active"
-        type="button"
-        onClick={handleClick}
-        aria-label="Currently busy status. Activate for confetti."
-      >
-        <span id="pill-emoji" aria-hidden="true">
-          ☺️
-        </span>
-        <span id="pill-text">Available for hire!</span>
-      </button>
+    <header id="intro-container">
+      <ThemeToggle />
       <div id="profile-pic" className="active">
         <Link to="/about" preload="true">
           <img

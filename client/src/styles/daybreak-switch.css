@@ -1,0 +1,371 @@
+/*
+ * DaybreakSwitch
+ * Sizing is driven by --h (track height). Everything else derives from it.
+ * Motion: a single ease-in-out curve, no overshoot, no bounce.
+ */
+.dn-switch {
+  --h: 120px;
+  --w: calc(var(--h) * 2.2);
+  --pad: calc(var(--h) * 0.08);
+  --knob: calc(var(--h) - var(--pad) * 1.8);
+  --bevel: calc(var(--h) * 0.025);
+  --travel: calc(var(--w) - var(--pad) * 2 - var(--knob));
+  --ring-step: calc(var(--h) * 0.24);
+  --dur: 600ms;
+  --ease: cubic-bezier(0.45, 0.05, 0.2, 1);
+
+  /* Palette: OKLCH keeps adjustments perceptually predictable. */
+  --dn-color-white: oklch(100% 0 0);
+  --dn-color-black: oklch(0% 0 0);
+  --dn-color-ink: oklch(20.1151% 0.06199 264.8);
+  --dn-color-focus-ring: oklch(21.0084% 0.03176 264.66);
+  --dn-color-focus-halo: oklch(98.4152% 0.00341 247.86);
+  --dn-color-day-track: oklch(65.8176% 0.14287 247.94);
+  --dn-color-night-track: oklch(24.8289% 0.03076 275.74);
+  --dn-gradient-day-sky: linear-gradient(
+    90deg,
+    oklch(61.8189% 0.1508 250.34) 0%,
+    oklch(69.2818% 0.13448 245.87) 55%,
+    oklch(78.2303% 0.10159 242.59) 100%
+  );
+  --dn-gradient-night-sky: linear-gradient(
+    90deg,
+    oklch(22.0539% 0.02399 273.43) 0%,
+    oklch(27.4403% 0.03757 274.97) 60%,
+    oklch(31.9091% 0.04172 274.38) 100%
+  );
+  --dn-color-stars: var(--dn-color-white);
+  --dn-color-cloud-shadow: oklch(42.6461% 0.11146 254.77);
+  --dn-color-cloud-back: oklch(84.5737% 0.06947 240.83);
+  --dn-color-cloud-front: oklch(90.8748% 0.03889 247.06);
+  --dn-gradient-sun-face: linear-gradient(
+      180deg,
+      oklch(89.4007% 0.15424 93.11) 0%,
+      oklch(86.6336% 0.16672 88.99) 55%,
+      oklch(84.4493% 0.16745 85.47) 100%
+    )
+    padding-box;
+  --dn-gradient-sun-rim: conic-gradient(
+      from 0deg,
+      oklch(92.4638% 0.12539 95.92) 0deg,
+      oklch(88.5528% 0.15704 91.66) 70deg,
+      oklch(78.3038% 0.1638 77.04) 130deg,
+      oklch(70.2294% 0.15137 70.84) 180deg,
+      oklch(78.3038% 0.1638 77.04) 230deg,
+      oklch(88.5528% 0.15704 91.66) 290deg,
+      oklch(92.4638% 0.12539 95.92) 360deg
+    )
+    border-box;
+  --dn-color-moon-crater: oklch(71.4574% 0.02635 265.52);
+  --dn-color-moon-crater-shadow: oklch(56.9269% 0.03087 267.31);
+  --dn-color-moon-crater-highlight: oklch(91.4799% 0.01044 261.79);
+  --dn-color-moon-face: oklch(86.905% 0.01481 264.49);
+
+  all: unset;
+  position: relative;
+  display: inline-block;
+  box-sizing: content-box;
+  width: var(--w);
+  height: var(--h);
+  padding: var(--bevel);
+  border-radius: calc(var(--h) / 2 + var(--bevel));
+  /* bevel ring: dark lip at the top (0deg) sweeping to a light lip at the bottom (180deg) */
+  background: conic-gradient(
+    from 0deg,
+    oklch(from var(--dn-color-ink) l c h / 30%) 0deg,
+    oklch(from var(--dn-color-ink) l c h / 12%) 70deg,
+    oklch(from var(--dn-color-white) l c h / 50%) 130deg,
+    oklch(from var(--dn-color-white) l c h / 90%) 180deg,
+    oklch(from var(--dn-color-white) l c h / 50%) 230deg,
+    oklch(from var(--dn-color-ink) l c h / 12%) 290deg,
+    oklch(from var(--dn-color-ink) l c h / 30%) 360deg
+  );
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* Expand the hit area to 44px without changing the visual size. */
+.dn-switch::before {
+  content: "";
+  position: absolute;
+  top: min(0px, calc(50% - 22px));
+  right: min(0px, calc(50% - 22px));
+  bottom: min(0px, calc(50% - 22px));
+  left: min(0px, calc(50% - 22px));
+}
+
+.dn-switch:focus-visible {
+  outline: 3px solid var(--dn-color-focus-ring);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--dn-color-focus-halo);
+  border-radius: calc(var(--h) / 2 + var(--bevel));
+}
+
+.dn-switch:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.dn-switch__track {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: calc(var(--h) / 2);
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--dn-color-day-track);
+  transition: background-color var(--dur) var(--ease);
+  /* the outer bevel is the gradient ring on .dn-switch; the inner shadow lives on .dn-switch__inset */
+}
+
+/* ---- recessed inner edge ---------------------------------------------- */
+.dn-switch__inset {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 1;
+  box-shadow:
+    inset 0 0 calc(var(--h) * 0.2) oklch(from var(--dn-color-ink) l c h / 42%),
+    inset 0 calc(var(--h) * 0.16) calc(var(--h) * 0.1) oklch(from var(--dn-color-ink) l c h / 58%);
+  transition: box-shadow var(--dur) var(--ease);
+}
+
+.dn-switch[data-state="night"] .dn-switch__inset {
+  box-shadow:
+    inset 0 0 calc(var(--h) * 0.1) oklch(from var(--dn-color-black) l c h / 55%),
+    inset 0 calc(var(--h) * 0.06) calc(var(--h) * 0.12)
+      oklch(from var(--dn-color-black) l c h / 60%),
+    inset 0 calc(var(--h) * -0.02) calc(var(--h) * 0.05)
+      oklch(from var(--dn-color-white) l c h / 8%);
+}
+
+.dn-switch[data-state="night"] .dn-switch__track {
+  background: var(--dn-color-night-track);
+}
+
+/* ---- sky layers ------------------------------------------------------- */
+.dn-switch__sky {
+  position: absolute;
+  inset: 0;
+  transition: opacity var(--dur) var(--ease);
+}
+
+.dn-switch__sky--day {
+  background: var(--dn-gradient-day-sky);
+  opacity: 1;
+}
+
+.dn-switch__sky--night {
+  background: var(--dn-gradient-night-sky);
+  opacity: 0;
+}
+
+.dn-switch[data-state="night"] .dn-switch__sky--day {
+  opacity: 0;
+}
+
+.dn-switch[data-state="night"] .dn-switch__sky--night {
+  opacity: 1;
+}
+
+/* ---- scenery ---------------------------------------------------------- */
+.dn-switch__clouds,
+.dn-switch__stars {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition:
+    transform var(--dur) var(--ease),
+    opacity var(--dur) var(--ease);
+}
+
+.dn-switch__clouds {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.dn-switch__stars {
+  transform: translateY(-40%);
+  opacity: 0;
+}
+
+.dn-switch[data-state="night"] .dn-switch__clouds {
+  transform: translateY(60%);
+  opacity: 0;
+}
+
+.dn-switch[data-state="night"] .dn-switch__stars {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ---- thumb (knob + rings) -------------------------------------------- */
+.dn-switch__thumb {
+  position: absolute;
+  top: var(--pad);
+  left: var(--pad);
+  width: var(--knob);
+  height: var(--knob);
+  z-index: 2;
+  transform: translateX(0);
+  transition: transform var(--dur) var(--ease);
+  will-change: transform;
+}
+
+.dn-switch[data-state="night"] .dn-switch__thumb {
+  transform: translateX(var(--travel));
+}
+
+/* concentric halo rings, centred on the knob, clipped by the track */
+.dn-switch__ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  background: oklch(from var(--dn-color-white) l c h / 7%);
+  translate: -50% -50%;
+  pointer-events: none;
+}
+
+.dn-switch__ring--1 {
+  width: calc(var(--knob) + var(--ring-step) * 2);
+  height: calc(var(--knob) + var(--ring-step) * 2);
+}
+
+.dn-switch__ring--2 {
+  width: calc(var(--knob) + var(--ring-step) * 4);
+  height: calc(var(--knob) + var(--ring-step) * 4);
+}
+
+.dn-switch__ring--3 {
+  width: calc(var(--knob) + var(--ring-step) * 6);
+  height: calc(var(--knob) + var(--ring-step) * 6);
+}
+
+.dn-switch__knob {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow:
+    0 calc(var(--h) * 0.05) calc(var(--h) * 0.12) oklch(from var(--dn-color-black) l c h / 35%),
+    0 calc(var(--h) * 0.01) calc(var(--h) * 0.03) oklch(from var(--dn-color-black) l c h / 25%);
+}
+
+.dn-switch__sun,
+.dn-switch__moon {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  transition:
+    opacity var(--dur) var(--ease),
+    transform var(--dur) var(--ease);
+}
+
+.dn-switch__sun {
+  /* bevel rim: light lip at the top sweeping to a deep orange lip at the bottom */
+  border: calc(var(--h) * 0.03) solid transparent;
+  background: var(--dn-gradient-sun-face), var(--dn-gradient-sun-rim);
+  opacity: 1;
+}
+
+.dn-switch__moon {
+  /*
+   * Each crater is three stacked discs: the fill, nudged down a touch; a darker
+   * disc beneath it (shows as a thin shadow crescent along the top edge); and a
+   * lighter disc nudged further down (shows as a light rim along the bottom).
+   */
+  background:
+    radial-gradient(circle at 30% 47.8%, var(--dn-color-moon-crater) 0 17%, transparent 18%),
+    radial-gradient(circle at 30% 46%, var(--dn-color-moon-crater-shadow) 0 17%, transparent 18%),
+    radial-gradient(
+      circle at 30% 49.2%,
+      var(--dn-color-moon-crater-highlight) 0 17%,
+      transparent 18%
+    ),
+    radial-gradient(circle at 62% 25%, var(--dn-color-moon-crater) 0 9%, transparent 10%),
+    radial-gradient(circle at 62% 24%, var(--dn-color-moon-crater-shadow) 0 9%, transparent 10%),
+    radial-gradient(
+      circle at 62% 25.8%,
+      var(--dn-color-moon-crater-highlight) 0 9%,
+      transparent 10%
+    ),
+    radial-gradient(circle at 68% 71.4%, var(--dn-color-moon-crater) 0 13%, transparent 14%),
+    radial-gradient(circle at 68% 70%, var(--dn-color-moon-crater-shadow) 0 13%, transparent 14%),
+    radial-gradient(
+      circle at 68% 72.6%,
+      var(--dn-color-moon-crater-highlight) 0 13%,
+      transparent 14%
+    ),
+    var(--dn-color-moon-face);
+  box-shadow: inset 0 calc(var(--h) * -0.05) 0 oklch(from var(--dn-color-black) l c h / 14%);
+  opacity: 0;
+  /* rolls into place as it fades in */
+  transform: rotate(-90deg);
+}
+
+.dn-switch[data-state="night"] .dn-switch__sun {
+  opacity: 0;
+}
+
+.dn-switch[data-state="night"] .dn-switch__moon {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* The switch keeps its own day/night scenery, so only the focus ring needs
+   flipping to stay visible against the dark page. */
+[data-theme="night"] .dn-switch {
+  --dn-color-focus-ring: oklch(98.4152% 0.00341 247.86);
+  --dn-color-focus-halo: oklch(21.0084% 0.03176 264.66);
+}
+
+/* ---- motion preferences ---------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .dn-switch {
+    --dur: 0ms;
+  }
+}
+
+/* ---- forced colors (Windows High Contrast) --------------------------- */
+@media (forced-colors: active) {
+  .dn-switch {
+    background: ButtonFace;
+    border: 2px solid ButtonText;
+    box-shadow: none;
+  }
+
+  .dn-switch:focus-visible {
+    outline: 3px solid Highlight;
+    outline-offset: 3px;
+    box-shadow: none;
+  }
+
+  .dn-switch:disabled {
+    opacity: 1;
+    border-style: dashed;
+  }
+
+  .dn-switch__sky,
+  .dn-switch__clouds,
+  .dn-switch__stars,
+  .dn-switch__ring,
+  .dn-switch__inset,
+  .dn-switch__sun,
+  .dn-switch__moon {
+    display: none;
+  }
+
+  .dn-switch__track {
+    background: Canvas;
+  }
+
+  .dn-switch__knob {
+    background: ButtonText;
+    box-shadow: none;
+  }
+}

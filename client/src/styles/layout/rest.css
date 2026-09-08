@@ -10,7 +10,17 @@ section {
   color: var(--primary);
 }
 
+#profile-pic a {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#profile-pic a:focus-visible {
+  outline: none;
+}
+
 #profile-pic img {
+  display: block;
   height: 8rem;
   border-radius: 50%;
   padding: 4px;
@@ -32,6 +42,9 @@ section #thanks-container {
   padding: 2rem 2rem 0 2rem;
   margin-bottom: 4rem;
   background-color: var(--white);
+  transition:
+    background-color var(--theme-fade),
+    border-color var(--theme-fade);
 }
 
 section #thanks-container #thanks-contact {
