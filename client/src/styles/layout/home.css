@@ -192,14 +192,18 @@ section .portfolio-item #last-screen {
   transition: transform 0.1s cubic-bezier(0.1, 0.15, 1, 1);
 }
 
-section .portfolio-item:hover,
-section .portfolio-item:focus-visible {
+section .portfolio-item:hover:not(:focus-visible) {
   cursor: pointer;
-  outline: none;
   box-shadow:
     0 0 0 3px var(--greyLight),
     rgba(17, 17, 26, 0.05) 0 4px 16px,
     rgba(17, 17, 26, 0.05) 0 8px 32px;
+}
+
+section .portfolio-item:focus-visible {
+  outline: 3px solid var(--black);
+  outline-offset: 3px;
+  border-radius: 25px;
 }
 
 section a:hover #second-screen {
