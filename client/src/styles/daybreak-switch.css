@@ -99,6 +99,7 @@
   outline: 3px solid var(--dn-color-focus-ring);
   outline-offset: 3px;
   box-shadow: 0 0 0 6px var(--dn-color-focus-halo);
+  border-radius: calc(var(--h) / 2 + var(--bevel));
 }
 
 .dn-switch:disabled {

@@ -156,7 +156,7 @@ a:active {
 }
 
 a:focus-visible,
-button:focus-visible,
+button:focus-visible:not(.dn-switch),
 [role="button"]:focus-visible {
   outline: 3px solid var(--black);
   outline-offset: 3px;

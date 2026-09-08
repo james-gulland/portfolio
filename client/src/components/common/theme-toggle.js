@@ -15,7 +15,7 @@ const ThemeToggle = () => {
       <DaybreakSwitch
         checked={isNight}
         onChange={handleChange}
-        size={40}
+        size={34}
         aria-label={isNight ? "Switch to day mode" : "Switch to night mode"}
       />
     </div>
