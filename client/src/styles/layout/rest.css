@@ -10,7 +10,17 @@ section {
   color: var(--primary);
 }
 
+#profile-pic a {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#profile-pic a:focus-visible {
+  outline: none;
+}
+
 #profile-pic img {
+  display: block;
   height: 8rem;
   border-radius: 50%;
   padding: 4px;

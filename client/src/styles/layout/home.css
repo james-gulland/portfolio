@@ -49,7 +49,8 @@
   margin-bottom: 2rem;
 }
 
-#profile-pic.active img:hover {
+#profile-pic.active img:hover,
+#profile-pic.active a:focus-visible img {
   border: 3px solid var(--black);
 }
 
